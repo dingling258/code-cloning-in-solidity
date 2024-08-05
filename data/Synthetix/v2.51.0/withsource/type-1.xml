@@ -1,0 +1,1076 @@
+<clones>
+<systeminfo processor="nicad6" system="source-code" granularity="functions" threshold="0%" minlines="3" maxlines="2500"/>
+<cloneinfo npcs="1238" npairs="211"/>
+<runinfo ncompares="221065" cputime="21216"/>
+<classinfo nclasses="57"/>
+
+<class classid="1" nclones="10" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="73" endline="75" pcid="12">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="136" endline="138" pcid="531">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/Synth.sol" startline="209" endline="211" pcid="992">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/SynthRedeemer.sol" startline="32" endline="34" pcid="1063">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="146" endline="148" pcid="408">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/EtherWrapper.sol" startline="89" endline="91" pcid="384">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/Liquidations.sol" startline="65" endline="67" pcid="689">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/SynthetixBridgeToOptimism.sol" startline="36" endline="38" pcid="1020">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="77" endline="79" pcid="48">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="73" endline="75" pcid="81">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+</class>
+
+<class classid="2" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="77" endline="79" pcid="13">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/ExchangeRates.sol" startline="449" endline="451" pcid="477">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/TradingRewards.sol" startline="70" endline="72" pcid="1193">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="128" endline="130" pcid="529">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="69" endline="71" pcid="80">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="117" endline="119" pcid="614">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/Synth.sol" startline="205" endline="207" pcid="991">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+</class>
+
+<class classid="3" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="81" endline="83" pcid="14">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="126" endline="128" pcid="403">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/Liquidations.sol" startline="69" endline="71" pcid="690">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/Depot.sol" startline="515" endline="517" pcid="328">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="121" endline="123" pcid="615">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/EtherWrapper.sol" startline="85" endline="87" pcid="383">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/PurgeableSynth.sol" startline="42" endline="44" pcid="872">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+</class>
+
+<class classid="4" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="85" endline="87" pcid="15">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="118" endline="120" pcid="401">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="65" endline="67" pcid="79">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/Liquidations.sol" startline="61" endline="63" pcid="688">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/RewardEscrowV2.sol" startline="46" endline="48" pcid="894">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="112" endline="114" pcid="525">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/Synth.sol" startline="197" endline="199" pcid="989">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+</class>
+
+<class classid="5" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="89" endline="91" pcid="16">
+    function collateralManager() internal view returns (ICollateralManager) {
+        return ICollateralManager(requireAndGetAddress(CONTRACT_COLLATERALMANAGER));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="141" endline="143" pcid="620">
+    function collateralManager() internal view returns (ICollateralManager) {
+        return ICollateralManager(requireAndGetAddress(CONTRACT_COLLATERALMANAGER));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="132" endline="134" pcid="530">
+    function collateralManager() internal view returns (ICollateralManager) {
+        return ICollateralManager(requireAndGetAddress(CONTRACT_COLLATERALMANAGER));
+    }
+</source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="34" endline="36" pcid="822">
+    function collateralManager() internal view returns (ICollateralManager) {
+        return ICollateralManager(requireAndGetAddress(CONTRACT_COLLATERALMANAGER));
+    }
+</source>
+</class>
+
+<class classid="6" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="93" endline="95" pcid="17">
+    function etherWrapper() internal view returns (IEtherWrapper) {
+        return IEtherWrapper(requireAndGetAddress(CONTRACT_ETHER_WRAPPER));
+    }
+</source>
+<source file="systems/source-code/NativeEtherWrapper.sol" startline="33" endline="35" pcid="828">
+    function etherWrapper() internal view returns (IEtherWrapper) {
+        return IEtherWrapper(requireAndGetAddress(CONTRACT_ETHER_WRAPPER));
+    }
+</source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="38" endline="40" pcid="823">
+    function etherWrapper() internal view returns (IEtherWrapper) {
+        return IEtherWrapper(requireAndGetAddress(CONTRACT_ETHER_WRAPPER));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="156" endline="158" pcid="536">
+    function etherWrapper() internal view returns (IEtherWrapper) {
+        return IEtherWrapper(requireAndGetAddress(CONTRACT_ETHER_WRAPPER));
+    }
+</source>
+</class>
+
+<class classid="7" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="97" endline="99" pcid="18">
+    function debtSnapshotStaleTime() external view returns (uint) {
+        return getDebtSnapshotStaleTime();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="118" endline="120" pcid="1091">
+    function debtSnapshotStaleTime() external view returns (uint) {
+        return getDebtSnapshotStaleTime();
+    }
+</source>
+</class>
+
+<class classid="8" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="69" endline="71" pcid="46">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="129" endline="131" pcid="617">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/EtherWrapper.sol" startline="81" endline="83" pcid="382">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/Synth.sol" startline="201" endline="203" pcid="990">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="134" endline="136" pcid="405">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+</class>
+
+<class classid="9" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="73" endline="75" pcid="47">
+    function synthetix() internal view returns (ISynthetix) {
+        return ISynthetix(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/Liquidations.sol" startline="57" endline="59" pcid="687">
+    function synthetix() internal view returns (ISynthetix) {
+        return ISynthetix(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="116" endline="118" pcid="526">
+    function synthetix() internal view returns (ISynthetix) {
+        return ISynthetix(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="130" endline="132" pcid="404">
+    function synthetix() internal view returns (ISynthetix) {
+        return ISynthetix(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="35" endline="37" pcid="131">
+    function synthetix() internal view returns (ISynthetix) {
+        return ISynthetix(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="113" endline="115" pcid="613">
+    function synthetix() internal view returns (ISynthetix) {
+        return ISynthetix(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+</class>
+
+<class classid="10" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="81" endline="83" pcid="49">
+    function _notImplemented() internal pure {
+        revert("Cannot be run on this layer");
+    }
+</source>
+<source file="systems/source-code/ExchangeRatesWithoutInvPricing.sol" startline="47" endline="49" pcid="501">
+    function _notImplemented() internal pure {
+        revert("Cannot be run on this layer");
+    }
+</source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="347" endline="349" pcid="121">
+    function _notImplemented() internal pure {
+        revert("Cannot be run on this layer");
+    }
+</source>
+</class>
+
+<class classid="11" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="98" endline="100" pcid="51">
+    function balanceOf(address account) public view returns (uint) {
+        return totalEscrowedAccountBalance[account];
+    }
+</source>
+<source file="systems/source-code/RewardEscrow.sol" startline="79" endline="81" pcid="877">
+    function balanceOf(address account) public view returns (uint) {
+        return totalEscrowedAccountBalance[account];
+    }
+</source>
+</class>
+
+<class classid="12" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="61" endline="63" pcid="78">
+    function synthetixState() internal view returns (ISynthetixState) {
+        return ISynthetixState(requireAndGetAddress(CONTRACT_SYNTHETIXSTATE));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="140" endline="142" pcid="532">
+    function synthetixState() internal view returns (ISynthetixState) {
+        return ISynthetixState(requireAndGetAddress(CONTRACT_SYNTHETIXSTATE));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="125" endline="127" pcid="616">
+    function synthetixState() internal view returns (ISynthetixState) {
+        return ISynthetixState(requireAndGetAddress(CONTRACT_SYNTHETIXSTATE));
+    }
+</source>
+</class>
+
+<class classid="13" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="77" endline="79" pcid="82">
+    function rewardsDistribution() internal view returns (IRewardsDistribution) {
+        return IRewardsDistribution(requireAndGetAddress(CONTRACT_REWARDSDISTRIBUTION));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="152" endline="154" pcid="535">
+    function rewardsDistribution() internal view returns (IRewardsDistribution) {
+        return IRewardsDistribution(requireAndGetAddress(CONTRACT_REWARDSDISTRIBUTION));
+    }
+</source>
+</class>
+
+<class classid="14" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="200" endline="210" pcid="101">
+    function settle(bytes32 currencyKey)
+        external
+        optionalProxy
+        returns (
+            uint reclaimed,
+            uint refunded,
+            uint numEntriesSettled
+        )
+    {
+        return exchanger().settle(messageSender, currencyKey);
+    }
+</source>
+<source file="systems/source-code/Synthetix.sol" startline="104" endline="114" pcid="1004">
+    function settle(bytes32 currencyKey)
+        external
+        optionalProxy
+        returns (
+            uint reclaimed,
+            uint refunded,
+            uint numEntriesSettled
+        )
+    {
+        return exchanger().settle(messageSender, currencyKey);
+    }
+</source>
+</class>
+
+<class classid="15" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="116" endline="118" pcid="143">
+    function _synth(bytes32 synthName) internal view returns (ISynth) {
+        return ISynth(requireAndGetAddress(synthName));
+    }
+</source>
+<source file="systems/source-code/CollateralManager.sol" startline="145" endline="147" pcid="201">
+    function _synth(bytes32 synthName) internal view returns (ISynth) {
+        return ISynth(requireAndGetAddress(synthName));
+    }
+</source>
+</class>
+
+<class classid="16" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="124" endline="126" pcid="145">
+    function _exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/CollateralManager.sol" startline="141" endline="143" pcid="200">
+    function _exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+</class>
+
+<class classid="17" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/CollateralErc20.sol" startline="83" endline="89" pcid="184">
+    function repay(
+        address borrower,
+        uint id,
+        uint amount
+    ) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _repay(borrower, msg.sender, id, amount);
+    }
+</source>
+<source file="systems/source-code/CollateralShort.sol" startline="53" endline="59" pcid="260">
+    function repay(
+        address borrower,
+        uint id,
+        uint amount
+    ) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _repay(borrower, msg.sender, id, amount);
+    }
+</source>
+<source file="systems/source-code/CollateralEth.sol" startline="43" endline="49" pcid="193">
+    function repay(
+        address borrower,
+        uint id,
+        uint amount
+    ) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _repay(borrower, msg.sender, id, amount);
+    }
+</source>
+</class>
+
+<class classid="18" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/CollateralErc20.sol" startline="91" endline="93" pcid="185">
+    function draw(uint id, uint amount) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _draw(id, amount);
+    }
+</source>
+<source file="systems/source-code/CollateralShort.sol" startline="82" endline="84" pcid="264">
+    function draw(uint id, uint amount) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _draw(id, amount);
+    }
+</source>
+<source file="systems/source-code/CollateralEth.sol" startline="51" endline="53" pcid="194">
+    function draw(uint id, uint amount) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _draw(id, amount);
+    }
+</source>
+</class>
+
+<class classid="19" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Depot.sol" startline="511" endline="513" pcid="327">
+    function synthetix() internal view returns (IERC20) {
+        return IERC20(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/TradingRewards.sol" startline="66" endline="68" pcid="1192">
+    function synthetix() internal view returns (IERC20) {
+        return IERC20(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+</class>
+
+<class classid="20" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="142" endline="144" pcid="407">
+    function delegateApprovals() internal view returns (IDelegateApprovals) {
+        return IDelegateApprovals(requireAndGetAddress(CONTRACT_DELEGATEAPPROVALS));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="137" endline="139" pcid="619">
+    function delegateApprovals() internal view returns (IDelegateApprovals) {
+        return IDelegateApprovals(requireAndGetAddress(CONTRACT_DELEGATEAPPROVALS));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="148" endline="150" pcid="534">
+    function delegateApprovals() internal view returns (IDelegateApprovals) {
+        return IDelegateApprovals(requireAndGetAddress(CONTRACT_DELEGATEAPPROVALS));
+    }
+</source>
+</class>
+
+<class classid="21" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="158" endline="160" pcid="411">
+    function waitingPeriodSecs() external view returns (uint) {
+        return getWaitingPeriodSecs();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="56" endline="58" pcid="1080">
+    function waitingPeriodSecs() external view returns (uint) {
+        return getWaitingPeriodSecs();
+    }
+</source>
+</class>
+
+<class classid="22" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="162" endline="164" pcid="412">
+    function tradingRewardsEnabled() external view returns (bool) {
+        return getTradingRewardsEnabled();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="128" endline="130" pcid="1093">
+    function tradingRewardsEnabled() external view returns (bool) {
+        return getTradingRewardsEnabled();
+    }
+</source>
+</class>
+
+<class classid="23" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="166" endline="168" pcid="413">
+    function priceDeviationThresholdFactor() external view returns (uint) {
+        return getPriceDeviationThresholdFactor();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="63" endline="65" pcid="1081">
+    function priceDeviationThresholdFactor() external view returns (uint) {
+        return getPriceDeviationThresholdFactor();
+    }
+</source>
+</class>
+
+<class classid="24" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRates.sol" startline="243" endline="245" pcid="456">
+    function rateStalePeriod() external view returns (uint) {
+        return getRateStalePeriod();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="106" endline="108" pcid="1088">
+    function rateStalePeriod() external view returns (uint) {
+        return getRateStalePeriod();
+    }
+</source>
+</class>
+
+<class classid="25" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRates.sol" startline="247" endline="249" pcid="457">
+    function aggregatorWarningFlags() external view returns (address) {
+        return getAggregatorWarningFlags();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="122" endline="124" pcid="1092">
+    function aggregatorWarningFlags() external view returns (address) {
+        return getAggregatorWarningFlags();
+    }
+</source>
+</class>
+
+<class classid="26" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="144" endline="146" pcid="533">
+    function rewardEscrowV2() internal view returns (IRewardEscrowV2) {
+        return IRewardEscrowV2(requireAndGetAddress(CONTRACT_REWARDESCROW_V2));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="145" endline="147" pcid="621">
+    function rewardEscrowV2() internal view returns (IRewardEscrowV2) {
+        return IRewardEscrowV2(requireAndGetAddress(CONTRACT_REWARDESCROW_V2));
+    }
+</source>
+<source file="systems/source-code/Synthetix.sol" startline="45" endline="47" pcid="1000">
+    function rewardEscrowV2() internal view returns (IRewardEscrowV2) {
+        return IRewardEscrowV2(requireAndGetAddress(CONTRACT_REWARDESCROW_V2));
+    }
+</source>
+</class>
+
+<class classid="27" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="160" endline="162" pcid="537">
+    function issuanceRatio() external view returns (uint) {
+        return getIssuanceRatio();
+    }
+</source>
+<source file="systems/source-code/Liquidations.sol" startline="78" endline="80" pcid="692">
+    function issuanceRatio() external view returns (uint) {
+        return getIssuanceRatio();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="69" endline="71" pcid="1082">
+    function issuanceRatio() external view returns (uint) {
+        return getIssuanceRatio();
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="161" endline="163" pcid="625">
+    function issuanceRatio() external view returns (uint) {
+        return getIssuanceRatio();
+    }
+</source>
+</class>
+
+<class classid="28" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="164" endline="166" pcid="538">
+    function feePeriodDuration() external view returns (uint) {
+        return getFeePeriodDuration();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="77" endline="79" pcid="1083">
+    function feePeriodDuration() external view returns (uint) {
+        return getFeePeriodDuration();
+    }
+</source>
+</class>
+
+<class classid="29" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="168" endline="170" pcid="539">
+    function targetThreshold() external view returns (uint) {
+        return getTargetThreshold();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="82" endline="84" pcid="1084">
+    function targetThreshold() external view returns (uint) {
+        return getTargetThreshold();
+    }
+</source>
+</class>
+
+<class classid="30" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Issuer.sol" startline="317" endline="319" pcid="637">
+    function minimumStakeTime() external view returns (uint) {
+        return getMinimumStakeTime();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="114" endline="116" pcid="1090">
+    function minimumStakeTime() external view returns (uint) {
+        return getMinimumStakeTime();
+    }
+</source>
+</class>
+
+<class classid="31" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="22" endline="25" pcid="683">
+    function setAssociatedContract(address _associatedContract) external onlyOwner {
+        associatedContract = _associatedContract;
+        emit AssociatedContractUpdated(_associatedContract);
+    }
+</source>
+<source file="systems/source-code/State.sol" startline="23" endline="26" pcid="961">
+    function setAssociatedContract(address _associatedContract) external onlyOwner {
+        associatedContract = _associatedContract;
+        emit AssociatedContractUpdated(_associatedContract);
+    }
+</source>
+</class>
+
+<class classid="32" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="27" endline="33" pcid="684">
+    function setAllowance(
+        address tokenOwner,
+        address spender,
+        uint value
+    ) external onlyAssociatedContract {
+        allowance[tokenOwner][spender] = value;
+    }
+</source>
+<source file="systems/source-code/TokenState.sol" startline="25" endline="31" pcid="1189">
+    function setAllowance(
+        address tokenOwner,
+        address spender,
+        uint value
+    ) external onlyAssociatedContract {
+        allowance[tokenOwner][spender] = value;
+    }
+</source>
+</class>
+
+<class classid="33" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="35" endline="37" pcid="685">
+    function setBalanceOf(address account, uint value) external onlyAssociatedContract {
+        balanceOf[account] = value;
+    }
+</source>
+<source file="systems/source-code/TokenState.sol" startline="39" endline="41" pcid="1190">
+    function setBalanceOf(address account, uint value) external onlyAssociatedContract {
+        balanceOf[account] = value;
+    }
+</source>
+</class>
+
+<class classid="34" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidations.sol" startline="82" endline="84" pcid="693">
+    function liquidationDelay() external view returns (uint) {
+        return getLiquidationDelay();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="88" endline="90" pcid="1085">
+    function liquidationDelay() external view returns (uint) {
+        return getLiquidationDelay();
+    }
+</source>
+</class>
+
+<class classid="35" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidations.sol" startline="86" endline="88" pcid="694">
+    function liquidationRatio() external view returns (uint) {
+        return getLiquidationRatio();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="95" endline="97" pcid="1086">
+    function liquidationRatio() external view returns (uint) {
+        return getLiquidationRatio();
+    }
+</source>
+</class>
+
+<class classid="36" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidations.sol" startline="90" endline="92" pcid="695">
+    function liquidationPenalty() external view returns (uint) {
+        return getLiquidationPenalty();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="101" endline="103" pcid="1087">
+    function liquidationPenalty() external view returns (uint) {
+        return getLiquidationPenalty();
+    }
+</source>
+</class>
+
+<class classid="37" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/Migration_Kaus.sol" startline="82" endline="87" pcid="714">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_Mirfak.sol" startline="266" endline="271" pcid="722">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+</class>
+
+<class classid="38" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/Migration_Kaus.sol" startline="89" endline="94" pcid="715">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_Mirfak.sol" startline="273" endline="278" pcid="723">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+</class>
+
+<class classid="39" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="17" endline="19" pcid="854">
+    function transfer(address to, uint value) external optionalProxy returns (bool) {
+        return _transferByProxy(messageSender, to, value);
+    }
+</source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="17" endline="19" pcid="857">
+    function transfer(address to, uint value) external optionalProxy returns (bool) {
+        return _transferByProxy(messageSender, to, value);
+    }
+</source>
+</class>
+
+<class classid="40" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="21" endline="27" pcid="855">
+    function transferFrom(
+        address from,
+        address to,
+        uint value
+    ) external optionalProxy returns (bool) {
+        return _transferFromByProxy(messageSender, from, to, value);
+    }
+</source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="21" endline="27" pcid="858">
+    function transferFrom(
+        address from,
+        address to,
+        uint value
+    ) external optionalProxy returns (bool) {
+        return _transferFromByProxy(messageSender, from, to, value);
+    }
+</source>
+</class>
+
+<class classid="41" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="32" endline="34" pcid="856">
+    function somethingToBeProxied(uint256 inputA, bytes32 inputB) external {
+        emit Received(messageSender, inputA, inputB);
+    }
+</source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="32" endline="34" pcid="859">
+    function somethingToBeProxied(uint256 inputA, bytes32 inputB) external {
+        emit Received(messageSender, inputA, inputB);
+    }
+</source>
+</class>
+
+<class classid="42" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="60" endline="63" pcid="875">
+    function setSynthetix(ISynthetix _synthetix) external onlyOwner {
+        synthetix = _synthetix;
+        emit SynthetixUpdated(address(_synthetix));
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="46" endline="49" pcid="1037">
+    function setSynthetix(ISynthetix _synthetix) external onlyOwner {
+        synthetix = _synthetix;
+        emit SynthetixUpdated(address(_synthetix));
+    }
+</source>
+</class>
+
+<class classid="43" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="69" endline="72" pcid="876">
+    function setFeePool(IFeePool _feePool) external onlyOwner {
+        feePool = _feePool;
+        emit FeePoolUpdated(address(_feePool));
+    }
+</source>
+<source file="systems/source-code/SynthetixStateWithLimitedSetup.sol" startline="29" endline="32" pcid="1059">
+    function setFeePool(IFeePool _feePool) external onlyOwner {
+        feePool = _feePool;
+        emit FeePoolUpdated(address(_feePool));
+    }
+</source>
+</class>
+
+<class classid="44" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="98" endline="100" pcid="880">
+    function getVestingScheduleEntry(address account, uint index) public view returns (uint[2] memory) {
+        return vestingSchedules[account][index];
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="71" endline="73" pcid="1040">
+    function getVestingScheduleEntry(address account, uint index) public view returns (uint[2] memory) {
+        return vestingSchedules[account][index];
+    }
+</source>
+</class>
+
+<class classid="45" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="105" endline="107" pcid="881">
+    function getVestingTime(address account, uint index) public view returns (uint) {
+        return getVestingScheduleEntry(account, index)[TIME_INDEX];
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="78" endline="80" pcid="1041">
+    function getVestingTime(address account, uint index) public view returns (uint) {
+        return getVestingScheduleEntry(account, index)[TIME_INDEX];
+    }
+</source>
+</class>
+
+<class classid="46" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="112" endline="114" pcid="882">
+    function getVestingQuantity(address account, uint index) public view returns (uint) {
+        return getVestingScheduleEntry(account, index)[QUANTITY_INDEX];
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="85" endline="87" pcid="1042">
+    function getVestingQuantity(address account, uint index) public view returns (uint) {
+        return getVestingScheduleEntry(account, index)[QUANTITY_INDEX];
+    }
+</source>
+</class>
+
+<class classid="47" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="143" endline="145" pcid="885">
+    function getNextVestingTime(address account) external view returns (uint) {
+        return getNextVestingEntry(account)[TIME_INDEX];
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="116" endline="118" pcid="1045">
+    function getNextVestingTime(address account) external view returns (uint) {
+        return getNextVestingEntry(account)[TIME_INDEX];
+    }
+</source>
+</class>
+
+<class classid="48" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="150" endline="152" pcid="886">
+    function getNextVestingQuantity(address account) external view returns (uint) {
+        return getNextVestingEntry(account)[QUANTITY_INDEX];
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="123" endline="125" pcid="1046">
+    function getNextVestingQuantity(address account) external view returns (uint) {
+        return getNextVestingEntry(account)[QUANTITY_INDEX];
+    }
+</source>
+</class>
+
+<class classid="49" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="65" endline="67" pcid="935">
+    function totalSupply() external view returns (uint256) {
+        return _totalSupply;
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="49" endline="51" pcid="946">
+    function totalSupply() external view returns (uint256) {
+        return _totalSupply;
+    }
+</source>
+</class>
+
+<class classid="50" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="69" endline="71" pcid="936">
+    function balanceOf(address account) external view returns (uint256) {
+        return _balances[account];
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="53" endline="55" pcid="947">
+    function balanceOf(address account) external view returns (uint256) {
+        return _balances[account];
+    }
+</source>
+</class>
+
+<class classid="51" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="73" endline="75" pcid="937">
+    function lastTimeRewardApplicable() public view returns (uint256) {
+        return block.timestamp < periodFinish ? block.timestamp : periodFinish;
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="57" endline="59" pcid="948">
+    function lastTimeRewardApplicable() public view returns (uint256) {
+        return block.timestamp < periodFinish ? block.timestamp : periodFinish;
+    }
+</source>
+</class>
+
+<class classid="52" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="77" endline="85" pcid="938">
+    function rewardPerToken() public view returns (uint256) {
+        if (_totalSupply == 0) {
+            return rewardPerTokenStored;
+        }
+        return
+            rewardPerTokenStored.add(
+                lastTimeRewardApplicable().sub(lastUpdateTime).mul(rewardRate).mul(1e18).div(_totalSupply)
+            );
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="61" endline="69" pcid="949">
+    function rewardPerToken() public view returns (uint256) {
+        if (_totalSupply == 0) {
+            return rewardPerTokenStored;
+        }
+        return
+            rewardPerTokenStored.add(
+                lastTimeRewardApplicable().sub(lastUpdateTime).mul(rewardRate).mul(1e18).div(_totalSupply)
+            );
+    }
+</source>
+</class>
+
+<class classid="53" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="87" endline="89" pcid="939">
+    function earned(address account) public view returns (uint256) {
+        return _balances[account].mul(rewardPerToken().sub(userRewardPerTokenPaid[account])).div(1e18).add(rewards[account]);
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="71" endline="73" pcid="950">
+    function earned(address account) public view returns (uint256) {
+        return _balances[account].mul(rewardPerToken().sub(userRewardPerTokenPaid[account])).div(1e18).add(rewards[account]);
+    }
+</source>
+</class>
+
+<class classid="54" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="91" endline="93" pcid="940">
+    function getRewardForDuration() external view returns (uint256) {
+        return rewardRate.mul(rewardsDuration);
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="75" endline="77" pcid="951">
+    function getRewardForDuration() external view returns (uint256) {
+        return rewardRate.mul(rewardsDuration);
+    }
+</source>
+</class>
+
+<class classid="55" nclones="2" nlines="15" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="125" endline="144" pcid="944">
+    function notifyRewardAmount(uint256 reward) external onlyRewardsDistribution updateReward(address(0)) {
+        if (block.timestamp >= periodFinish) {
+            rewardRate = reward.div(rewardsDuration);
+        } else {
+            uint256 remaining = periodFinish.sub(block.timestamp);
+            uint256 leftover = remaining.mul(rewardRate);
+            rewardRate = reward.add(leftover).div(rewardsDuration);
+        }
+
+        // Ensure the provided reward amount is not more than the balance in the contract.
+        // This keeps the reward rate in the right range, preventing overflows due to
+        // very high values of rewardRate in the earned and rewardsPerToken functions;
+        // Reward + leftover must be less than 2^256 / 10^18 to avoid overflow.
+        uint balance = rewardsToken.balanceOf(address(this));
+        require(rewardRate <= balance.div(rewardsDuration), "Provided reward too high");
+
+        lastUpdateTime = block.timestamp;
+        periodFinish = block.timestamp.add(rewardsDuration);
+        emit RewardAdded(reward);
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="113" endline="132" pcid="956">
+    function notifyRewardAmount(uint256 reward) external onlyRewardsDistribution updateReward(address(0)) {
+        if (block.timestamp >= periodFinish) {
+            rewardRate = reward.div(rewardsDuration);
+        } else {
+            uint256 remaining = periodFinish.sub(block.timestamp);
+            uint256 leftover = remaining.mul(rewardRate);
+            rewardRate = reward.add(leftover).div(rewardsDuration);
+        }
+
+        // Ensure the provided reward amount is not more than the balance in the contract.
+        // This keeps the reward rate in the right range, preventing overflows due to
+        // very high values of rewardRate in the earned and rewardsPerToken functions;
+        // Reward + leftover must be less than 2^256 / 10^18 to avoid overflow.
+        uint balance = rewardsToken.balanceOf(address(this));
+        require(rewardRate <= balance.div(rewardsDuration), "Provided reward too high");
+
+        lastUpdateTime = block.timestamp;
+        periodFinish = block.timestamp.add(rewardsDuration);
+        emit RewardAdded(reward);
+    }
+</source>
+</class>
+
+<class classid="56" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="146" endline="153" pcid="945">
+    function setRewardsDuration(uint256 _rewardsDuration) external onlyOwner {
+        require(
+            block.timestamp > periodFinish,
+            "Previous rewards period must be complete before changing the duration for the new period"
+        );
+        rewardsDuration = _rewardsDuration;
+        emit RewardsDurationUpdated(rewardsDuration);
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="141" endline="148" pcid="958">
+    function setRewardsDuration(uint256 _rewardsDuration) external onlyOwner {
+        require(
+            block.timestamp > periodFinish,
+            "Previous rewards period must be complete before changing the duration for the new period"
+        );
+        rewardsDuration = _rewardsDuration;
+        emit RewardsDurationUpdated(rewardsDuration);
+    }
+</source>
+</class>
+
+<class classid="57" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TestableAddressSet.sol" startline="26" endline="28" pcid="1166">
+    function size() public view returns (uint) {
+        return set.elements.length;
+    }
+</source>
+<source file="systems/source-code/TestableBytes32Set.sol" startline="26" endline="28" pcid="1173">
+    function size() public view returns (uint) {
+        return set.elements.length;
+    }
+</source>
+</class>
+
+</clones>

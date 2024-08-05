@@ -1,0 +1,310 @@
+<clones>
+<systeminfo processor="nicad6" system="source-code" granularity="functions" threshold="30%" minlines="3" maxlines="2500"/>
+<cloneinfo npcs="259" npairs="29"/>
+<runinfo ncompares="15942" cputime="9113"/>
+<classinfo nclasses="13"/>
+
+<class classid="1" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/AccessControlERC20MintMissing.sol" startline="17" endline="19" pcid="7">
+    function mint(address to, uint256 amount) public onlyRole(MINTER_ROLE) {
+        _mint(to, amount);
+    }
+</source>
+<source file="systems/source-code/AccessControlERC20MintOnlyRole.sol" startline="16" endline="18" pcid="9">
+    function mint(address to, uint256 amount) public onlyRole(MINTER_ROLE) {
+        _mint(to, amount);
+    }
+</source>
+</class>
+
+<class classid="2" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/AccessControlERC20MintMissing.sol" startline="21" endline="23" pcid="8">
+    function burn(address from, uint256 amount) public onlyRole(BURNER_ROLE) {
+        _burn(from, amount);
+    }
+</source>
+<source file="systems/source-code/AccessControlERC20MintOnlyRole.sol" startline="20" endline="22" pcid="10">
+    function burn(address from, uint256 amount) public onlyRole(BURNER_ROLE) {
+        _burn(from, amount);
+    }
+</source>
+</class>
+
+<class classid="3" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/AuthorityMock.sol" startline="25" endline="27" pcid="18">
+    function _setImmediate(bool immediate) external {
+        _immediate = immediate;
+    }
+</source>
+<source file="systems/source-code/AuthorityMock.sol" startline="42" endline="44" pcid="20">
+    function _setImmediate(bool immediate) external {
+        _immediate = immediate;
+    }
+</source>
+</class>
+
+<class classid="4" nclones="3" nlines="25" similarity="76">
+<source file="systems/source-code/Checkpoints.t.sol" startline="41" endline="74" pcid="42">
+    function testPush(uint32[] memory keys, uint224[] memory values, uint32 pastKey) public {
+        vm.assume(values.length > 0 && values.length <= keys.length);
+        _prepareKeys(keys, _KEY_MAX_GAP);
+
+        // initial state
+        assertEq(_ckpts.length(), 0);
+        assertEq(_ckpts.latest(), 0);
+        _assertLatestCheckpoint(false, 0, 0);
+
+        uint256 duplicates = 0;
+        for (uint256 i = 0; i < keys.length; ++i) {
+            uint32 key = keys[i];
+            uint224 value = values[i % values.length];
+            if (i > 0 && key == keys[i - 1]) ++duplicates;
+
+            // push
+            _ckpts.push(key, value);
+
+            // check length & latest
+            assertEq(_ckpts.length(), i + 1 - duplicates);
+            assertEq(_ckpts.latest(), value);
+            _assertLatestCheckpoint(true, key, value);
+        }
+
+        if (keys.length > 0) {
+            uint32 lastKey = keys[keys.length - 1];
+            if (lastKey > 0) {
+                pastKey = _boundUint32(pastKey, 0, lastKey - 1);
+
+                vm.expectRevert();
+                this.push(pastKey, values[keys.length % values.length]);
+            }
+        }
+    }
+</source>
+<source file="systems/source-code/Checkpoints.t.sol" startline="257" endline="290" pcid="54">
+    function testPush(uint96[] memory keys, uint160[] memory values, uint96 pastKey) public {
+        vm.assume(values.length > 0 && values.length <= keys.length);
+        _prepareKeys(keys, _KEY_MAX_GAP);
+
+        // initial state
+        assertEq(_ckpts.length(), 0);
+        assertEq(_ckpts.latest(), 0);
+        _assertLatestCheckpoint(false, 0, 0);
+
+        uint256 duplicates = 0;
+        for (uint256 i = 0; i < keys.length; ++i) {
+            uint96 key = keys[i];
+            uint160 value = values[i % values.length];
+            if (i > 0 && key == keys[i - 1]) ++duplicates;
+
+            // push
+            _ckpts.push(key, value);
+
+            // check length & latest
+            assertEq(_ckpts.length(), i + 1 - duplicates);
+            assertEq(_ckpts.latest(), value);
+            _assertLatestCheckpoint(true, key, value);
+        }
+
+        if (keys.length > 0) {
+            uint96 lastKey = keys[keys.length - 1];
+            if (lastKey > 0) {
+                pastKey = _boundUint96(pastKey, 0, lastKey - 1);
+
+                vm.expectRevert();
+                this.push(pastKey, values[keys.length % values.length]);
+            }
+        }
+    }
+</source>
+<source file="systems/source-code/Checkpoints.t.sol" startline="149" endline="182" pcid="48">
+    function testPush(uint48[] memory keys, uint208[] memory values, uint48 pastKey) public {
+        vm.assume(values.length > 0 && values.length <= keys.length);
+        _prepareKeys(keys, _KEY_MAX_GAP);
+
+        // initial state
+        assertEq(_ckpts.length(), 0);
+        assertEq(_ckpts.latest(), 0);
+        _assertLatestCheckpoint(false, 0, 0);
+
+        uint256 duplicates = 0;
+        for (uint256 i = 0; i < keys.length; ++i) {
+            uint48 key = keys[i];
+            uint208 value = values[i % values.length];
+            if (i > 0 && key == keys[i - 1]) ++duplicates;
+
+            // push
+            _ckpts.push(key, value);
+
+            // check length & latest
+            assertEq(_ckpts.length(), i + 1 - duplicates);
+            assertEq(_ckpts.latest(), value);
+            _assertLatestCheckpoint(true, key, value);
+        }
+
+        if (keys.length > 0) {
+            uint48 lastKey = keys[keys.length - 1];
+            if (lastKey > 0) {
+                pastKey = _boundUint48(pastKey, 0, lastKey - 1);
+
+                vm.expectRevert();
+                this.push(pastKey, values[keys.length % values.length]);
+            }
+        }
+    }
+</source>
+</class>
+
+<class classid="5" nclones="2" nlines="6" similarity="75">
+<source file="systems/source-code/ERC1271WalletMock.sol" startline="18" endline="23" pcid="93">
+    function isValidSignature(bytes32, bytes memory) public pure returns (bytes4) {
+        assembly {
+            mstore(0, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+            return(0, 32)
+        }
+    }
+</source>
+<source file="systems/source-code/ERC165MaliciousData.sol" startline="6" endline="11" pcid="99">
+    function supportsInterface(bytes4) public pure returns (bool) {
+        assembly {
+            mstore(0, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+            return(0, 32)
+        }
+    }
+</source>
+</class>
+
+<class classid="6" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20FlashMintHarness.sol" startline="15" endline="17" pcid="104">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC4626Mock.sol" startline="10" endline="12" pcid="129">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20PermitHarness.sol" startline="9" endline="11" pcid="111">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20Mock.sol" startline="9" endline="11" pcid="109">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+</class>
+
+<class classid="7" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20FlashMintHarness.sol" startline="19" endline="21" pcid="105">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20PermitHarness.sol" startline="13" endline="15" pcid="112">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20Mock.sol" startline="13" endline="15" pcid="110">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC4626Mock.sol" startline="14" endline="16" pcid="130">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+</class>
+
+<class classid="8" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="20" endline="22" pcid="165">
+    function initialize() public initializer {
+        initializerRan = true;
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="58" endline="60" pcid="172">
+    function initialize() public initializer {
+        initializerRan = true;
+    }
+</source>
+</class>
+
+<class classid="9" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="24" endline="26" pcid="166">
+    function initializeOnlyInitializing() public onlyInitializing {
+        onlyInitializingRan = true;
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="62" endline="64" pcid="173">
+    function initializeOnlyInitializing() public onlyInitializing {
+        onlyInitializingRan = true;
+    }
+</source>
+</class>
+
+<class classid="10" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyToken.sol" startline="14" endline="16" pcid="213">
+    function _update(address from, address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._update(from, to, amount);
+    }
+</source>
+<source file="systems/source-code/MyTokenTimestampBased.sol" startline="25" endline="27" pcid="217">
+    function _update(address from, address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._update(from, to, amount);
+    }
+</source>
+<source file="systems/source-code/MyTokenWrapped.sol" startline="21" endline="23" pcid="220">
+    function _update(address from, address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._update(from, to, amount);
+    }
+</source>
+</class>
+
+<class classid="11" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyToken.sol" startline="18" endline="20" pcid="214">
+    function nonces(address owner) public view virtual override(ERC20Permit, Nonces) returns (uint256) {
+        return super.nonces(owner);
+    }
+</source>
+<source file="systems/source-code/MyTokenWrapped.sol" startline="25" endline="27" pcid="221">
+    function nonces(address owner) public view virtual override(ERC20Permit, Nonces) returns (uint256) {
+        return super.nonces(owner);
+    }
+</source>
+<source file="systems/source-code/MyTokenTimestampBased.sol" startline="29" endline="31" pcid="218">
+    function nonces(address owner) public view virtual override(ERC20Permit, Nonces) returns (uint256) {
+        return super.nonces(owner);
+    }
+</source>
+</class>
+
+<class classid="12" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PausableHarness.sol" startline="7" endline="9" pcid="224">
+    function pause() external {
+        _pause();
+    }
+</source>
+<source file="systems/source-code/PausableMock.sol" startline="24" endline="26" pcid="230">
+    function pause() external {
+        _pause();
+    }
+</source>
+</class>
+
+<class classid="13" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PausableHarness.sol" startline="11" endline="13" pcid="225">
+    function unpause() external {
+        _unpause();
+    }
+</source>
+<source file="systems/source-code/PausableMock.sol" startline="28" endline="30" pcid="231">
+    function unpause() external {
+        _unpause();
+    }
+</source>
+</class>
+
+</clones>

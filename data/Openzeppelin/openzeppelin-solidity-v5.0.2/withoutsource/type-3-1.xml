@@ -1,0 +1,79 @@
+<clones>
+<systeminfo processor="nicad6" system="source-code" granularity="functions" threshold="30%" minlines="3" maxlines="2500"/>
+<cloneinfo npcs="259" npairs="29"/>
+<runinfo ncompares="15942" cputime="9113"/>
+<classinfo nclasses="13"/>
+
+<class classid="1" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/AccessControlERC20MintMissing.sol" startline="17" endline="19" pcid="7"></source>
+<source file="systems/source-code/AccessControlERC20MintOnlyRole.sol" startline="16" endline="18" pcid="9"></source>
+</class>
+
+<class classid="2" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/AccessControlERC20MintMissing.sol" startline="21" endline="23" pcid="8"></source>
+<source file="systems/source-code/AccessControlERC20MintOnlyRole.sol" startline="20" endline="22" pcid="10"></source>
+</class>
+
+<class classid="3" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/AuthorityMock.sol" startline="25" endline="27" pcid="18"></source>
+<source file="systems/source-code/AuthorityMock.sol" startline="42" endline="44" pcid="20"></source>
+</class>
+
+<class classid="4" nclones="3" nlines="25" similarity="76">
+<source file="systems/source-code/Checkpoints.t.sol" startline="41" endline="74" pcid="42"></source>
+<source file="systems/source-code/Checkpoints.t.sol" startline="257" endline="290" pcid="54"></source>
+<source file="systems/source-code/Checkpoints.t.sol" startline="149" endline="182" pcid="48"></source>
+</class>
+
+<class classid="5" nclones="2" nlines="6" similarity="75">
+<source file="systems/source-code/ERC1271WalletMock.sol" startline="18" endline="23" pcid="93"></source>
+<source file="systems/source-code/ERC165MaliciousData.sol" startline="6" endline="11" pcid="99"></source>
+</class>
+
+<class classid="6" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20FlashMintHarness.sol" startline="15" endline="17" pcid="104"></source>
+<source file="systems/source-code/ERC4626Mock.sol" startline="10" endline="12" pcid="129"></source>
+<source file="systems/source-code/ERC20PermitHarness.sol" startline="9" endline="11" pcid="111"></source>
+<source file="systems/source-code/ERC20Mock.sol" startline="9" endline="11" pcid="109"></source>
+</class>
+
+<class classid="7" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20FlashMintHarness.sol" startline="19" endline="21" pcid="105"></source>
+<source file="systems/source-code/ERC20PermitHarness.sol" startline="13" endline="15" pcid="112"></source>
+<source file="systems/source-code/ERC20Mock.sol" startline="13" endline="15" pcid="110"></source>
+<source file="systems/source-code/ERC4626Mock.sol" startline="14" endline="16" pcid="130"></source>
+</class>
+
+<class classid="8" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="20" endline="22" pcid="165"></source>
+<source file="systems/source-code/InitializableMock.sol" startline="58" endline="60" pcid="172"></source>
+</class>
+
+<class classid="9" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="24" endline="26" pcid="166"></source>
+<source file="systems/source-code/InitializableMock.sol" startline="62" endline="64" pcid="173"></source>
+</class>
+
+<class classid="10" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyToken.sol" startline="14" endline="16" pcid="213"></source>
+<source file="systems/source-code/MyTokenTimestampBased.sol" startline="25" endline="27" pcid="217"></source>
+<source file="systems/source-code/MyTokenWrapped.sol" startline="21" endline="23" pcid="220"></source>
+</class>
+
+<class classid="11" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyToken.sol" startline="18" endline="20" pcid="214"></source>
+<source file="systems/source-code/MyTokenWrapped.sol" startline="25" endline="27" pcid="221"></source>
+<source file="systems/source-code/MyTokenTimestampBased.sol" startline="29" endline="31" pcid="218"></source>
+</class>
+
+<class classid="12" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PausableHarness.sol" startline="7" endline="9" pcid="224"></source>
+<source file="systems/source-code/PausableMock.sol" startline="24" endline="26" pcid="230"></source>
+</class>
+
+<class classid="13" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PausableHarness.sol" startline="11" endline="13" pcid="225"></source>
+<source file="systems/source-code/PausableMock.sol" startline="28" endline="30" pcid="231"></source>
+</class>
+
+</clones>
