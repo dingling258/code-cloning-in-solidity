@@ -1,0 +1,578 @@
+<clones>
+<systeminfo processor="nicad6" system="source-code" granularity="functions-consistent" threshold="0%" minlines="3" maxlines="2500"/>
+<cloneinfo npcs="259" npairs="167"/>
+<runinfo ncompares="15418" cputime="8617"/>
+<classinfo nclasses="30"/>
+
+<class classid="1" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/AccessControlDefaultAdminRulesHarness.sol" startline="23" endline="26" pcid="2">
+    function pendingDefaultAdminSchedule_() external view returns (uint48) {
+        (, uint48 schedule) = pendingDefaultAdmin();
+        return schedule;
+    }
+</source>
+<source file="systems/source-code/AccessControlDefaultAdminRulesHarness.sol" startline="33" endline="36" pcid="4">
+    function pendingDelaySchedule_() external view returns (uint48) {
+        (, uint48 schedule) = pendingDefaultAdminDelay();
+        return schedule;
+    }
+</source>
+</class>
+
+<class classid="2" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/AccessControlDefaultAdminRulesHarness.sol" startline="43" endline="45" pcid="6">
+    function defaultAdminDelayIncreaseWait() public view override returns (uint48) {
+        return _delayIncreaseWait;
+    }
+</source>
+<source file="systems/source-code/ERC20FlashMintHarness.sol" startline="33" endline="35" pcid="108">
+    function _flashFeeReceiver() internal view override returns (address) {
+        return someFeeReceiver;
+    }
+</source>
+</class>
+
+<class classid="3" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/AccessControlERC20MintMissing.sol" startline="17" endline="19" pcid="7">
+    function mint(address to, uint256 amount) public onlyRole(MINTER_ROLE) {
+        _mint(to, amount);
+    }
+</source>
+<source file="systems/source-code/AccessControlERC20MintMissing.sol" startline="21" endline="23" pcid="8">
+    function burn(address from, uint256 amount) public onlyRole(BURNER_ROLE) {
+        _burn(from, amount);
+    }
+</source>
+<source file="systems/source-code/AccessControlERC20MintOnlyRole.sol" startline="16" endline="18" pcid="9">
+    function mint(address to, uint256 amount) public onlyRole(MINTER_ROLE) {
+        _mint(to, amount);
+    }
+</source>
+<source file="systems/source-code/AccessControlERC20MintOnlyRole.sol" startline="20" endline="22" pcid="10">
+    function burn(address from, uint256 amount) public onlyRole(BURNER_ROLE) {
+        _burn(from, amount);
+    }
+</source>
+</class>
+
+<class classid="4" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/ArraysMock.sol" startline="20" endline="22" pcid="13">
+    function unsafeAccess(uint256 pos) external view returns (uint256) {
+        return _array.unsafeAccess(pos).value;
+    }
+</source>
+<source file="systems/source-code/ArraysMock.sol" startline="48" endline="50" pcid="15">
+    function unsafeAccess(uint256 pos) external view returns (bytes32) {
+        return _array.unsafeAccess(pos).value;
+    }
+</source>
+<source file="systems/source-code/ArraysMock.sol" startline="34" endline="36" pcid="14">
+    function unsafeAccess(uint256 pos) external view returns (address) {
+        return _array.unsafeAccess(pos).value;
+    }
+</source>
+</class>
+
+<class classid="5" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/AuthorityMock.sol" startline="25" endline="27" pcid="18">
+    function _setImmediate(bool immediate) external {
+        _immediate = immediate;
+    }
+</source>
+<source file="systems/source-code/AuthorityMock.sol" startline="42" endline="44" pcid="20">
+    function _setImmediate(bool immediate) external {
+        _immediate = immediate;
+    }
+</source>
+</class>
+
+<class classid="6" nclones="8" nlines="3" similarity="100">
+<source file="systems/source-code/CallReceiverMock.sol" startline="37" endline="39" pcid="33">
+    function mockFunctionRevertsNoReason() public payable {
+        revert();
+    }
+</source>
+<source file="systems/source-code/InitializableHarness.sol" startline="11" endline="11" pcid="158">
+    function nested_init_init()                       public initializer      { initialize();    }
+</source>
+<source file="systems/source-code/ReentrancyMock.sol" startline="15" endline="17" pcid="233">
+    function callback() external nonReentrant {
+        _count();
+    }
+</source>
+<source file="systems/source-code/MultipleInheritanceInitializableMocks.sol" startline="29" endline="31" pcid="188">
+    function __SampleHuman_init() internal onlyInitializing {
+        __SampleHuman_init_unchained();
+    }
+</source>
+<source file="systems/source-code/MultipleInheritanceInitializableMocks.sol" startline="24" endline="26" pcid="187">
+    function initialize() public initializer {
+        __SampleHuman_init();
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="86" endline="88" pcid="176">
+    function initialize() public initializer {
+        doStuff();
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="32" endline="34" pcid="168">
+    function onlyInitializingNested() public initializer {
+        initializeOnlyInitializing();
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="28" endline="30" pcid="167">
+    function initializerNested() public initializer {
+        initialize();
+    }
+</source>
+</class>
+
+<class classid="7" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ContextMock.sol" startline="10" endline="12" pcid="59">
+    function msgSender() public {
+        emit Sender(_msgSender());
+    }
+</source>
+<source file="systems/source-code/ContextMock.sol" startline="22" endline="24" pcid="61">
+    function msgDataShort() public {
+        emit DataShort(_msgData());
+    }
+</source>
+</class>
+
+<class classid="8" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/DoubleEndedQueueHarness.sol" startline="11" endline="13" pcid="64">
+    function pushFront(bytes32 value) external {
+        _deque.pushFront(value);
+    }
+</source>
+<source file="systems/source-code/DoubleEndedQueueHarness.sol" startline="15" endline="17" pcid="65">
+    function pushBack(bytes32 value) external {
+        _deque.pushBack(value);
+    }
+</source>
+</class>
+
+<class classid="9" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/DoubleEndedQueueHarness.sol" startline="19" endline="21" pcid="66">
+    function popFront() external returns (bytes32 value) {
+        return _deque.popFront();
+    }
+</source>
+<source file="systems/source-code/DoubleEndedQueueHarness.sol" startline="23" endline="25" pcid="67">
+    function popBack() external returns (bytes32 value) {
+        return _deque.popBack();
+    }
+</source>
+</class>
+
+<class classid="10" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/DoubleEndedQueueHarness.sol" startline="31" endline="33" pcid="69">
+    function begin() external view returns (uint128) {
+        return _deque._begin;
+    }
+</source>
+<source file="systems/source-code/DoubleEndedQueueHarness.sol" startline="35" endline="37" pcid="70">
+    function end() external view returns (uint128) {
+        return _deque._end;
+    }
+</source>
+</class>
+
+<class classid="11" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/DoubleEndedQueueHarness.sol" startline="39" endline="41" pcid="71">
+    function length() external view returns (uint256) {
+        return _deque.length();
+    }
+</source>
+<source file="systems/source-code/DoubleEndedQueueHarness.sol" startline="43" endline="45" pcid="72">
+    function empty() external view returns (bool) {
+        return _deque.empty();
+    }
+</source>
+<source file="systems/source-code/EnumerableMapHarness.sol" startline="24" endline="26" pcid="79">
+    function length() public view returns (uint256) {
+        return _map.length();
+    }
+</source>
+<source file="systems/source-code/EnumerableSetHarness.sol" startline="24" endline="26" pcid="89">
+    function length() public view returns (uint256) {
+        return _set.length();
+    }
+</source>
+</class>
+
+<class classid="12" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/DoubleEndedQueueHarness.sol" startline="47" endline="49" pcid="73">
+    function front() external view returns (bytes32 value) {
+        return _deque.front();
+    }
+</source>
+<source file="systems/source-code/DoubleEndedQueueHarness.sol" startline="51" endline="53" pcid="74">
+    function back() external view returns (bytes32 value) {
+        return _deque.back();
+    }
+</source>
+</class>
+
+<class classid="13" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/EnumerableMapHarness.sol" startline="16" endline="18" pcid="77">
+    function remove(bytes32 key) public returns (bool) {
+        return _map.remove(key);
+    }
+</source>
+<source file="systems/source-code/EnumerableSetHarness.sol" startline="16" endline="18" pcid="87">
+    function remove(bytes32 value) public returns (bool) {
+        return _set.remove(value);
+    }
+</source>
+<source file="systems/source-code/EnumerableSetHarness.sol" startline="12" endline="14" pcid="86">
+    function add(bytes32 value) public returns (bool) {
+        return _set.add(value);
+    }
+</source>
+</class>
+
+<class classid="14" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/EnumerableMapHarness.sol" startline="20" endline="22" pcid="78">
+    function contains(bytes32 key) public view returns (bool) {
+        return _map.contains(key);
+    }
+</source>
+<source file="systems/source-code/EnumerableSetHarness.sol" startline="20" endline="22" pcid="88">
+    function contains(bytes32 value) public view returns (bool) {
+        return _set.contains(value);
+    }
+</source>
+<source file="systems/source-code/EnumerableMapHarness.sol" startline="48" endline="50" pcid="84">
+    function get(bytes32 key) public view returns (bytes32) {
+        return _map.get(key);
+    }
+</source>
+</class>
+
+<class classid="15" nclones="10" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20FlashMintHarness.sol" startline="15" endline="17" pcid="104">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC4626Mock.sol" startline="14" endline="16" pcid="130">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC721Harness.sol" startline="10" endline="12" pcid="135">
+    function mint(address account, uint256 tokenId) external {
+        _mint(account, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC4626Mock.sol" startline="10" endline="12" pcid="129">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC721Harness.sol" startline="14" endline="16" pcid="136">
+    function safeMint(address to, uint256 tokenId) external {
+        _safeMint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC20PermitHarness.sol" startline="13" endline="15" pcid="112">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20PermitHarness.sol" startline="9" endline="11" pcid="111">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20FlashMintHarness.sol" startline="19" endline="21" pcid="105">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20Mock.sol" startline="13" endline="15" pcid="110">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20Mock.sol" startline="9" endline="11" pcid="109">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+</class>
+
+<class classid="16" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20FlashMintHarness.sol" startline="24" endline="26" pcid="106">
+    function flashFeeReceiver() public view returns (address) {
+        return someFeeReceiver;
+    }
+</source>
+<source file="systems/source-code/UUPSUpgradeableMock.sol" startline="11" endline="13" pcid="255">
+    function current() external view returns (uint256) {
+        return _counter;
+    }
+</source>
+</class>
+
+<class classid="17" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20WrapperHarness.sol" startline="31" endline="33" pcid="122">
+    function decimals() public view override(ERC20Wrapper, ERC20) returns (uint8) {
+        return super.decimals();
+    }
+</source>
+<source file="systems/source-code/MyTokenWrapped.sol" startline="17" endline="19" pcid="219">
+    function decimals() public view override(ERC20, ERC20Wrapper) returns (uint8) {
+        return super.decimals();
+    }
+</source>
+<source file="systems/source-code/MyGovernor.sol" startline="78" endline="80" pcid="212">
+    function _executor() internal view override(Governor, GovernorTimelockControl) returns (address) {
+        return super._executor();
+    }
+</source>
+</class>
+
+<class classid="18" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC2771ContextMock.sol" startline="17" endline="19" pcid="123">
+    function _msgSender() internal view override(Context, ERC2771Context) returns (address) {
+        return ERC2771Context._msgSender();
+    }
+</source>
+<source file="systems/source-code/ERC2771ContextMock.sol" startline="25" endline="27" pcid="125">
+    function _contextSuffixLength() internal view override(Context, ERC2771Context) returns (uint256) {
+        return ERC2771Context._contextSuffixLength();
+    }
+</source>
+</class>
+
+<class classid="19" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721ConsecutiveEnumerableMock.sol" startline="27" endline="29" pcid="132">
+    function _ownerOf(uint256 tokenId) internal view virtual override(ERC721, ERC721Consecutive) returns (address) {
+        return super._ownerOf(tokenId);
+    }
+</source>
+<source file="systems/source-code/MyGovernor.sol" startline="43" endline="47" pcid="208">
+    function proposalNeedsQueuing(
+        uint256 proposalId
+    ) public view virtual override(Governor, GovernorTimelockControl) returns (bool) {
+        return super.proposalNeedsQueuing(proposalId);
+    }
+</source>
+</class>
+
+<class classid="20" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721Harness.sol" startline="26" endline="28" pcid="139">
+    function unsafeOwnerOf(uint256 tokenId) external view returns (address) {
+        return _ownerOf(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721Harness.sol" startline="30" endline="32" pcid="140">
+    function unsafeGetApproved(uint256 tokenId) external view returns (address) {
+        return _getApproved(tokenId);
+    }
+</source>
+</class>
+
+<class classid="21" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableHarness.sol" startline="9" endline="9" pcid="157">
+    function disable()              public { _disableInitializers(); }
+</source>
+<source file="systems/source-code/PausableMock.sol" startline="24" endline="26" pcid="230">
+    function pause() external {
+        _pause();
+    }
+</source>
+<source file="systems/source-code/PausableHarness.sol" startline="11" endline="13" pcid="225">
+    function unpause() external {
+        _unpause();
+    }
+</source>
+<source file="systems/source-code/PausableMock.sol" startline="28" endline="30" pcid="231">
+    function unpause() external {
+        _unpause();
+    }
+</source>
+<source file="systems/source-code/PausableHarness.sol" startline="7" endline="9" pcid="224">
+    function pause() external {
+        _pause();
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="103" endline="105" pcid="180">
+    function disableInitializers() public {
+        _disableInitializers();
+    }
+</source>
+</class>
+
+<class classid="22" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableHarness.sol" startline="13" endline="13" pcid="160">
+    function nested_reinit_init(uint64 n)             public reinitializer(n) { initialize();    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="90" endline="92" pcid="177">
+    function reinitialize(uint64 i) public reinitializer(i) {
+        doStuff();
+    }
+</source>
+</class>
+
+<class classid="23" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableHarness.sol" startline="14" endline="14" pcid="161">
+    function nested_reinit_reinit(uint64 n, uint64 m) public reinitializer(n) { reinitialize(m); }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="94" endline="96" pcid="178">
+    function nestedReinitialize(uint64 i, uint64 j) public reinitializer(i) {
+        reinitialize(j);
+    }
+</source>
+</class>
+
+<class classid="24" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableHarness.sol" startline="16" endline="18" pcid="162">
+    function version() public view returns (uint64) {
+        return _getInitializedVersion();
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="82" endline="84" pcid="175">
+    function getInitializedVersion() public view returns (uint64) {
+        return _getInitializedVersion();
+    }
+</source>
+<source file="systems/source-code/InitializableHarness.sol" startline="20" endline="22" pcid="163">
+    function initializing() public view returns (bool) {
+        return _isInitializing();
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="16" endline="18" pcid="164">
+    function isInitializing() public view returns (bool) {
+        return _isInitializing();
+    }
+</source>
+</class>
+
+<class classid="25" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="20" endline="22" pcid="165">
+    function initialize() public initializer {
+        initializerRan = true;
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="74" endline="76" pcid="174">
+    function childInitialize() public initializer {
+        childInitializerRan = true;
+    }
+</source>
+<source file="systems/source-code/MultipleInheritanceInitializableMocks.sol" startline="34" endline="36" pcid="189">
+    function __SampleHuman_init_unchained() internal onlyInitializing {
+        isHuman = true;
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="58" endline="60" pcid="172">
+    function initialize() public initializer {
+        initializerRan = true;
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="24" endline="26" pcid="166">
+    function initializeOnlyInitializing() public onlyInitializing {
+        onlyInitializingRan = true;
+    }
+</source>
+<source file="systems/source-code/PausableMock.sol" startline="20" endline="22" pcid="229">
+    function drasticMeasure() external whenPaused {
+        drasticMeasureTaken = true;
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="62" endline="64" pcid="173">
+    function initializeOnlyInitializing() public onlyInitializing {
+        onlyInitializingRan = true;
+    }
+</source>
+</class>
+
+<class classid="26" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="36" endline="38" pcid="169">
+    function initializeWithX(uint256 _x) public payable initializer {
+        x = _x;
+    }
+</source>
+<source file="systems/source-code/SingleInheritanceInitializableMocks.sol" startline="14" endline="16" pcid="249">
+    function initialize(uint256 value) public payable initializer {
+        x = value;
+    }
+</source>
+</class>
+
+<class classid="27" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="40" endline="42" pcid="170">
+    function nonInitializable(uint256 _x) public payable {
+        x = _x;
+    }
+</source>
+<source file="systems/source-code/MultipleInheritanceInitializableMocks.sol" startline="56" endline="58" pcid="192">
+    function __SampleMother_init_unchained(uint256 value) internal onlyInitializing {
+        mother = value;
+    }
+</source>
+<source file="systems/source-code/MultipleInheritanceInitializableMocks.sol" startline="128" endline="130" pcid="201">
+    function __SampleChild_init_unchained(uint256 _child) internal onlyInitializing {
+        child = _child;
+    }
+</source>
+<source file="systems/source-code/MultipleInheritanceInitializableMocks.sol" startline="100" endline="102" pcid="198">
+    function __SampleFather_init_unchained(uint256 _father) internal onlyInitializing {
+        father = _father;
+    }
+</source>
+</class>
+
+<class classid="28" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="107" endline="109" pcid="181">
+    function doStuff() public onlyInitializing {
+        counter++;
+    }
+</source>
+<source file="systems/source-code/PausableMock.sol" startline="16" endline="18" pcid="228">
+    function normalProcess() external whenNotPaused {
+        count++;
+    }
+</source>
+</class>
+
+<class classid="29" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyToken.sol" startline="14" endline="16" pcid="213">
+    function _update(address from, address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._update(from, to, amount);
+    }
+</source>
+<source file="systems/source-code/MyTokenWrapped.sol" startline="21" endline="23" pcid="220">
+    function _update(address from, address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._update(from, to, amount);
+    }
+</source>
+<source file="systems/source-code/MyTokenTimestampBased.sol" startline="25" endline="27" pcid="217">
+    function _update(address from, address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._update(from, to, amount);
+    }
+</source>
+</class>
+
+<class classid="30" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyToken.sol" startline="18" endline="20" pcid="214">
+    function nonces(address owner) public view virtual override(ERC20Permit, Nonces) returns (uint256) {
+        return super.nonces(owner);
+    }
+</source>
+<source file="systems/source-code/MyTokenWrapped.sol" startline="25" endline="27" pcid="221">
+    function nonces(address owner) public view virtual override(ERC20Permit, Nonces) returns (uint256) {
+        return super.nonces(owner);
+    }
+</source>
+<source file="systems/source-code/MyTokenTimestampBased.sol" startline="29" endline="31" pcid="218">
+    function nonces(address owner) public view virtual override(ERC20Permit, Nonces) returns (uint256) {
+        return super.nonces(owner);
+    }
+</source>
+</class>
+
+</clones>

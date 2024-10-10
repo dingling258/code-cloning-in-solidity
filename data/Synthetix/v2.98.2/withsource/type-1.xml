@@ -1,0 +1,3640 @@
+<clones>
+<systeminfo processor="nicad6" system="source-code" granularity="functions" threshold="0%" minlines="3" maxlines="2500"/>
+<cloneinfo npcs="2696" npairs="1975"/>
+<runinfo ncompares="838565" cputime="22294"/>
+<classinfo nclasses="160"/>
+
+<class classid="1" nclones="13" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="71" endline="73" pcid="12">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/EtherWrapper.sol" startline="89" endline="91" pcid="516">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="66" endline="68" pcid="204">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="100" endline="102" pcid="545">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/SynthetixBridgeToOptimism.sol" startline="40" endline="42" pcid="2292">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/Synth.sol" startline="212" endline="214" pcid="2258">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/LiquidatorRewards.sol" startline="70" endline="72" pcid="1043">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/SynthRedeemer.sol" startline="32" endline="34" pcid="2355">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="145" endline="147" pcid="688">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="82" endline="84" pcid="106">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="61" endline="63" pcid="69">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/Liquidator.sol" startline="69" endline="71" pcid="1015">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="78" endline="80" pcid="138">
+    function issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+</class>
+
+<class classid="2" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="75" endline="77" pcid="13">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/TradingRewards.sol" startline="71" endline="73" pcid="2641">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="126" endline="128" pcid="925">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="74" endline="76" pcid="137">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/Synth.sol" startline="208" endline="210" pcid="2257">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="137" endline="139" pcid="686">
+    function exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+</class>
+
+<class classid="3" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="79" endline="81" pcid="14">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/Liquidator.sol" startline="73" endline="75" pcid="1016">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/Depot.sol" startline="515" endline="517" pcid="444">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="130" endline="132" pcid="926">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/PurgeableSynth.sol" startline="42" endline="44" pcid="2104">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="76" endline="78" pcid="539">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/EtherWrapper.sol" startline="85" endline="87" pcid="515">
+    function exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+</class>
+
+<class classid="4" nclones="8" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="83" endline="85" pcid="15">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/Liquidator.sol" startline="65" endline="67" pcid="1014">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="68" endline="70" pcid="537">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="125" endline="127" pcid="683">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="70" endline="72" pcid="136">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/RewardEscrowV2Frozen.sol" startline="52" endline="54" pcid="2129">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/CircuitBreaker.sol" startline="86" endline="88" pcid="230">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/Synth.sol" startline="200" endline="202" pcid="2255">
+    function systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+</class>
+
+<class classid="5" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="87" endline="89" pcid="16">
+    function collateralManager() internal view returns (ICollateralManager) {
+        return ICollateralManager(requireAndGetAddress(CONTRACT_COLLATERALMANAGER));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="141" endline="143" pcid="687">
+    function collateralManager() internal view returns (ICollateralManager) {
+        return ICollateralManager(requireAndGetAddress(CONTRACT_COLLATERALMANAGER));
+    }
+</source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="36" endline="38" pcid="1761">
+    function collateralManager() internal view returns (ICollateralManager) {
+        return ICollateralManager(requireAndGetAddress(CONTRACT_COLLATERALMANAGER));
+    }
+</source>
+</class>
+
+<class classid="6" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="91" endline="93" pcid="17">
+    function etherWrapper() internal view returns (IEtherWrapper) {
+        return IEtherWrapper(requireAndGetAddress(CONTRACT_ETHER_WRAPPER));
+    }
+</source>
+<source file="systems/source-code/NativeEtherWrapper.sol" startline="33" endline="35" pcid="1769">
+    function etherWrapper() internal view returns (IEtherWrapper) {
+        return IEtherWrapper(requireAndGetAddress(CONTRACT_ETHER_WRAPPER));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="161" endline="163" pcid="692">
+    function etherWrapper() internal view returns (IEtherWrapper) {
+        return IEtherWrapper(requireAndGetAddress(CONTRACT_ETHER_WRAPPER));
+    }
+</source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="40" endline="42" pcid="1762">
+    function etherWrapper() internal view returns (IEtherWrapper) {
+        return IEtherWrapper(requireAndGetAddress(CONTRACT_ETHER_WRAPPER));
+    }
+</source>
+</class>
+
+<class classid="7" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="95" endline="97" pcid="18">
+    function futuresMarketManager() internal view returns (IFuturesMarketManager) {
+        return IFuturesMarketManager(requireAndGetAddress(CONTRACT_FUTURESMARKETMANAGER));
+    }
+</source>
+<source file="systems/source-code/Synth.sol" startline="216" endline="218" pcid="2259">
+    function futuresMarketManager() internal view returns (IFuturesMarketManager) {
+        return IFuturesMarketManager(requireAndGetAddress(CONTRACT_FUTURESMARKETMANAGER));
+    }
+</source>
+</class>
+
+<class classid="8" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="99" endline="101" pcid="19">
+    function wrapperFactory() internal view returns (IWrapperFactory) {
+        return IWrapperFactory(requireAndGetAddress(CONTRACT_WRAPPER_FACTORY));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="169" endline="171" pcid="694">
+    function wrapperFactory() internal view returns (IWrapperFactory) {
+        return IWrapperFactory(requireAndGetAddress(CONTRACT_WRAPPER_FACTORY));
+    }
+</source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="44" endline="46" pcid="1763">
+    function wrapperFactory() internal view returns (IWrapperFactory) {
+        return IWrapperFactory(requireAndGetAddress(CONTRACT_WRAPPER_FACTORY));
+    }
+</source>
+</class>
+
+<class classid="9" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="103" endline="105" pcid="20">
+    function debtSnapshotStaleTime() external view returns (uint) {
+        return getDebtSnapshotStaleTime();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="156" endline="158" pcid="2392">
+    function debtSnapshotStaleTime() external view returns (uint) {
+        return getDebtSnapshotStaleTime();
+    }
+</source>
+</class>
+
+<class classid="10" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtMigrator.sol" startline="49" endline="51" pcid="52">
+    function _issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+<source file="systems/source-code/CollateralManager.sol" startline="137" endline="139" pcid="291">
+    function _issuer() internal view returns (IIssuer) {
+        return IIssuer(requireAndGetAddress(CONTRACT_ISSUER));
+    }
+</source>
+</class>
+
+<class classid="11" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="53" endline="55" pcid="67">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="74" endline="76" pcid="104">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/WrapperFactory.sol" startline="44" endline="46" pcid="2691">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="88" endline="90" pcid="542">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/EtherWrapper.sol" startline="81" endline="83" pcid="514">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/Synth.sol" startline="204" endline="206" pcid="2256">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="70" endline="72" pcid="205">
+    function feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+</class>
+
+<class classid="12" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="57" endline="59" pcid="68">
+    function synthetixERC20() internal view returns (IERC20) {
+        return IERC20(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/SynthetixBridgeToOptimism.sol" startline="36" endline="38" pcid="2291">
+    function synthetixERC20() internal view returns (IERC20) {
+        return IERC20(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="122" endline="124" pcid="924">
+    function synthetixERC20() internal view returns (IERC20) {
+        return IERC20(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+</class>
+
+<class classid="13" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="69" endline="71" pcid="71">
+    function _notImplemented() internal pure {
+        revert("Cannot be run on this layer");
+    }
+</source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="528" endline="530" pcid="189">
+    function _notImplemented() internal pure {
+        revert("Cannot be run on this layer");
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="792" endline="794" pcid="582">
+    function _notImplemented() internal pure {
+        revert("Cannot be run on this layer");
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="86" endline="88" pcid="107">
+    function _notImplemented() internal pure {
+        revert("Cannot be run on this layer");
+    }
+</source>
+<source file="systems/source-code/ExchangeRates.sol" startline="617" endline="620" pcid="627">
+    function _notImplemented() internal pure {
+        // slither-disable-next-line dead-code
+        revert("Cannot be run on this layer");
+    }
+</source>
+</class>
+
+<class classid="14" nclones="2" nlines="7" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="208" endline="215" pcid="86">
+    function _claimableAmount(VestingEntries.VestingEntry memory _entry) internal view returns (uint256) {
+        uint256 quantity;
+        if (_entry.escrowAmount != 0) {
+            /* Escrow amounts claimable if block.timestamp equal to or after entry endTime */
+            quantity = block.timestamp >= _entry.endTime ? _entry.escrowAmount : 0;
+        }
+        return quantity;
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="198" endline="205" pcid="116">
+    function _claimableAmount(VestingEntries.VestingEntry memory _entry) internal view returns (uint256) {
+        uint256 quantity;
+        if (_entry.escrowAmount != 0) {
+            /* Escrow amounts claimable if block.timestamp equal to or after entry endTime */
+            quantity = block.timestamp >= _entry.endTime ? _entry.escrowAmount : 0;
+        }
+        return quantity;
+    }
+</source>
+</class>
+
+<class classid="15" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="337" endline="343" pcid="91">
+    function appendVestingEntry(
+        address account,
+        uint256 quantity,
+        uint256 duration
+    ) external onlyFeePool {
+        _appendVestingEntry(account, quantity, duration);
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="266" endline="272" pcid="119">
+    function appendVestingEntry(
+        address account,
+        uint256 quantity,
+        uint256 duration
+    ) external onlyFeePool {
+        _appendVestingEntry(account, quantity, duration);
+    }
+</source>
+</class>
+
+<class classid="16" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="378" endline="380" pcid="93">
+    function accountMergingIsOpen() public view returns (bool) {
+        return accountMergingStartTime.add(accountMergingDuration) > block.timestamp;
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="290" endline="292" pcid="122">
+    function accountMergingIsOpen() public view returns (bool) {
+        return accountMergingStartTime.add(accountMergingDuration) > block.timestamp;
+    }
+</source>
+</class>
+
+<class classid="17" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="382" endline="385" pcid="94">
+    function startMergingWindow() external onlyOwner {
+        accountMergingStartTime = block.timestamp;
+        emit AccountMergingStarted(accountMergingStartTime, accountMergingStartTime.add(accountMergingDuration));
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="294" endline="297" pcid="123">
+    function startMergingWindow() external onlyOwner {
+        accountMergingStartTime = block.timestamp;
+        emit AccountMergingStarted(accountMergingStartTime, accountMergingStartTime.add(accountMergingDuration));
+    }
+</source>
+</class>
+
+<class classid="18" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="387" endline="391" pcid="95">
+    function setAccountMergingDuration(uint256 duration) external onlyOwner {
+        require(duration <= maxAccountMergingDuration, "exceeds max merging duration");
+        accountMergingDuration = duration;
+        emit AccountMergingDurationUpdated(duration);
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="299" endline="303" pcid="124">
+    function setAccountMergingDuration(uint256 duration) external onlyOwner {
+        require(duration <= maxAccountMergingDuration, "exceeds max merging duration");
+        accountMergingDuration = duration;
+        emit AccountMergingDurationUpdated(duration);
+    }
+</source>
+</class>
+
+<class classid="19" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="393" endline="396" pcid="96">
+    function setMaxAccountMergingWindow(uint256 duration) external onlyOwner {
+        maxAccountMergingDuration = duration;
+        emit MaxAccountMergingDurationUpdated(duration);
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="305" endline="308" pcid="125">
+    function setMaxAccountMergingWindow(uint256 duration) external onlyOwner {
+        maxAccountMergingDuration = duration;
+        emit MaxAccountMergingDurationUpdated(duration);
+    }
+</source>
+</class>
+
+<class classid="20" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="398" endline="401" pcid="97">
+    function setMaxEscrowDuration(uint256 duration) external onlyOwner {
+        max_duration = duration;
+        emit MaxEscrowDurationUpdated(duration);
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="310" endline="313" pcid="126">
+    function setMaxEscrowDuration(uint256 duration) external onlyOwner {
+        max_duration = duration;
+        emit MaxEscrowDurationUpdated(duration);
+    }
+</source>
+</class>
+
+<class classid="21" nclones="2" nlines="7" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="404" endline="410" pcid="98">
+    function nominateAccountToMerge(address account) external {
+        require(account != msg.sender, "Cannot nominate own account to merge");
+        require(accountMergingIsOpen(), "Account merging has ended");
+        require(issuer().debtBalanceOf(msg.sender, "sUSD") == 0, "Cannot merge accounts with debt");
+        nominatedReceiver[msg.sender] = account;
+        emit NominateAccountToMerge(msg.sender, account);
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="316" endline="322" pcid="127">
+    function nominateAccountToMerge(address account) external {
+        require(account != msg.sender, "Cannot nominate own account to merge");
+        require(accountMergingIsOpen(), "Account merging has ended");
+        require(issuer().debtBalanceOf(msg.sender, "sUSD") == 0, "Cannot merge accounts with debt");
+        nominatedReceiver[msg.sender] = account;
+        emit NominateAccountToMerge(msg.sender, account);
+    }
+</source>
+</class>
+
+<class classid="22" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="447" endline="449" pcid="100">
+    function migrateVestingSchedule(address) external {
+        _notImplemented();
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="375" endline="377" pcid="130">
+    function migrateVestingSchedule(address) external {
+        _notImplemented();
+    }
+</source>
+</class>
+
+<class classid="23" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="451" endline="457" pcid="101">
+    function migrateAccountEscrowBalances(
+        address[] calldata,
+        uint256[] calldata,
+        uint256[] calldata
+    ) external {
+        _notImplemented();
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="379" endline="385" pcid="131">
+    function migrateAccountEscrowBalances(
+        address[] calldata,
+        uint256[] calldata,
+        uint256[] calldata
+    ) external {
+        _notImplemented();
+    }
+</source>
+</class>
+
+<class classid="24" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="461" endline="463" pcid="102">
+    function burnForMigration(address, uint[] calldata) external returns (uint256, VestingEntries.VestingEntry[] memory) {
+        _notImplemented();
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="389" endline="391" pcid="132">
+    function burnForMigration(address, uint[] calldata) external returns (uint256, VestingEntries.VestingEntry[] memory) {
+        _notImplemented();
+    }
+</source>
+</class>
+
+<class classid="25" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="465" endline="471" pcid="103">
+    function importVestingEntries(
+        address,
+        uint256,
+        VestingEntries.VestingEntry[] calldata
+    ) external {
+        _notImplemented();
+    }
+</source>
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="393" endline="399" pcid="133">
+    function importVestingEntries(
+        address,
+        uint256,
+        VestingEntries.VestingEntry[] calldata
+    ) external {
+        _notImplemented();
+    }
+</source>
+</class>
+
+<class classid="26" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="78" endline="80" pcid="105">
+    function synthetix() internal view returns (ISynthetix) {
+        return ISynthetix(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="58" endline="60" pcid="202">
+    function synthetix() internal view returns (ISynthetix) {
+        return ISynthetix(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/Liquidator.sol" startline="61" endline="63" pcid="1013">
+    function synthetix() internal view returns (ISynthetix) {
+        return ISynthetix(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="84" endline="86" pcid="541">
+    function synthetix() internal view returns (ISynthetix) {
+        return ISynthetix(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+</class>
+
+<class classid="27" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2Frozen.sol" startline="103" endline="105" pcid="109">
+    function balanceOf(address account) public view returns (uint) {
+        return totalEscrowedAccountBalance[account];
+    }
+</source>
+<source file="systems/source-code/RewardEscrow.sol" startline="79" endline="81" pcid="2109">
+    function balanceOf(address account) public view returns (uint) {
+        return totalEscrowedAccountBalance[account];
+    }
+</source>
+</class>
+
+<class classid="28" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="82" endline="84" pcid="139">
+    function rewardsDistribution() internal view returns (IRewardsDistribution) {
+        return IRewardsDistribution(requireAndGetAddress(CONTRACT_REWARDSDISTRIBUTION));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="157" endline="159" pcid="691">
+    function rewardsDistribution() internal view returns (IRewardsDistribution) {
+        return IRewardsDistribution(requireAndGetAddress(CONTRACT_REWARDSDISTRIBUTION));
+    }
+</source>
+</class>
+
+<class classid="29" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="90" endline="92" pcid="141">
+    function rewardEscrowV2() internal view returns (IRewardEscrowV2) {
+        return IRewardEscrowV2(requireAndGetAddress(CONTRACT_REWARDESCROW_V2));
+    }
+</source>
+<source file="systems/source-code/LiquidatorRewards.sol" startline="74" endline="76" pcid="1044">
+    function rewardEscrowV2() internal view returns (IRewardEscrowV2) {
+        return IRewardEscrowV2(requireAndGetAddress(CONTRACT_REWARDESCROW_V2));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="149" endline="151" pcid="689">
+    function rewardEscrowV2() internal view returns (IRewardEscrowV2) {
+        return IRewardEscrowV2(requireAndGetAddress(CONTRACT_REWARDESCROW_V2));
+    }
+</source>
+</class>
+
+<class classid="30" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="94" endline="96" pcid="142">
+    function liquidator() internal view returns (ILiquidator) {
+        return ILiquidator(requireAndGetAddress(CONTRACT_LIQUIDATOR));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="142" endline="144" pcid="929">
+    function liquidator() internal view returns (ILiquidator) {
+        return ILiquidator(requireAndGetAddress(CONTRACT_LIQUIDATOR));
+    }
+</source>
+</class>
+
+<class classid="31" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="240" endline="250" pcid="162">
+    function settle(bytes32 currencyKey)
+        external
+        optionalProxy
+        returns (
+            uint reclaimed,
+            uint refunded,
+            uint numEntriesSettled
+        )
+    {
+        return exchanger().settle(messageSender, currencyKey);
+    }
+</source>
+<source file="systems/source-code/Synthetix.sol" startline="118" endline="128" pcid="2274">
+    function settle(bytes32 currencyKey)
+        external
+        optionalProxy
+        returns (
+            uint reclaimed,
+            uint refunded,
+            uint numEntriesSettled
+        )
+    {
+        return exchanger().settle(messageSender, currencyKey);
+    }
+</source>
+</class>
+
+<class classid="32" nclones="2" nlines="11" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="575" endline="585" pcid="194">
+    function _onlyProxyOrInternal() internal {
+        if (msg.sender == address(proxy)) {
+            // allow proxy through, messageSender should be already set correctly
+            return;
+        } else if (_isInternalTransferCaller(msg.sender)) {
+            // optionalProxy behaviour only for the internal legacy contracts
+            messageSender = msg.sender;
+        } else {
+            revert("Only the proxy can call");
+        }
+    }
+</source>
+<source file="systems/source-code/Synth.sol" startline="278" endline="288" pcid="2264">
+    function _onlyProxyOrInternal() internal {
+        if (msg.sender == address(proxy)) {
+            // allow proxy through, messageSender should be already set correctly
+            return;
+        } else if (_isInternalTransferCaller(msg.sender)) {
+            // optionalProxy behaviour only for the internal legacy contracts
+            messageSender = msg.sender;
+        } else {
+            revert("Only the proxy can call");
+        }
+    }
+</source>
+</class>
+
+<class classid="33" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="74" endline="76" pcid="206">
+    function flexibleStorage() internal view returns (IFlexibleStorage) {
+        return IFlexibleStorage(requireAndGetAddress(CONTRACT_FLEXIBLESTORAGE));
+    }
+</source>
+<source file="systems/source-code/MixinSystemSettings.sol" startline="79" endline="81" pcid="1616">
+    function flexibleStorage() internal view returns (IFlexibleStorage) {
+        return IFlexibleStorage(requireAndGetAddress(CONTRACT_FLEXIBLESTORAGE));
+    }
+</source>
+<source file="systems/source-code/WrapperFactory.sol" startline="40" endline="42" pcid="2690">
+    function flexibleStorage() internal view returns (IFlexibleStorage) {
+        return IFlexibleStorage(requireAndGetAddress(CONTRACT_FLEXIBLESTORAGE));
+    }
+</source>
+</class>
+
+<class classid="34" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="137" endline="141" pcid="214">
+    function suspendInitiation() external onlyOwner {
+        require(initiationActive, "Initiation suspended");
+        initiationActive = false;
+        emit InitiationSuspended();
+    }
+</source>
+<source file="systems/source-code/DebtMigratorOnEthereum.sol" startline="146" endline="150" pcid="392">
+    function suspendInitiation() external onlyOwner {
+        require(initiationActive, "Initiation suspended");
+        initiationActive = false;
+        emit InitiationSuspended();
+    }
+</source>
+</class>
+
+<class classid="35" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="143" endline="147" pcid="215">
+    function resumeInitiation() external onlyOwner {
+        require(!initiationActive, "Initiation not suspended");
+        initiationActive = true;
+        emit InitiationResumed();
+    }
+</source>
+<source file="systems/source-code/DebtMigratorOnEthereum.sol" startline="152" endline="156" pcid="393">
+    function resumeInitiation() external onlyOwner {
+        require(!initiationActive, "Initiation not suspended");
+        initiationActive = true;
+        emit InitiationResumed();
+    }
+</source>
+</class>
+
+<class classid="36" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/CircuitBreaker.sol" startline="72" endline="74" pcid="227">
+    function priceDeviationThresholdFactor() external view returns (uint) {
+        return getPriceDeviationThresholdFactor();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="39" endline="41" pcid="2373">
+    function priceDeviationThresholdFactor() external view returns (uint) {
+        return getPriceDeviationThresholdFactor();
+    }
+</source>
+<source file="systems/source-code/Exchanger.sol" startline="132" endline="134" pcid="551">
+    function priceDeviationThresholdFactor() external view returns (uint) {
+        return getPriceDeviationThresholdFactor();
+    }
+</source>
+</class>
+
+<class classid="37" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="112" endline="114" pcid="236">
+    function _systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="131" endline="133" pcid="1826">
+    function _systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+<source file="systems/source-code/FuturesMarketBase.sol" startline="213" endline="215" pcid="770">
+    function _systemStatus() internal view returns (ISystemStatus) {
+        return ISystemStatus(requireAndGetAddress(CONTRACT_SYSTEMSTATUS));
+    }
+</source>
+</class>
+
+<class classid="38" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="116" endline="118" pcid="237">
+    function _synth(bytes32 synthName) internal view returns (ISynth) {
+        return ISynth(requireAndGetAddress(synthName));
+    }
+</source>
+<source file="systems/source-code/CollateralManager.sol" startline="145" endline="147" pcid="293">
+    function _synth(bytes32 synthName) internal view returns (ISynth) {
+        return ISynth(requireAndGetAddress(synthName));
+    }
+</source>
+</class>
+
+<class classid="39" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="124" endline="126" pcid="239">
+    function _exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/CollateralManager.sol" startline="141" endline="143" pcid="292">
+    function _exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="123" endline="125" pcid="1824">
+    function _exchangeRates() internal view returns (IExchangeRates) {
+        return IExchangeRates(requireAndGetAddress(CONTRACT_EXRATES));
+    }
+</source>
+</class>
+
+<class classid="40" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="128" endline="130" pcid="240">
+    function _exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="127" endline="129" pcid="1825">
+    function _exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/FuturesMarketBase.sol" startline="209" endline="211" pcid="769">
+    function _exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+<source file="systems/source-code/FuturesMarketManager.sol" startline="91" endline="93" pcid="849">
+    function _exchanger() internal view returns (IExchanger) {
+        return IExchanger(requireAndGetAddress(CONTRACT_EXCHANGER));
+    }
+</source>
+</class>
+
+<class classid="41" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="132" endline="134" pcid="241">
+    function _feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+<source file="systems/source-code/FuturesMarketManager.sol" startline="87" endline="89" pcid="848">
+    function _feePool() internal view returns (IFeePool) {
+        return IFeePool(requireAndGetAddress(CONTRACT_FEEPOOL));
+    }
+</source>
+</class>
+
+<class classid="42" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/CollateralErc20.sol" startline="83" endline="89" pcid="276">
+    function repay(
+        address borrower,
+        uint id,
+        uint amount
+    ) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _repay(borrower, msg.sender, id, amount);
+    }
+</source>
+<source file="systems/source-code/CollateralEth.sol" startline="43" endline="49" pcid="285">
+    function repay(
+        address borrower,
+        uint id,
+        uint amount
+    ) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _repay(borrower, msg.sender, id, amount);
+    }
+</source>
+<source file="systems/source-code/CollateralShort.sol" startline="53" endline="59" pcid="352">
+    function repay(
+        address borrower,
+        uint id,
+        uint amount
+    ) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _repay(borrower, msg.sender, id, amount);
+    }
+</source>
+</class>
+
+<class classid="43" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/CollateralErc20.sol" startline="91" endline="93" pcid="277">
+    function draw(uint id, uint amount) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _draw(id, amount);
+    }
+</source>
+<source file="systems/source-code/CollateralEth.sol" startline="51" endline="53" pcid="286">
+    function draw(uint id, uint amount) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _draw(id, amount);
+    }
+</source>
+<source file="systems/source-code/CollateralShort.sol" startline="82" endline="84" pcid="356">
+    function draw(uint id, uint amount) external returns (uint principal, uint collateral) {
+        (principal, collateral) = _draw(id, amount);
+    }
+</source>
+</class>
+
+<class classid="44" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/CollateralUtil.sol" startline="27" endline="32" pcid="360">
+    function resolverAddressesRequired() public view returns (bytes32[] memory addresses) {
+        bytes32[] memory existingAddresses = MixinSystemSettings.resolverAddressesRequired();
+        bytes32[] memory newAddresses = new bytes32[](1);
+        newAddresses[0] = CONTRACT_EXRATES;
+        addresses = combineArrays(existingAddresses, newAddresses);
+    }
+</source>
+<source file="systems/source-code/ExchangeCircuitBreaker.sol" startline="45" endline="50" pcid="532">
+    function resolverAddressesRequired() public view returns (bytes32[] memory addresses) {
+        bytes32[] memory existingAddresses = MixinSystemSettings.resolverAddressesRequired();
+        bytes32[] memory newAddresses = new bytes32[](1);
+        newAddresses[0] = CONTRACT_EXRATES;
+        addresses = combineArrays(existingAddresses, newAddresses);
+    }
+</source>
+</class>
+
+<class classid="45" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/DebtMigratorOnEthereum.sol" startline="59" endline="66" pcid="388">
+    function _getCrossDomainGasLimit(uint32 crossDomainGasLimit) private view returns (uint32) {
+        // Use specified crossDomainGasLimit if specified value is not zero.
+        // otherwise use the default in SystemSettings.
+        return
+            crossDomainGasLimit != 0
+                ? crossDomainGasLimit
+                : uint32(getCrossDomainMessageGasLimit(CrossDomainMessageGasLimits.Relay));
+    }
+</source>
+<source file="systems/source-code/OwnerRelayOnEthereum.sol" startline="32" endline="39" pcid="1786">
+    function _getCrossDomainGasLimit(uint32 crossDomainGasLimit) private view returns (uint32) {
+        // Use specified crossDomainGasLimit if specified value is not zero.
+        // otherwise use the default in SystemSettings.
+        return
+            crossDomainGasLimit != 0
+                ? crossDomainGasLimit
+                : uint32(getCrossDomainMessageGasLimit(CrossDomainMessageGasLimits.Relay));
+    }
+</source>
+</class>
+
+<class classid="46" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Depot.sol" startline="511" endline="513" pcid="443">
+    function synthetix() internal view returns (IERC20) {
+        return IERC20(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/TradingRewards.sol" startline="67" endline="69" pcid="2640">
+    function synthetix() internal view returns (IERC20) {
+        return IERC20(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+<source file="systems/source-code/LiquidatorRewards.sol" startline="78" endline="80" pcid="1045">
+    function synthetix() internal view returns (IERC20) {
+        return IERC20(requireAndGetAddress(CONTRACT_SYNTHETIX));
+    }
+</source>
+</class>
+
+<class classid="47" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="80" endline="82" pcid="540">
+    function circuitBreaker() internal view returns (ICircuitBreaker) {
+        return ICircuitBreaker(requireAndGetAddress(CONTRACT_CIRCUIT_BREAKER));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="134" endline="136" pcid="927">
+    function circuitBreaker() internal view returns (ICircuitBreaker) {
+        return ICircuitBreaker(requireAndGetAddress(CONTRACT_CIRCUIT_BREAKER));
+    }
+</source>
+<source file="systems/source-code/ExchangeRates.sol" startline="113" endline="115" pcid="587">
+    function circuitBreaker() internal view returns (ICircuitBreaker) {
+        return ICircuitBreaker(requireAndGetAddress(CONTRACT_CIRCUIT_BREAKER));
+    }
+</source>
+</class>
+
+<class classid="48" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="96" endline="98" pcid="544">
+    function delegateApprovals() internal view returns (IDelegateApprovals) {
+        return IDelegateApprovals(requireAndGetAddress(CONTRACT_DELEGATEAPPROVALS));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="150" endline="152" pcid="931">
+    function delegateApprovals() internal view returns (IDelegateApprovals) {
+        return IDelegateApprovals(requireAndGetAddress(CONTRACT_DELEGATEAPPROVALS));
+    }
+</source>
+<source file="systems/source-code/FeePool.sol" startline="153" endline="155" pcid="690">
+    function delegateApprovals() internal view returns (IDelegateApprovals) {
+        return IDelegateApprovals(requireAndGetAddress(CONTRACT_DELEGATEAPPROVALS));
+    }
+</source>
+</class>
+
+<class classid="49" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="108" endline="110" pcid="547">
+    function directIntegrationManager() internal view returns (IDirectIntegrationManager) {
+        return IDirectIntegrationManager(requireAndGetAddress(CONTRACT_DIRECT_INTEGRATION_MANAGER));
+    }
+</source>
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="40" endline="42" pcid="630">
+    function directIntegrationManager() internal view returns (IDirectIntegrationManager) {
+        return IDirectIntegrationManager(requireAndGetAddress(CONTRACT_DIRECT_INTEGRATION_MANAGER));
+    }
+</source>
+</class>
+
+<class classid="50" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="124" endline="126" pcid="549">
+    function waitingPeriodSecs() external view returns (uint) {
+        return getWaitingPeriodSecs();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="32" endline="34" pcid="2372">
+    function waitingPeriodSecs() external view returns (uint) {
+        return getWaitingPeriodSecs();
+    }
+</source>
+</class>
+
+<class classid="51" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="128" endline="130" pcid="550">
+    function tradingRewardsEnabled() external view returns (bool) {
+        return getTradingRewardsEnabled();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="166" endline="168" pcid="2394">
+    function tradingRewardsEnabled() external view returns (bool) {
+        return getTradingRewardsEnabled();
+    }
+</source>
+</class>
+
+<class classid="52" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRates.sol" startline="128" endline="130" pcid="589">
+    function rateStalePeriod() external view returns (uint) {
+        return getRateStalePeriod();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="116" endline="118" pcid="2385">
+    function rateStalePeriod() external view returns (uint) {
+        return getRateStalePeriod();
+    }
+</source>
+</class>
+
+<class classid="53" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRates.sol" startline="132" endline="134" pcid="590">
+    function aggregatorWarningFlags() external view returns (address) {
+        return getAggregatorWarningFlags();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="160" endline="162" pcid="2393">
+    function aggregatorWarningFlags() external view returns (address) {
+        return getAggregatorWarningFlags();
+    }
+</source>
+</class>
+
+<class classid="54" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="128" endline="130" pcid="634">
+    function _getMinValue(uint x, uint y) internal pure returns (uint) {
+        return x < y ? x : y;
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="848" endline="850" pcid="994">
+    function _getMinValue(uint x, uint y) internal pure returns (uint) {
+        return x < y ? x : y;
+    }
+</source>
+</class>
+
+<class classid="55" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangerWithFeeRecAlternatives.sol" startline="50" endline="52" pcid="641">
+    function atomicMaxVolumePerBlock() external view returns (uint) {
+        return getAtomicMaxVolumePerBlock();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="220" endline="222" pcid="2404">
+    function atomicMaxVolumePerBlock() external view returns (uint) {
+        return getAtomicMaxVolumePerBlock();
+    }
+</source>
+</class>
+
+<class classid="56" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExternStateToken.sol" startline="133" endline="135" pcid="676">
+    function addressToBytes32(address input) internal pure returns (bytes32) {
+        return bytes32(uint256(uint160(input)));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketProxyable.sol" startline="276" endline="278" pcid="1926">
+    function addressToBytes32(address input) internal pure returns (bytes32) {
+        return bytes32(uint256(uint160(input)));
+    }
+</source>
+</class>
+
+<class classid="57" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="129" endline="131" pcid="684">
+    function synthetixDebtShare() internal view returns (ISynthetixDebtShare) {
+        return ISynthetixDebtShare(requireAndGetAddress(CONTRACT_SYNTHETIXDEBTSHARE));
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="138" endline="140" pcid="928">
+    function synthetixDebtShare() internal view returns (ISynthetixDebtShare) {
+        return ISynthetixDebtShare(requireAndGetAddress(CONTRACT_SYNTHETIXDEBTSHARE));
+    }
+</source>
+<source file="systems/source-code/LiquidatorRewards.sol" startline="66" endline="68" pcid="1042">
+    function synthetixDebtShare() internal view returns (ISynthetixDebtShare) {
+        return ISynthetixDebtShare(requireAndGetAddress(CONTRACT_SYNTHETIXDEBTSHARE));
+    }
+</source>
+</class>
+
+<class classid="58" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="173" endline="175" pcid="695">
+    function issuanceRatio() external view returns (uint) {
+        return getIssuanceRatio();
+    }
+</source>
+<source file="systems/source-code/Issuer.sol" startline="190" endline="192" pcid="936">
+    function issuanceRatio() external view returns (uint) {
+        return getIssuanceRatio();
+    }
+</source>
+<source file="systems/source-code/Liquidator.sol" startline="77" endline="79" pcid="1017">
+    function issuanceRatio() external view returns (uint) {
+        return getIssuanceRatio();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="45" endline="47" pcid="2374">
+    function issuanceRatio() external view returns (uint) {
+        return getIssuanceRatio();
+    }
+</source>
+</class>
+
+<class classid="59" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="177" endline="179" pcid="696">
+    function feePeriodDuration() external view returns (uint) {
+        return getFeePeriodDuration();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="53" endline="55" pcid="2375">
+    function feePeriodDuration() external view returns (uint) {
+        return getFeePeriodDuration();
+    }
+</source>
+</class>
+
+<class classid="60" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="181" endline="183" pcid="697">
+    function targetThreshold() external view returns (uint) {
+        return getTargetThreshold();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="58" endline="60" pcid="2376">
+    function targetThreshold() external view returns (uint) {
+        return getTargetThreshold();
+    }
+</source>
+</class>
+
+<class classid="61" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="217" endline="219" pcid="771">
+    function _manager() internal view returns (IFuturesMarketManagerInternal) {
+        return IFuturesMarketManagerInternal(requireAndGetAddress(CONTRACT_FUTURESMARKETMANAGER));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="135" endline="137" pcid="1827">
+    function _manager() internal view returns (IFuturesMarketManagerInternal) {
+        return IFuturesMarketManagerInternal(requireAndGetAddress(CONTRACT_FUTURESMARKETMANAGER));
+    }
+</source>
+</class>
+
+<class classid="62" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="307" endline="309" pcid="779">
+    function _notionalValue(int positionSize, uint price) internal pure returns (int value) {
+        return positionSize.multiplyDecimal(int(price));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="268" endline="270" pcid="1839">
+    function _notionalValue(int positionSize, uint price) internal pure returns (int value) {
+        return positionSize.multiplyDecimal(int(price));
+    }
+</source>
+</class>
+
+<class classid="63" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="311" endline="314" pcid="780">
+    function _profitLoss(Position memory position, uint price) internal pure returns (int pnl) {
+        int priceShift = int(price).sub(int(position.lastPrice));
+        return int(position.size).multiplyDecimal(priceShift);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="272" endline="275" pcid="1840">
+    function _profitLoss(Position memory position, uint price) internal pure returns (int pnl) {
+        int priceShift = int(price).sub(int(position.lastPrice));
+        return int(position.size).multiplyDecimal(priceShift);
+    }
+</source>
+</class>
+
+<class classid="64" nclones="2" nlines="8" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="316" endline="323" pcid="781">
+    function _accruedFunding(Position memory position, uint price) internal view returns (int funding) {
+        uint lastModifiedIndex = position.lastFundingIndex;
+        if (lastModifiedIndex == 0) {
+            return 0; // The position does not exist -- no funding.
+        }
+        int net = _netFundingPerUnit(lastModifiedIndex, price);
+        return int(position.size).multiplyDecimal(net);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="277" endline="284" pcid="1841">
+    function _accruedFunding(Position memory position, uint price) internal view returns (int funding) {
+        uint lastModifiedIndex = position.lastFundingIndex;
+        if (lastModifiedIndex == 0) {
+            return 0; // The position does not exist -- no funding.
+        }
+        int net = _netFundingPerUnit(lastModifiedIndex, price);
+        return int(position.size).multiplyDecimal(net);
+    }
+</source>
+</class>
+
+<class classid="65" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="328" endline="331" pcid="782">
+    function _marginPlusProfitFunding(Position memory position, uint price) internal view returns (int) {
+        int funding = _accruedFunding(position, price);
+        return int(position.margin).add(_profitLoss(position, price)).add(funding);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="289" endline="292" pcid="1842">
+    function _marginPlusProfitFunding(Position memory position, uint price) internal view returns (int) {
+        int funding = _accruedFunding(position, price);
+        return int(position.margin).add(_profitLoss(position, price)).add(funding);
+    }
+</source>
+</class>
+
+<class classid="66" nclones="2" nlines="13" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="339" endline="358" pcid="783">
+    function _recomputeMarginWithDelta(
+        Position memory position,
+        uint price,
+        int marginDelta
+    ) internal view returns (uint margin, Status statusCode) {
+        int newMargin = _marginPlusProfitFunding(position, price).add(marginDelta);
+        if (newMargin < 0) {
+            return (0, Status.InsufficientMargin);
+        }
+
+        uint uMargin = uint(newMargin);
+        int positionSize = int(position.size);
+        // minimum margin beyond which position can be liquidated
+        uint lMargin = _liquidationMargin(positionSize, price);
+        if (positionSize != 0 && uMargin <= lMargin) {
+            return (uMargin, Status.CanLiquidate);
+        }
+
+        return (uMargin, Status.Ok);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="300" endline="319" pcid="1843">
+    function _recomputeMarginWithDelta(
+        Position memory position,
+        uint price,
+        int marginDelta
+    ) internal view returns (uint margin, Status statusCode) {
+        int newMargin = _marginPlusProfitFunding(position, price).add(marginDelta);
+        if (newMargin < 0) {
+            return (0, Status.InsufficientMargin);
+        }
+
+        uint uMargin = uint(newMargin);
+        int positionSize = int(position.size);
+        // minimum margin beyond which position can be liquidated
+        uint lMargin = _liquidationMargin(positionSize, price);
+        if (positionSize != 0 && uMargin <= lMargin) {
+            return (uMargin, Status.CanLiquidate);
+        }
+
+        return (uMargin, Status.Ok);
+    }
+</source>
+</class>
+
+<class classid="67" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="360" endline="365" pcid="784">
+    function _remainingMargin(Position memory position, uint price) internal view returns (uint) {
+        int remaining = _marginPlusProfitFunding(position, price);
+
+        // If the margin went past zero, the position should have been liquidated - return zero remaining margin.
+        return uint(_max(0, remaining));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="321" endline="326" pcid="1844">
+    function _remainingMargin(Position memory position, uint price) internal view returns (uint) {
+        int remaining = _marginPlusProfitFunding(position, price);
+
+        // If the margin went past zero, the position should have been liquidated - return zero remaining margin.
+        return uint(_max(0, remaining));
+    }
+</source>
+</class>
+
+<class classid="68" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="432" endline="443" pcid="789">
+    function _currentLeverage(
+        Position memory position,
+        uint price,
+        uint remainingMargin_
+    ) internal pure returns (int leverage) {
+        // No position is open, or it is ready to be liquidated; leverage goes to nil
+        if (remainingMargin_ == 0) {
+            return 0;
+        }
+
+        return _notionalValue(position.size, price).divideDecimal(int(remainingMargin_));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="442" endline="453" pcid="1851">
+    function _currentLeverage(
+        Position memory position,
+        uint price,
+        uint remainingMargin_
+    ) internal pure returns (int leverage) {
+        // No position is open, or it is ready to be liquidated; leverage goes to nil
+        if (remainingMargin_ == 0) {
+            return 0;
+        }
+
+        return _notionalValue(position.size, price).divideDecimal(int(remainingMargin_));
+    }
+</source>
+</class>
+
+<class classid="69" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="570" endline="572" pcid="794">
+    function _signedAbs(int x) internal pure returns (int) {
+        return x < 0 ? -x : x;
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="653" endline="655" pcid="1858">
+    function _signedAbs(int x) internal pure returns (int) {
+        return x < 0 ? -x : x;
+    }
+</source>
+</class>
+
+<class classid="70" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="577" endline="579" pcid="795">
+    function _abs(int x) internal pure returns (uint) {
+        return uint(_signedAbs(x));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="660" endline="662" pcid="1859">
+    function _abs(int x) internal pure returns (uint) {
+        return uint(_signedAbs(x));
+    }
+</source>
+</class>
+
+<class classid="71" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="581" endline="583" pcid="796">
+    function _max(int x, int y) internal pure returns (int) {
+        return x < y ? y : x;
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="664" endline="666" pcid="1860">
+    function _max(int x, int y) internal pure returns (int) {
+        return x < y ? y : x;
+    }
+</source>
+</class>
+
+<class classid="72" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="585" endline="587" pcid="797">
+    function _min(int x, int y) internal pure returns (int) {
+        return x < y ? x : y;
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="668" endline="670" pcid="1861">
+    function _min(int x, int y) internal pure returns (int) {
+        return x < y ? x : y;
+    }
+</source>
+</class>
+
+<class classid="73" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="598" endline="600" pcid="799">
+    function _isError(Status status) internal pure returns (bool) {
+        return status != Status.Ok;
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="683" endline="685" pcid="1863">
+    function _isError(Status status) internal pure returns (bool) {
+        return status != Status.Ok;
+    }
+</source>
+</class>
+
+<class classid="74" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="605" endline="609" pcid="800">
+    function _revertIfError(bool isError, Status status) internal view {
+        if (isError) {
+            revert(_errorMessages[uint8(status)]);
+        }
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="690" endline="694" pcid="1864">
+    function _revertIfError(bool isError, Status status) internal view {
+        if (isError) {
+            revert(_errorMessages[uint8(status)]);
+        }
+    }
+</source>
+</class>
+
+<class classid="75" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="614" endline="618" pcid="801">
+    function _revertIfError(Status status) internal view {
+        if (_isError(status)) {
+            revert(_errorMessages[uint8(status)]);
+        }
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="699" endline="703" pcid="1865">
+    function _revertIfError(Status status) internal view {
+        if (_isError(status)) {
+            revert(_errorMessages[uint8(status)]);
+        }
+    }
+</source>
+</class>
+
+<class classid="76" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketData.sol" startline="110" endline="115" pcid="822">
+    function _futuresMarketManager() internal view returns (IFuturesMarketManager) {
+        return
+            IFuturesMarketManager(
+                resolverProxy.requireAndGetAddress("FuturesMarketManager", "Missing FuturesMarketManager Address")
+            );
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketData.sol" startline="107" endline="112" pcid="1866">
+    function _futuresMarketManager() internal view returns (IFuturesMarketManager) {
+        return
+            IFuturesMarketManager(
+                resolverProxy.requireAndGetAddress("FuturesMarketManager", "Missing FuturesMarketManager Address")
+            );
+    }
+</source>
+</class>
+
+<class classid="77" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketData.sol" startline="194" endline="196" pcid="828">
+    function marketSummaries(address[] calldata markets) external view returns (MarketSummary[] memory) {
+        return _marketSummaries(markets);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketData.sol" startline="191" endline="193" pcid="1873">
+    function marketSummaries(address[] calldata markets) external view returns (MarketSummary[] memory) {
+        return _marketSummaries(markets);
+    }
+</source>
+</class>
+
+<class classid="78" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketData.sol" startline="198" endline="200" pcid="829">
+    function marketSummariesForKeys(bytes32[] calldata marketKeys) external view returns (MarketSummary[] memory) {
+        return _marketSummaries(_futuresMarketManager().marketsForKeys(marketKeys));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketData.sol" startline="195" endline="197" pcid="1874">
+    function marketSummariesForKeys(bytes32[] calldata marketKeys) external view returns (MarketSummary[] memory) {
+        return _marketSummaries(_futuresMarketManager().marketsForKeys(marketKeys));
+    }
+</source>
+</class>
+
+<class classid="79" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketData.sol" startline="202" endline="204" pcid="830">
+    function allMarketSummaries() external view returns (MarketSummary[] memory) {
+        return _marketSummaries(_futuresMarketManager().allMarkets());
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketData.sol" startline="199" endline="201" pcid="1875">
+    function allMarketSummaries() external view returns (MarketSummary[] memory) {
+        return _marketSummaries(_futuresMarketManager().allMarkets());
+    }
+</source>
+</class>
+
+<class classid="80" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="33" endline="35" pcid="883">
+    function _futuresMarketManager() internal view returns (IFuturesMarketManager) {
+        return IFuturesMarketManager(requireAndGetAddress(CONTRACT_FUTURES_MARKET_MANAGER));
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="36" endline="38" pcid="1931">
+    function _futuresMarketManager() internal view returns (IFuturesMarketManager) {
+        return IFuturesMarketManager(requireAndGetAddress(CONTRACT_FUTURES_MARKET_MANAGER));
+    }
+</source>
+</class>
+
+<class classid="81" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="42" endline="44" pcid="884">
+    function takerFee(bytes32 _marketKey) external view returns (uint) {
+        return _takerFee(_marketKey);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="45" endline="47" pcid="1932">
+    function takerFee(bytes32 _marketKey) external view returns (uint) {
+        return _takerFee(_marketKey);
+    }
+</source>
+</class>
+
+<class classid="82" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="49" endline="51" pcid="885">
+    function makerFee(bytes32 _marketKey) public view returns (uint) {
+        return _makerFee(_marketKey);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="52" endline="54" pcid="1933">
+    function makerFee(bytes32 _marketKey) public view returns (uint) {
+        return _makerFee(_marketKey);
+    }
+</source>
+</class>
+
+<class classid="83" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="70" endline="72" pcid="888">
+    function nextPriceConfirmWindow(bytes32 _marketKey) public view returns (uint) {
+        return _nextPriceConfirmWindow(_marketKey);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="87" endline="89" pcid="1938">
+    function nextPriceConfirmWindow(bytes32 _marketKey) public view returns (uint) {
+        return _nextPriceConfirmWindow(_marketKey);
+    }
+</source>
+</class>
+
+<class classid="84" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="77" endline="79" pcid="889">
+    function maxLeverage(bytes32 _marketKey) public view returns (uint) {
+        return _maxLeverage(_marketKey);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="115" endline="117" pcid="1942">
+    function maxLeverage(bytes32 _marketKey) public view returns (uint) {
+        return _maxLeverage(_marketKey);
+    }
+</source>
+</class>
+
+<class classid="85" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="132" endline="134" pcid="894">
+    function minKeeperFee() external view returns (uint) {
+        return _minKeeperFee();
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="228" endline="230" pcid="1955">
+    function minKeeperFee() external view returns (uint) {
+        return _minKeeperFee();
+    }
+</source>
+</class>
+
+<class classid="86" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="140" endline="142" pcid="895">
+    function liquidationFeeRatio() external view returns (uint) {
+        return _liquidationFeeRatio();
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="243" endline="245" pcid="1957">
+    function liquidationFeeRatio() external view returns (uint) {
+        return _liquidationFeeRatio();
+    }
+</source>
+</class>
+
+<class classid="87" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="155" endline="157" pcid="897">
+    function minInitialMargin() external view returns (uint) {
+        return _minInitialMargin();
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="251" endline="253" pcid="1958">
+    function minInitialMargin() external view returns (uint) {
+        return _minInitialMargin();
+    }
+</source>
+</class>
+
+<class classid="88" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="163" endline="170" pcid="898">
+    function _setParameter(
+        bytes32 _marketKey,
+        bytes32 key,
+        uint value
+    ) internal {
+        _flexibleStorage().setUIntValue(SETTING_CONTRACT_NAME, keccak256(abi.encodePacked(_marketKey, key)), value);
+        emit ParameterUpdated(_marketKey, key, value);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="266" endline="273" pcid="1960">
+    function _setParameter(
+        bytes32 _marketKey,
+        bytes32 key,
+        uint value
+    ) internal {
+        _flexibleStorage().setUIntValue(SETTING_CONTRACT_NAME, keccak256(abi.encodePacked(_marketKey, key)), value);
+        emit ParameterUpdated(_marketKey, key, value);
+    }
+</source>
+</class>
+
+<class classid="89" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="172" endline="175" pcid="899">
+    function setTakerFee(bytes32 _marketKey, uint _takerFee) public onlyOwner {
+        require(_takerFee <= 1e18, "taker fee greater than 1");
+        _setParameter(_marketKey, PARAMETER_TAKER_FEE, _takerFee);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="275" endline="278" pcid="1961">
+    function setTakerFee(bytes32 _marketKey, uint _takerFee) public onlyOwner {
+        require(_takerFee <= 1e18, "taker fee greater than 1");
+        _setParameter(_marketKey, PARAMETER_TAKER_FEE, _takerFee);
+    }
+</source>
+</class>
+
+<class classid="90" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="177" endline="180" pcid="900">
+    function setMakerFee(bytes32 _marketKey, uint _makerFee) public onlyOwner {
+        require(_makerFee <= 1e18, "maker fee greater than 1");
+        _setParameter(_marketKey, PARAMETER_MAKER_FEE, _makerFee);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="280" endline="283" pcid="1962">
+    function setMakerFee(bytes32 _marketKey, uint _makerFee) public onlyOwner {
+        require(_makerFee <= 1e18, "maker fee greater than 1");
+        _setParameter(_marketKey, PARAMETER_MAKER_FEE, _makerFee);
+    }
+</source>
+</class>
+
+<class classid="91" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="192" endline="194" pcid="903">
+    function setNextPriceConfirmWindow(bytes32 _marketKey, uint _nextPriceConfirmWindow) public onlyOwner {
+        _setParameter(_marketKey, PARAMETER_NEXT_PRICE_CONFIRM_WINDOW, _nextPriceConfirmWindow);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="305" endline="307" pcid="1967">
+    function setNextPriceConfirmWindow(bytes32 _marketKey, uint _nextPriceConfirmWindow) public onlyOwner {
+        _setParameter(_marketKey, PARAMETER_NEXT_PRICE_CONFIRM_WINDOW, _nextPriceConfirmWindow);
+    }
+</source>
+</class>
+
+<class classid="92" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="196" endline="198" pcid="904">
+    function setMaxLeverage(bytes32 _marketKey, uint _maxLeverage) public onlyOwner {
+        _setParameter(_marketKey, PARAMETER_MAX_LEVERAGE, _maxLeverage);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="321" endline="323" pcid="1971">
+    function setMaxLeverage(bytes32 _marketKey, uint _maxLeverage) public onlyOwner {
+        _setParameter(_marketKey, PARAMETER_MAX_LEVERAGE, _maxLeverage);
+    }
+</source>
+</class>
+
+<class classid="93" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="256" endline="259" pcid="911">
+    function setLiquidationFeeRatio(uint _ratio) external onlyOwner {
+        _flexibleStorage().setUIntValue(SETTING_CONTRACT_NAME, SETTING_LIQUIDATION_FEE_RATIO, _ratio);
+        emit LiquidationFeeRatioUpdated(_ratio);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="437" endline="440" pcid="1987">
+    function setLiquidationFeeRatio(uint _ratio) external onlyOwner {
+        _flexibleStorage().setUIntValue(SETTING_CONTRACT_NAME, SETTING_LIQUIDATION_FEE_RATIO, _ratio);
+        emit LiquidationFeeRatioUpdated(_ratio);
+    }
+</source>
+</class>
+
+<class classid="94" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="266" endline="270" pcid="913">
+    function setMinInitialMargin(uint _minMargin) external onlyOwner {
+        require(_minKeeperFee() <= _minMargin, "min margin < liquidation fee");
+        _flexibleStorage().setUIntValue(SETTING_CONTRACT_NAME, SETTING_MIN_INITIAL_MARGIN, _minMargin);
+        emit MinInitialMarginUpdated(_minMargin);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketSettings.sol" startline="442" endline="446" pcid="1988">
+    function setMinInitialMargin(uint _minMargin) external onlyOwner {
+        require(_minKeeperFee() <= _minMargin, "min margin < liquidation fee");
+        _flexibleStorage().setUIntValue(SETTING_CONTRACT_NAME, SETTING_MIN_INITIAL_MARGIN, _minMargin);
+        emit MinInitialMarginUpdated(_minMargin);
+    }
+</source>
+</class>
+
+<class classid="95" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ImportableRewardEscrowV2.sol" startline="25" endline="27" pcid="917">
+    function synthetixBridgeToBase() internal view returns (address) {
+        return requireAndGetAddress(CONTRACT_SYNTHETIX_BRIDGE_BASE);
+    }
+</source>
+<source file="systems/source-code/ImportableRewardEscrowV2Frozen.sol" startline="30" endline="32" pcid="920">
+    function synthetixBridgeToBase() internal view returns (address) {
+        return requireAndGetAddress(CONTRACT_SYNTHETIX_BRIDGE_BASE);
+    }
+</source>
+</class>
+
+<class classid="96" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Issuer.sol" startline="367" endline="369" pcid="956">
+    function minimumStakeTime() external view returns (uint) {
+        return getMinimumStakeTime();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="152" endline="154" pcid="2391">
+    function minimumStakeTime() external view returns (uint) {
+        return getMinimumStakeTime();
+    }
+</source>
+</class>
+
+<class classid="97" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="22" endline="25" pcid="1009">
+    function setAssociatedContract(address _associatedContract) external onlyOwner {
+        associatedContract = _associatedContract;
+        emit AssociatedContractUpdated(_associatedContract);
+    }
+</source>
+<source file="systems/source-code/State.sol" startline="23" endline="26" pcid="2231">
+    function setAssociatedContract(address _associatedContract) external onlyOwner {
+        associatedContract = _associatedContract;
+        emit AssociatedContractUpdated(_associatedContract);
+    }
+</source>
+</class>
+
+<class classid="98" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="27" endline="33" pcid="1010">
+    function setAllowance(
+        address tokenOwner,
+        address spender,
+        uint value
+    ) external onlyAssociatedContract {
+        allowance[tokenOwner][spender] = value;
+    }
+</source>
+<source file="systems/source-code/TokenState.sol" startline="25" endline="31" pcid="2637">
+    function setAllowance(
+        address tokenOwner,
+        address spender,
+        uint value
+    ) external onlyAssociatedContract {
+        allowance[tokenOwner][spender] = value;
+    }
+</source>
+</class>
+
+<class classid="99" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="35" endline="37" pcid="1011">
+    function setBalanceOf(address account, uint value) external onlyAssociatedContract {
+        balanceOf[account] = value;
+    }
+</source>
+<source file="systems/source-code/TokenState.sol" startline="39" endline="41" pcid="2638">
+    function setBalanceOf(address account, uint value) external onlyAssociatedContract {
+        balanceOf[account] = value;
+    }
+</source>
+</class>
+
+<class classid="100" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="81" endline="83" pcid="1018">
+    function liquidationDelay() external view returns (uint) {
+        return getLiquidationDelay();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="64" endline="66" pcid="2377">
+    function liquidationDelay() external view returns (uint) {
+        return getLiquidationDelay();
+    }
+</source>
+</class>
+
+<class classid="101" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="85" endline="87" pcid="1019">
+    function liquidationRatio() external view returns (uint) {
+        return getLiquidationRatio();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="71" endline="73" pcid="2378">
+    function liquidationRatio() external view returns (uint) {
+        return getLiquidationRatio();
+    }
+</source>
+</class>
+
+<class classid="102" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="89" endline="91" pcid="1020">
+    function liquidationEscrowDuration() external view returns (uint) {
+        return getLiquidationEscrowDuration();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="91" endline="93" pcid="2381">
+    function liquidationEscrowDuration() external view returns (uint) {
+        return getLiquidationEscrowDuration();
+    }
+</source>
+</class>
+
+<class classid="103" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="100" endline="102" pcid="1022">
+    function selfLiquidationPenalty() external view returns (uint) {
+        return getSelfLiquidationPenalty();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="97" endline="99" pcid="2382">
+    function selfLiquidationPenalty() external view returns (uint) {
+        return getSelfLiquidationPenalty();
+    }
+</source>
+</class>
+
+<class classid="104" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="104" endline="106" pcid="1023">
+    function liquidateReward() external view returns (uint) {
+        return getLiquidateReward();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="109" endline="111" pcid="2384">
+    function liquidateReward() external view returns (uint) {
+        return getLiquidateReward();
+    }
+</source>
+</class>
+
+<class classid="105" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="108" endline="110" pcid="1024">
+    function flagReward() external view returns (uint) {
+        return getFlagReward();
+    }
+</source>
+<source file="systems/source-code/SystemSettings.sol" startline="103" endline="105" pcid="2383">
+    function flagReward() external view returns (uint) {
+        return getFlagReward();
+    }
+</source>
+</class>
+
+<class classid="106" nclones="40" nlines="6" similarity="100">
+<source file="systems/source-code/Migration_AludraOptimismStep1.sol" startline="262" endline="267" pcid="1053">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep5.sol" startline="205" endline="210" pcid="1198">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep12.sol" startline="205" endline="210" pcid="1140">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_ScheatOptimismStep1.sol" startline="107" endline="112" pcid="1527">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_AnkaaOptimismStep1.sol" startline="255" endline="260" pcid="1079">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_SabikOptimismStep2.sol" startline="229" endline="234" pcid="1475">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep6.sol" startline="205" endline="210" pcid="1208">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_DschubbaOptimismStep1.sol" startline="184" endline="189" pcid="1248">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep1.sol" startline="284" endline="289" pcid="1284">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_Naos.sol" startline="92" endline="97" pcid="1442">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep3.sol" startline="284" endline="289" pcid="1344">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep7.sol" startline="205" endline="210" pcid="1218">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_MarkebOptimismStep1.sol" startline="146" endline="151" pcid="1428">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_SabikOptimismStep1.sol" startline="354" endline="359" pcid="1463">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_DschubbaOptimismStep3.sol" startline="176" endline="181" pcid="1266">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep11.sol" startline="205" endline="210" pcid="1130">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep4.sol" startline="205" endline="210" pcid="1188">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_EnifOptimismStep1.sol" startline="108" endline="113" pcid="1278">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep10.sol" startline="205" endline="210" pcid="1120">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep13.sol" startline="205" endline="210" pcid="1150">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_MerakOptimismStep1.sol" startline="110" endline="115" pcid="1436">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_LarawagOptimismStep2.sol" startline="209" endline="214" pcid="1414">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep8.sol" startline="205" endline="210" pcid="1228">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_AnkaaOptimismStep2.sol" startline="197" endline="202" pcid="1091">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep9.sol" startline="205" endline="210" pcid="1238">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_SabikOptimismStep4.sol" startline="228" endline="233" pcid="1503">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_SabikOptimismStep3.sol" startline="228" endline="233" pcid="1489">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep4.sol" startline="284" endline="289" pcid="1374">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep14.sol" startline="46" endline="51" pcid="1160">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_Caph.sol" startline="51" endline="56" pcid="1103">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep2.sol" startline="226" endline="231" pcid="1165">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_AludraOptimismStep2.sol" startline="228" endline="233" pcid="1065">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_NaosOptimism.sol" startline="84" endline="89" pcid="1450">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep2.sol" startline="284" endline="289" pcid="1314">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep3.sol" startline="205" endline="210" pcid="1178">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_Phecda.sol" startline="60" endline="65" pcid="1457">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_DschubbaOptimismStep2.sol" startline="176" endline="181" pcid="1254">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_SabikOptimismStep5.sol" startline="161" endline="166" pcid="1517">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_LarawagOptimismStep1.sol" startline="237" endline="242" pcid="1404">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep1.sol" startline="68" endline="73" pcid="1109">
+    function acceptAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            Owned(contracts[i]).acceptOwnership();
+        }
+    }
+</source>
+</class>
+
+<class classid="107" nclones="40" nlines="6" similarity="100">
+<source file="systems/source-code/Migration_AludraOptimismStep1.sol" startline="269" endline="274" pcid="1054">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_MerakOptimismStep1.sol" startline="117" endline="122" pcid="1437">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep14.sol" startline="53" endline="58" pcid="1161">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep2.sol" startline="291" endline="296" pcid="1315">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_DschubbaOptimismStep3.sol" startline="183" endline="188" pcid="1267">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_MarkebOptimismStep1.sol" startline="153" endline="158" pcid="1429">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep11.sol" startline="212" endline="217" pcid="1131">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_AludraOptimismStep2.sol" startline="235" endline="240" pcid="1066">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_SabikOptimismStep2.sol" startline="236" endline="241" pcid="1476">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_EnifOptimismStep1.sol" startline="115" endline="120" pcid="1279">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_DschubbaOptimismStep1.sol" startline="191" endline="196" pcid="1249">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_LarawagOptimismStep2.sol" startline="216" endline="221" pcid="1415">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_AnkaaOptimismStep2.sol" startline="204" endline="209" pcid="1092">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep4.sol" startline="212" endline="217" pcid="1189">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_DschubbaOptimismStep2.sol" startline="183" endline="188" pcid="1255">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep1.sol" startline="291" endline="296" pcid="1285">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_AnkaaOptimismStep1.sol" startline="262" endline="267" pcid="1080">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_SabikOptimismStep5.sol" startline="168" endline="173" pcid="1518">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_LarawagOptimismStep1.sol" startline="244" endline="249" pcid="1405">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep13.sol" startline="212" endline="217" pcid="1151">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_SabikOptimismStep3.sol" startline="235" endline="240" pcid="1490">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep3.sol" startline="212" endline="217" pcid="1179">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_Naos.sol" startline="99" endline="104" pcid="1443">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep10.sol" startline="212" endline="217" pcid="1121">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_NaosOptimism.sol" startline="91" endline="96" pcid="1451">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_Caph.sol" startline="58" endline="63" pcid="1104">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_ScheatOptimismStep1.sol" startline="114" endline="119" pcid="1528">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep6.sol" startline="212" endline="217" pcid="1209">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep1.sol" startline="75" endline="80" pcid="1110">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep5.sol" startline="212" endline="217" pcid="1199">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep7.sol" startline="212" endline="217" pcid="1219">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep8.sol" startline="212" endline="217" pcid="1229">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep4.sol" startline="291" endline="296" pcid="1375">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_SabikOptimismStep4.sol" startline="235" endline="240" pcid="1504">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep9.sol" startline="212" endline="217" pcid="1239">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep12.sol" startline="212" endline="217" pcid="1141">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep3.sol" startline="291" endline="296" pcid="1345">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_SabikOptimismStep1.sol" startline="361" endline="366" pcid="1464">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_CaphOptimismStep2.sol" startline="233" endline="238" pcid="1166">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+<source file="systems/source-code/Migration_Phecda.sol" startline="67" endline="72" pcid="1458">
+    function nominateAll() internal {
+        address[] memory contracts = contractsRequiringOwnership();
+        for (uint i = 0; i < contracts.length; i++) {
+            returnOwnership(contracts[i]);
+        }
+    }
+</source>
+</class>
+
+<class classid="108" nclones="4" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_IzarOptimismStep1.sol" startline="298" endline="307" pcid="1286">
+    function addressresolver_importAddresses_0() internal {
+        bytes32[] memory addressresolver_importAddresses_names_0_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_0_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_0_1 = new address[](1);
+        addressresolver_importAddresses_destinations_0_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_0_0,
+            addressresolver_importAddresses_destinations_0_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep4.sol" startline="298" endline="307" pcid="1376">
+    function addressresolver_importAddresses_0() internal {
+        bytes32[] memory addressresolver_importAddresses_names_0_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_0_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_0_1 = new address[](1);
+        addressresolver_importAddresses_destinations_0_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_0_0,
+            addressresolver_importAddresses_destinations_0_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep3.sol" startline="298" endline="307" pcid="1346">
+    function addressresolver_importAddresses_0() internal {
+        bytes32[] memory addressresolver_importAddresses_names_0_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_0_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_0_1 = new address[](1);
+        addressresolver_importAddresses_destinations_0_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_0_0,
+            addressresolver_importAddresses_destinations_0_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep2.sol" startline="298" endline="307" pcid="1316">
+    function addressresolver_importAddresses_0() internal {
+        bytes32[] memory addressresolver_importAddresses_names_0_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_0_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_0_1 = new address[](1);
+        addressresolver_importAddresses_destinations_0_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_0_0,
+            addressresolver_importAddresses_destinations_0_1
+        );
+    }
+</source>
+</class>
+
+<class classid="109" nclones="4" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_IzarOptimismStep1.sol" startline="345" endline="354" pcid="1290">
+    function addressresolver_importAddresses_19() internal {
+        bytes32[] memory addressresolver_importAddresses_names_19_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_19_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_19_1 = new address[](1);
+        addressresolver_importAddresses_destinations_19_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_19_0,
+            addressresolver_importAddresses_destinations_19_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep2.sol" startline="345" endline="354" pcid="1320">
+    function addressresolver_importAddresses_19() internal {
+        bytes32[] memory addressresolver_importAddresses_names_19_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_19_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_19_1 = new address[](1);
+        addressresolver_importAddresses_destinations_19_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_19_0,
+            addressresolver_importAddresses_destinations_19_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep4.sol" startline="345" endline="354" pcid="1380">
+    function addressresolver_importAddresses_19() internal {
+        bytes32[] memory addressresolver_importAddresses_names_19_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_19_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_19_1 = new address[](1);
+        addressresolver_importAddresses_destinations_19_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_19_0,
+            addressresolver_importAddresses_destinations_19_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep3.sol" startline="345" endline="354" pcid="1350">
+    function addressresolver_importAddresses_19() internal {
+        bytes32[] memory addressresolver_importAddresses_names_19_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_19_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_19_1 = new address[](1);
+        addressresolver_importAddresses_destinations_19_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_19_0,
+            addressresolver_importAddresses_destinations_19_1
+        );
+    }
+</source>
+</class>
+
+<class classid="110" nclones="4" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_IzarOptimismStep1.sol" startline="392" endline="401" pcid="1294">
+    function addressresolver_importAddresses_38() internal {
+        bytes32[] memory addressresolver_importAddresses_names_38_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_38_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_38_1 = new address[](1);
+        addressresolver_importAddresses_destinations_38_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_38_0,
+            addressresolver_importAddresses_destinations_38_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep4.sol" startline="392" endline="401" pcid="1384">
+    function addressresolver_importAddresses_38() internal {
+        bytes32[] memory addressresolver_importAddresses_names_38_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_38_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_38_1 = new address[](1);
+        addressresolver_importAddresses_destinations_38_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_38_0,
+            addressresolver_importAddresses_destinations_38_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep2.sol" startline="392" endline="401" pcid="1324">
+    function addressresolver_importAddresses_38() internal {
+        bytes32[] memory addressresolver_importAddresses_names_38_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_38_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_38_1 = new address[](1);
+        addressresolver_importAddresses_destinations_38_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_38_0,
+            addressresolver_importAddresses_destinations_38_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep3.sol" startline="392" endline="401" pcid="1354">
+    function addressresolver_importAddresses_38() internal {
+        bytes32[] memory addressresolver_importAddresses_names_38_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_38_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_38_1 = new address[](1);
+        addressresolver_importAddresses_destinations_38_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_38_0,
+            addressresolver_importAddresses_destinations_38_1
+        );
+    }
+</source>
+</class>
+
+<class classid="111" nclones="4" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_IzarOptimismStep1.sol" startline="439" endline="448" pcid="1298">
+    function addressresolver_importAddresses_57() internal {
+        bytes32[] memory addressresolver_importAddresses_names_57_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_57_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_57_1 = new address[](1);
+        addressresolver_importAddresses_destinations_57_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_57_0,
+            addressresolver_importAddresses_destinations_57_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep2.sol" startline="439" endline="448" pcid="1328">
+    function addressresolver_importAddresses_57() internal {
+        bytes32[] memory addressresolver_importAddresses_names_57_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_57_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_57_1 = new address[](1);
+        addressresolver_importAddresses_destinations_57_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_57_0,
+            addressresolver_importAddresses_destinations_57_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep4.sol" startline="439" endline="448" pcid="1388">
+    function addressresolver_importAddresses_57() internal {
+        bytes32[] memory addressresolver_importAddresses_names_57_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_57_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_57_1 = new address[](1);
+        addressresolver_importAddresses_destinations_57_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_57_0,
+            addressresolver_importAddresses_destinations_57_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep3.sol" startline="439" endline="448" pcid="1358">
+    function addressresolver_importAddresses_57() internal {
+        bytes32[] memory addressresolver_importAddresses_names_57_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_57_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_57_1 = new address[](1);
+        addressresolver_importAddresses_destinations_57_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_57_0,
+            addressresolver_importAddresses_destinations_57_1
+        );
+    }
+</source>
+</class>
+
+<class classid="112" nclones="4" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_IzarOptimismStep1.sol" startline="486" endline="495" pcid="1302">
+    function addressresolver_importAddresses_76() internal {
+        bytes32[] memory addressresolver_importAddresses_names_76_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_76_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_76_1 = new address[](1);
+        addressresolver_importAddresses_destinations_76_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_76_0,
+            addressresolver_importAddresses_destinations_76_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep2.sol" startline="486" endline="495" pcid="1332">
+    function addressresolver_importAddresses_76() internal {
+        bytes32[] memory addressresolver_importAddresses_names_76_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_76_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_76_1 = new address[](1);
+        addressresolver_importAddresses_destinations_76_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_76_0,
+            addressresolver_importAddresses_destinations_76_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep4.sol" startline="486" endline="495" pcid="1392">
+    function addressresolver_importAddresses_76() internal {
+        bytes32[] memory addressresolver_importAddresses_names_76_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_76_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_76_1 = new address[](1);
+        addressresolver_importAddresses_destinations_76_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_76_0,
+            addressresolver_importAddresses_destinations_76_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep3.sol" startline="486" endline="495" pcid="1362">
+    function addressresolver_importAddresses_76() internal {
+        bytes32[] memory addressresolver_importAddresses_names_76_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_76_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_76_1 = new address[](1);
+        addressresolver_importAddresses_destinations_76_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_76_0,
+            addressresolver_importAddresses_destinations_76_1
+        );
+    }
+</source>
+</class>
+
+<class classid="113" nclones="4" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_IzarOptimismStep1.sol" startline="533" endline="542" pcid="1306">
+    function addressresolver_importAddresses_95() internal {
+        bytes32[] memory addressresolver_importAddresses_names_95_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_95_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_95_1 = new address[](1);
+        addressresolver_importAddresses_destinations_95_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_95_0,
+            addressresolver_importAddresses_destinations_95_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep4.sol" startline="533" endline="542" pcid="1396">
+    function addressresolver_importAddresses_95() internal {
+        bytes32[] memory addressresolver_importAddresses_names_95_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_95_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_95_1 = new address[](1);
+        addressresolver_importAddresses_destinations_95_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_95_0,
+            addressresolver_importAddresses_destinations_95_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep3.sol" startline="533" endline="542" pcid="1366">
+    function addressresolver_importAddresses_95() internal {
+        bytes32[] memory addressresolver_importAddresses_names_95_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_95_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_95_1 = new address[](1);
+        addressresolver_importAddresses_destinations_95_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_95_0,
+            addressresolver_importAddresses_destinations_95_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep2.sol" startline="533" endline="542" pcid="1336">
+    function addressresolver_importAddresses_95() internal {
+        bytes32[] memory addressresolver_importAddresses_names_95_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_95_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_95_1 = new address[](1);
+        addressresolver_importAddresses_destinations_95_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_95_0,
+            addressresolver_importAddresses_destinations_95_1
+        );
+    }
+</source>
+</class>
+
+<class classid="114" nclones="4" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_IzarOptimismStep1.sol" startline="580" endline="589" pcid="1310">
+    function addressresolver_importAddresses_114() internal {
+        bytes32[] memory addressresolver_importAddresses_names_114_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_114_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_114_1 = new address[](1);
+        addressresolver_importAddresses_destinations_114_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_114_0,
+            addressresolver_importAddresses_destinations_114_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep2.sol" startline="580" endline="589" pcid="1340">
+    function addressresolver_importAddresses_114() internal {
+        bytes32[] memory addressresolver_importAddresses_names_114_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_114_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_114_1 = new address[](1);
+        addressresolver_importAddresses_destinations_114_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_114_0,
+            addressresolver_importAddresses_destinations_114_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep4.sol" startline="580" endline="589" pcid="1400">
+    function addressresolver_importAddresses_114() internal {
+        bytes32[] memory addressresolver_importAddresses_names_114_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_114_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_114_1 = new address[](1);
+        addressresolver_importAddresses_destinations_114_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_114_0,
+            addressresolver_importAddresses_destinations_114_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep3.sol" startline="580" endline="589" pcid="1370">
+    function addressresolver_importAddresses_114() internal {
+        bytes32[] memory addressresolver_importAddresses_names_114_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_114_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_114_1 = new address[](1);
+        addressresolver_importAddresses_destinations_114_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_114_0,
+            addressresolver_importAddresses_destinations_114_1
+        );
+    }
+</source>
+</class>
+
+<class classid="115" nclones="4" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_IzarOptimismStep1.sol" startline="591" endline="600" pcid="1311">
+    function addressresolver_importAddresses_116() internal {
+        bytes32[] memory addressresolver_importAddresses_names_116_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_116_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_116_1 = new address[](1);
+        addressresolver_importAddresses_destinations_116_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_116_0,
+            addressresolver_importAddresses_destinations_116_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep3.sol" startline="591" endline="600" pcid="1371">
+    function addressresolver_importAddresses_116() internal {
+        bytes32[] memory addressresolver_importAddresses_names_116_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_116_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_116_1 = new address[](1);
+        addressresolver_importAddresses_destinations_116_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_116_0,
+            addressresolver_importAddresses_destinations_116_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep2.sol" startline="591" endline="600" pcid="1341">
+    function addressresolver_importAddresses_116() internal {
+        bytes32[] memory addressresolver_importAddresses_names_116_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_116_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_116_1 = new address[](1);
+        addressresolver_importAddresses_destinations_116_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_116_0,
+            addressresolver_importAddresses_destinations_116_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_IzarOptimismStep4.sol" startline="591" endline="600" pcid="1401">
+    function addressresolver_importAddresses_116() internal {
+        bytes32[] memory addressresolver_importAddresses_names_116_0 = new bytes32[](1);
+        addressresolver_importAddresses_names_116_0[0] = bytes32("PerpsV2MarketData");
+        address[] memory addressresolver_importAddresses_destinations_116_1 = new address[](1);
+        addressresolver_importAddresses_destinations_116_1[0] = address(new_PerpsV2MarketData_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_116_0,
+            addressresolver_importAddresses_destinations_116_1
+        );
+    }
+</source>
+</class>
+
+<class classid="116" nclones="2" nlines="9" similarity="100">
+<source file="systems/source-code/Migration_Naos.sol" startline="106" endline="117" pcid="1444">
+    function addressresolver_importAddresses_0() internal {
+        bytes32[] memory addressresolver_importAddresses_names_0_0 = new bytes32[](2);
+        addressresolver_importAddresses_names_0_0[0] = bytes32("Synthetix");
+        addressresolver_importAddresses_names_0_0[1] = bytes32("Issuer");
+        address[] memory addressresolver_importAddresses_destinations_0_1 = new address[](2);
+        addressresolver_importAddresses_destinations_0_1[0] = address(new_Synthetix_contract);
+        addressresolver_importAddresses_destinations_0_1[1] = address(new_Issuer_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_0_0,
+            addressresolver_importAddresses_destinations_0_1
+        );
+    }
+</source>
+<source file="systems/source-code/Migration_NaosOptimism.sol" startline="98" endline="109" pcid="1452">
+    function addressresolver_importAddresses_0() internal {
+        bytes32[] memory addressresolver_importAddresses_names_0_0 = new bytes32[](2);
+        addressresolver_importAddresses_names_0_0[0] = bytes32("Synthetix");
+        addressresolver_importAddresses_names_0_0[1] = bytes32("Issuer");
+        address[] memory addressresolver_importAddresses_destinations_0_1 = new address[](2);
+        addressresolver_importAddresses_destinations_0_1[0] = address(new_Synthetix_contract);
+        addressresolver_importAddresses_destinations_0_1[1] = address(new_Issuer_contract);
+        addressresolver_i.importAddresses(
+            addressresolver_importAddresses_names_0_0,
+            addressresolver_importAddresses_destinations_0_1
+        );
+    }
+</source>
+</class>
+
+<class classid="117" nclones="3" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="46" endline="49" pcid="1540">
+    function resolverAddressesRequired() public view returns (bytes32[] memory addresses) {
+        addresses = new bytes32[](1);
+        addresses[0] = CONTRACT_FLEXIBLESTORAGE;
+    }
+</source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="64" endline="67" pcid="1580">
+    function resolverAddressesRequired() public view returns (bytes32[] memory addresses) {
+        addresses = new bytes32[](1);
+        addresses[0] = CONTRACT_FLEXIBLESTORAGE;
+    }
+</source>
+<source file="systems/source-code/MixinSystemSettings.sol" startline="74" endline="77" pcid="1615">
+    function resolverAddressesRequired() public view returns (bytes32[] memory addresses) {
+        addresses = new bytes32[](1);
+        addresses[0] = CONTRACT_FLEXIBLESTORAGE;
+    }
+</source>
+</class>
+
+<class classid="118" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="51" endline="53" pcid="1541">
+    function _flexibleStorage() internal view returns (IFlexibleStorage) {
+        return IFlexibleStorage(requireAndGetAddress(CONTRACT_FLEXIBLESTORAGE));
+    }
+</source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="69" endline="71" pcid="1581">
+    function _flexibleStorage() internal view returns (IFlexibleStorage) {
+        return IFlexibleStorage(requireAndGetAddress(CONTRACT_FLEXIBLESTORAGE));
+    }
+</source>
+</class>
+
+<class classid="119" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="57" endline="59" pcid="1542">
+    function _parameter(bytes32 _marketKey, bytes32 key) internal view returns (uint value) {
+        return _flexibleStorage().getUIntValue(SETTING_CONTRACT_NAME, keccak256(abi.encodePacked(_marketKey, key)));
+    }
+</source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="75" endline="77" pcid="1582">
+    function _parameter(bytes32 _marketKey, bytes32 key) internal view returns (uint value) {
+        return _flexibleStorage().getUIntValue(SETTING_CONTRACT_NAME, keccak256(abi.encodePacked(_marketKey, key)));
+    }
+</source>
+</class>
+
+<class classid="120" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="61" endline="63" pcid="1543">
+    function _takerFee(bytes32 _marketKey) internal view returns (uint) {
+        return _parameter(_marketKey, PARAMETER_TAKER_FEE);
+    }
+</source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="79" endline="81" pcid="1583">
+    function _takerFee(bytes32 _marketKey) internal view returns (uint) {
+        return _parameter(_marketKey, PARAMETER_TAKER_FEE);
+    }
+</source>
+</class>
+
+<class classid="121" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="65" endline="67" pcid="1544">
+    function _makerFee(bytes32 _marketKey) internal view returns (uint) {
+        return _parameter(_marketKey, PARAMETER_MAKER_FEE);
+    }
+</source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="83" endline="85" pcid="1584">
+    function _makerFee(bytes32 _marketKey) internal view returns (uint) {
+        return _parameter(_marketKey, PARAMETER_MAKER_FEE);
+    }
+</source>
+</class>
+
+<class classid="122" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="77" endline="79" pcid="1547">
+    function _nextPriceConfirmWindow(bytes32 _marketKey) internal view returns (uint) {
+        return _parameter(_marketKey, PARAMETER_NEXT_PRICE_CONFIRM_WINDOW);
+    }
+</source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="103" endline="105" pcid="1589">
+    function _nextPriceConfirmWindow(bytes32 _marketKey) internal view returns (uint) {
+        return _parameter(_marketKey, PARAMETER_NEXT_PRICE_CONFIRM_WINDOW);
+    }
+</source>
+</class>
+
+<class classid="123" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="81" endline="83" pcid="1548">
+    function _maxLeverage(bytes32 _marketKey) internal view returns (uint) {
+        return _parameter(_marketKey, PARAMETER_MAX_LEVERAGE);
+    }
+</source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="119" endline="121" pcid="1593">
+    function _maxLeverage(bytes32 _marketKey) internal view returns (uint) {
+        return _parameter(_marketKey, PARAMETER_MAX_LEVERAGE);
+    }
+</source>
+</class>
+
+<class classid="124" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="97" endline="99" pcid="1552">
+    function _minKeeperFee() internal view returns (uint) {
+        return _flexibleStorage().getUIntValue(SETTING_CONTRACT_NAME, SETTING_MIN_KEEPER_FEE);
+    }
+</source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="171" endline="173" pcid="1605">
+    function _minKeeperFee() internal view returns (uint) {
+        return _flexibleStorage().getUIntValue(SETTING_CONTRACT_NAME, SETTING_MIN_KEEPER_FEE);
+    }
+</source>
+</class>
+
+<class classid="125" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="101" endline="103" pcid="1553">
+    function _liquidationFeeRatio() internal view returns (uint) {
+        return _flexibleStorage().getUIntValue(SETTING_CONTRACT_NAME, SETTING_LIQUIDATION_FEE_RATIO);
+    }
+</source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="179" endline="181" pcid="1607">
+    function _liquidationFeeRatio() internal view returns (uint) {
+        return _flexibleStorage().getUIntValue(SETTING_CONTRACT_NAME, SETTING_LIQUIDATION_FEE_RATIO);
+    }
+</source>
+</class>
+
+<class classid="126" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="109" endline="111" pcid="1555">
+    function _minInitialMargin() internal view returns (uint) {
+        return _flexibleStorage().getUIntValue(SETTING_CONTRACT_NAME, SETTING_MIN_INITIAL_MARGIN);
+    }
+</source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="183" endline="185" pcid="1608">
+    function _minInitialMargin() internal view returns (uint) {
+        return _flexibleStorage().getUIntValue(SETTING_CONTRACT_NAME, SETTING_MIN_INITIAL_MARGIN);
+    }
+</source>
+</class>
+
+<class classid="127" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="50" endline="52" pcid="1568">
+    function fundingSequenceLength() external view returns (uint) {
+        return fundingSequence.length;
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketStateLegacyR1.sol" startline="108" endline="110" pcid="2021">
+    function fundingSequenceLength() external view returns (uint) {
+        return fundingSequence.length;
+    }
+</source>
+</class>
+
+<class classid="128" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MockEtherWrapper.sol" startline="13" endline="15" pcid="1675">
+    function setTotalIssuedSynths(uint value) external {
+        totalIssuedSynths = value;
+    }
+</source>
+<source file="systems/source-code/MockWrapperFactory.sol" startline="13" endline="15" pcid="1760">
+    function setTotalIssuedSynths(uint value) external {
+        totalIssuedSynths = value;
+    }
+</source>
+</class>
+
+<class classid="129" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MockFuturesMarket.sol" startline="34" endline="36" pcid="1689">
+    function setBaseAsset(bytes32 _baseAsset) external {
+        baseAsset = _baseAsset;
+    }
+</source>
+<source file="systems/source-code/MockPerpsV2Market.sol" startline="39" endline="41" pcid="1703">
+    function setBaseAsset(bytes32 _baseAsset) external {
+        baseAsset = _baseAsset;
+    }
+</source>
+</class>
+
+<class classid="130" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MockFuturesMarket.sol" startline="38" endline="40" pcid="1690">
+    function setMarketKey(bytes32 _marketKey) external {
+        marketKey = _marketKey;
+    }
+</source>
+<source file="systems/source-code/MockPerpsV2Market.sol" startline="43" endline="45" pcid="1704">
+    function setMarketKey(bytes32 _marketKey) external {
+        marketKey = _marketKey;
+    }
+</source>
+</class>
+
+<class classid="131" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MockFuturesMarket.sol" startline="42" endline="44" pcid="1691">
+    function setMarketDebt(uint _debt) external {
+        debt = _debt;
+    }
+</source>
+<source file="systems/source-code/MockPerpsV2Market.sol" startline="47" endline="49" pcid="1705">
+    function setMarketDebt(uint _debt) external {
+        debt = _debt;
+    }
+</source>
+</class>
+
+<class classid="132" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MockFuturesMarket.sol" startline="46" endline="48" pcid="1692">
+    function setInvalid(bool _invalid) external {
+        invalid = _invalid;
+    }
+</source>
+<source file="systems/source-code/MockPerpsV2Market.sol" startline="51" endline="53" pcid="1706">
+    function setInvalid(bool _invalid) external {
+        invalid = _invalid;
+    }
+</source>
+</class>
+
+<class classid="133" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MockFuturesMarket.sol" startline="50" endline="52" pcid="1693">
+    function marketDebt() external view returns (uint _debt, bool _invalid) {
+        return (debt, invalid);
+    }
+</source>
+<source file="systems/source-code/MockPerpsV2Market.sol" startline="55" endline="57" pcid="1707">
+    function marketDebt() external view returns (uint _debt, bool _invalid) {
+        return (debt, invalid);
+    }
+</source>
+</class>
+
+<class classid="134" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MockFuturesMarket.sol" startline="54" endline="56" pcid="1694">
+    function issueSUSD(address account, uint amount) external {
+        manager.issueSUSD(account, amount);
+    }
+</source>
+<source file="systems/source-code/MockPerpsV2Market.sol" startline="59" endline="61" pcid="1708">
+    function issueSUSD(address account, uint amount) external {
+        manager.issueSUSD(account, amount);
+    }
+</source>
+</class>
+
+<class classid="135" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MockFuturesMarket.sol" startline="58" endline="60" pcid="1695">
+    function burnSUSD(address account, uint amount) external {
+        manager.burnSUSD(account, amount);
+    }
+</source>
+<source file="systems/source-code/MockPerpsV2Market.sol" startline="63" endline="65" pcid="1709">
+    function burnSUSD(address account, uint amount) external {
+        manager.burnSUSD(account, amount);
+    }
+</source>
+</class>
+
+<class classid="136" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/OwnerRelayOnEthereum.sol" startline="24" endline="26" pcid="1784">
+    function _messenger() private view returns (iAbs_BaseCrossDomainMessenger) {
+        return iAbs_BaseCrossDomainMessenger(requireAndGetAddress(CONTRACT_EXT_MESSENGER));
+    }
+</source>
+<source file="systems/source-code/OwnerRelayOnOptimism.sol" startline="28" endline="30" pcid="1790">
+    function _messenger() private view returns (iAbs_BaseCrossDomainMessenger) {
+        return iAbs_BaseCrossDomainMessenger(requireAndGetAddress(CONTRACT_EXT_MESSENGER));
+    }
+</source>
+</class>
+
+<class classid="137" nclones="2" nlines="8" similarity="100">
+<source file="systems/source-code/PerpsV2ExchangeRate.sol" startline="58" endline="65" pcid="1802">
+    function removeAssociatedContracts(address[] calldata associatedContracts) external onlyOwner {
+        for (uint i = 0; i < associatedContracts.length; i++) {
+            if (_associatedContracts.contains(associatedContracts[i])) {
+                _associatedContracts.remove(associatedContracts[i]);
+                emit AssociatedContractRemoved(associatedContracts[i]);
+            }
+        }
+    }
+</source>
+<source file="systems/source-code/StateShared.sol" startline="48" endline="55" pcid="2234">
+    function removeAssociatedContracts(address[] calldata associatedContracts) external onlyOwner {
+        for (uint i = 0; i < associatedContracts.length; i++) {
+            if (_associatedContracts.contains(associatedContracts[i])) {
+                _associatedContracts.remove(associatedContracts[i]);
+                emit AssociatedContractRemoved(associatedContracts[i]);
+            }
+        }
+    }
+</source>
+</class>
+
+<class classid="138" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PerpsV2ExchangeRate.sol" startline="67" endline="69" pcid="1803">
+    function associatedContracts() external view returns (address[] memory) {
+        return _associatedContracts.getPage(0, _associatedContracts.elements.length);
+    }
+</source>
+<source file="systems/source-code/StateShared.sol" startline="57" endline="59" pcid="2235">
+    function associatedContracts() external view returns (address[] memory) {
+        return _associatedContracts.getPage(0, _associatedContracts.elements.length);
+    }
+</source>
+</class>
+
+<class classid="139" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PerpsV2MarketState.sol" startline="148" endline="150" pcid="1991">
+    function entryDebtCorrection() external view returns (int128) {
+        return _entryDebtCorrection;
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketStateLegacyR1.sol" startline="100" endline="102" pcid="2019">
+    function entryDebtCorrection() external view returns (int128) {
+        return _entryDebtCorrection;
+    }
+</source>
+</class>
+
+<class classid="140" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PerpsV2MarketState.sol" startline="152" endline="154" pcid="1992">
+    function nextPositionId() external view returns (uint64) {
+        return _nextPositionId;
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketStateLegacyR1.sol" startline="104" endline="106" pcid="2020">
+    function nextPositionId() external view returns (uint64) {
+        return _nextPositionId;
+    }
+</source>
+</class>
+
+<class classid="141" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PerpsV2MarketState.sol" startline="218" endline="225" pcid="1998">
+    function getPositionAddressesPage(uint index, uint pageSize)
+        external
+        view
+        onlyAssociatedContracts
+        returns (address[] memory)
+    {
+        return _positionAddresses.getPage(index, pageSize);
+    }
+</source>
+<source file="systems/source-code/PerpsV2MarketStateLegacyR1.sol" startline="112" endline="119" pcid="2022">
+    function getPositionAddressesPage(uint index, uint pageSize)
+        external
+        view
+        onlyAssociatedContracts
+        returns (address[] memory)
+    {
+        return _positionAddresses.getPage(index, pageSize);
+    }
+</source>
+</class>
+
+<class classid="142" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="18" endline="20" pcid="2085">
+    function transfer(address to, uint value) external optionalProxy returns (bool) {
+        return _transferByProxy(messageSender, to, value);
+    }
+</source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="17" endline="19" pcid="2089">
+    function transfer(address to, uint value) external optionalProxy returns (bool) {
+        return _transferByProxy(messageSender, to, value);
+    }
+</source>
+</class>
+
+<class classid="143" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="22" endline="28" pcid="2086">
+    function transferFrom(
+        address from,
+        address to,
+        uint value
+    ) external optionalProxy returns (bool) {
+        return _transferFromByProxy(messageSender, from, to, value);
+    }
+</source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="21" endline="27" pcid="2090">
+    function transferFrom(
+        address from,
+        address to,
+        uint value
+    ) external optionalProxy returns (bool) {
+        return _transferFromByProxy(messageSender, from, to, value);
+    }
+</source>
+</class>
+
+<class classid="144" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="33" endline="35" pcid="2087">
+    function somethingToBeProxied(uint256 inputA, bytes32 inputB) external {
+        emit Received(messageSender, inputA, inputB);
+    }
+</source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="32" endline="34" pcid="2091">
+    function somethingToBeProxied(uint256 inputA, bytes32 inputB) external {
+        emit Received(messageSender, inputA, inputB);
+    }
+</source>
+</class>
+
+<class classid="145" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="60" endline="63" pcid="2107">
+    function setSynthetix(ISynthetix _synthetix) external onlyOwner {
+        synthetix = _synthetix;
+        emit SynthetixUpdated(address(_synthetix));
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="46" endline="49" pcid="2332">
+    function setSynthetix(ISynthetix _synthetix) external onlyOwner {
+        synthetix = _synthetix;
+        emit SynthetixUpdated(address(_synthetix));
+    }
+</source>
+</class>
+
+<class classid="146" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="98" endline="100" pcid="2112">
+    function getVestingScheduleEntry(address account, uint index) public view returns (uint[2] memory) {
+        return vestingSchedules[account][index];
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="71" endline="73" pcid="2335">
+    function getVestingScheduleEntry(address account, uint index) public view returns (uint[2] memory) {
+        return vestingSchedules[account][index];
+    }
+</source>
+</class>
+
+<class classid="147" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="105" endline="107" pcid="2113">
+    function getVestingTime(address account, uint index) public view returns (uint) {
+        return getVestingScheduleEntry(account, index)[TIME_INDEX];
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="78" endline="80" pcid="2336">
+    function getVestingTime(address account, uint index) public view returns (uint) {
+        return getVestingScheduleEntry(account, index)[TIME_INDEX];
+    }
+</source>
+</class>
+
+<class classid="148" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="112" endline="114" pcid="2114">
+    function getVestingQuantity(address account, uint index) public view returns (uint) {
+        return getVestingScheduleEntry(account, index)[QUANTITY_INDEX];
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="85" endline="87" pcid="2337">
+    function getVestingQuantity(address account, uint index) public view returns (uint) {
+        return getVestingScheduleEntry(account, index)[QUANTITY_INDEX];
+    }
+</source>
+</class>
+
+<class classid="149" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="143" endline="145" pcid="2117">
+    function getNextVestingTime(address account) external view returns (uint) {
+        return getNextVestingEntry(account)[TIME_INDEX];
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="116" endline="118" pcid="2340">
+    function getNextVestingTime(address account) external view returns (uint) {
+        return getNextVestingEntry(account)[TIME_INDEX];
+    }
+</source>
+</class>
+
+<class classid="150" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="150" endline="152" pcid="2118">
+    function getNextVestingQuantity(address account) external view returns (uint) {
+        return getNextVestingEntry(account)[QUANTITY_INDEX];
+    }
+</source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="123" endline="125" pcid="2341">
+    function getNextVestingQuantity(address account) external view returns (uint) {
+        return getNextVestingEntry(account)[QUANTITY_INDEX];
+    }
+</source>
+</class>
+
+<class classid="151" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrowV2.sol" startline="29" endline="31" pcid="2124">
+    function synthetixBridgeToOptimism() internal view returns (address) {
+        return requireAndGetAddress(CONTRACT_SYNTHETIX_BRIDGE_OPTIMISM);
+    }
+</source>
+<source file="systems/source-code/RewardEscrowV2Frozen.sol" startline="44" endline="46" pcid="2127">
+    function synthetixBridgeToOptimism() internal view returns (address) {
+        return requireAndGetAddress(CONTRACT_SYNTHETIX_BRIDGE_OPTIMISM);
+    }
+</source>
+</class>
+
+<class classid="152" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="65" endline="67" pcid="2188">
+    function totalSupply() external view returns (uint256) {
+        return _totalSupply;
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="49" endline="51" pcid="2216">
+    function totalSupply() external view returns (uint256) {
+        return _totalSupply;
+    }
+</source>
+</class>
+
+<class classid="153" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="69" endline="71" pcid="2189">
+    function balanceOf(address account) external view returns (uint256) {
+        return _balances[account];
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="53" endline="55" pcid="2217">
+    function balanceOf(address account) external view returns (uint256) {
+        return _balances[account];
+    }
+</source>
+</class>
+
+<class classid="154" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="73" endline="75" pcid="2190">
+    function lastTimeRewardApplicable() public view returns (uint256) {
+        return block.timestamp < periodFinish ? block.timestamp : periodFinish;
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="57" endline="59" pcid="2218">
+    function lastTimeRewardApplicable() public view returns (uint256) {
+        return block.timestamp < periodFinish ? block.timestamp : periodFinish;
+    }
+</source>
+</class>
+
+<class classid="155" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="77" endline="85" pcid="2191">
+    function rewardPerToken() public view returns (uint256) {
+        if (_totalSupply == 0) {
+            return rewardPerTokenStored;
+        }
+        return
+            rewardPerTokenStored.add(
+                lastTimeRewardApplicable().sub(lastUpdateTime).mul(rewardRate).mul(1e18).div(_totalSupply)
+            );
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="61" endline="69" pcid="2219">
+    function rewardPerToken() public view returns (uint256) {
+        if (_totalSupply == 0) {
+            return rewardPerTokenStored;
+        }
+        return
+            rewardPerTokenStored.add(
+                lastTimeRewardApplicable().sub(lastUpdateTime).mul(rewardRate).mul(1e18).div(_totalSupply)
+            );
+    }
+</source>
+</class>
+
+<class classid="156" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="87" endline="89" pcid="2192">
+    function earned(address account) public view returns (uint256) {
+        return _balances[account].mul(rewardPerToken().sub(userRewardPerTokenPaid[account])).div(1e18).add(rewards[account]);
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="71" endline="73" pcid="2220">
+    function earned(address account) public view returns (uint256) {
+        return _balances[account].mul(rewardPerToken().sub(userRewardPerTokenPaid[account])).div(1e18).add(rewards[account]);
+    }
+</source>
+</class>
+
+<class classid="157" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="91" endline="93" pcid="2193">
+    function getRewardForDuration() external view returns (uint256) {
+        return rewardRate.mul(rewardsDuration);
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="75" endline="77" pcid="2221">
+    function getRewardForDuration() external view returns (uint256) {
+        return rewardRate.mul(rewardsDuration);
+    }
+</source>
+</class>
+
+<class classid="158" nclones="2" nlines="15" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="125" endline="144" pcid="2197">
+    function notifyRewardAmount(uint256 reward) external onlyRewardsDistribution updateReward(address(0)) {
+        if (block.timestamp >= periodFinish) {
+            rewardRate = reward.div(rewardsDuration);
+        } else {
+            uint256 remaining = periodFinish.sub(block.timestamp);
+            uint256 leftover = remaining.mul(rewardRate);
+            rewardRate = reward.add(leftover).div(rewardsDuration);
+        }
+
+        // Ensure the provided reward amount is not more than the balance in the contract.
+        // This keeps the reward rate in the right range, preventing overflows due to
+        // very high values of rewardRate in the earned and rewardsPerToken functions;
+        // Reward + leftover must be less than 2^256 / 10^18 to avoid overflow.
+        uint balance = rewardsToken.balanceOf(address(this));
+        require(rewardRate <= balance.div(rewardsDuration), "Provided reward too high");
+
+        lastUpdateTime = block.timestamp;
+        periodFinish = block.timestamp.add(rewardsDuration);
+        emit RewardAdded(reward);
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="113" endline="132" pcid="2226">
+    function notifyRewardAmount(uint256 reward) external onlyRewardsDistribution updateReward(address(0)) {
+        if (block.timestamp >= periodFinish) {
+            rewardRate = reward.div(rewardsDuration);
+        } else {
+            uint256 remaining = periodFinish.sub(block.timestamp);
+            uint256 leftover = remaining.mul(rewardRate);
+            rewardRate = reward.add(leftover).div(rewardsDuration);
+        }
+
+        // Ensure the provided reward amount is not more than the balance in the contract.
+        // This keeps the reward rate in the right range, preventing overflows due to
+        // very high values of rewardRate in the earned and rewardsPerToken functions;
+        // Reward + leftover must be less than 2^256 / 10^18 to avoid overflow.
+        uint balance = rewardsToken.balanceOf(address(this));
+        require(rewardRate <= balance.div(rewardsDuration), "Provided reward too high");
+
+        lastUpdateTime = block.timestamp;
+        periodFinish = block.timestamp.add(rewardsDuration);
+        emit RewardAdded(reward);
+    }
+</source>
+</class>
+
+<class classid="159" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="146" endline="153" pcid="2198">
+    function setRewardsDuration(uint256 _rewardsDuration) external onlyOwner {
+        require(
+            block.timestamp > periodFinish,
+            "Previous rewards period must be complete before changing the duration for the new period"
+        );
+        rewardsDuration = _rewardsDuration;
+        emit RewardsDurationUpdated(rewardsDuration);
+    }
+</source>
+<source file="systems/source-code/StakingRewards.sol" startline="141" endline="148" pcid="2228">
+    function setRewardsDuration(uint256 _rewardsDuration) external onlyOwner {
+        require(
+            block.timestamp > periodFinish,
+            "Previous rewards period must be complete before changing the duration for the new period"
+        );
+        rewardsDuration = _rewardsDuration;
+        emit RewardsDurationUpdated(rewardsDuration);
+    }
+</source>
+</class>
+
+<class classid="160" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TestableAddressSet.sol" startline="26" endline="28" pcid="2551">
+    function size() public view returns (uint) {
+        return set.elements.length;
+    }
+</source>
+<source file="systems/source-code/TestableBytes32Set.sol" startline="26" endline="28" pcid="2558">
+    function size() public view returns (uint) {
+        return set.elements.length;
+    }
+</source>
+</class>
+
+</clones>

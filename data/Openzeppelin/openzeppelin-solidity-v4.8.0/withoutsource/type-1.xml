@@ -1,0 +1,387 @@
+<clones>
+<systeminfo processor="nicad6" system="source-code" granularity="functions" threshold="0%" minlines="3" maxlines="2500"/>
+<cloneinfo npcs="806" npairs="295"/>
+<runinfo ncompares="192444" cputime="12424"/>
+<classinfo nclasses="61"/>
+
+<class classid="1" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/AccessControlCrossChainMock.sol" startline="13" endline="15" pcid="1"></source>
+<source file="systems/source-code/AccessControlEnumerableMock.sol" startline="12" endline="14" pcid="4"></source>
+<source file="systems/source-code/AccessControlMock.sol" startline="12" endline="14" pcid="6"></source>
+</class>
+
+<class classid="2" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/CheckpointsMock.sol" startline="29" endline="31" pcid="36"></source>
+<source file="systems/source-code/CheckpointsMock.sol" startline="67" endline="69" pcid="42"></source>
+<source file="systems/source-code/CheckpointsMock.sol" startline="105" endline="107" pcid="48"></source>
+</class>
+
+<class classid="3" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/EIP712External.sol" startline="28" endline="30" pcid="102"></source>
+<source file="systems/source-code/ERC20PermitMock.sol" startline="17" endline="19" pcid="285"></source>
+<source file="systems/source-code/ERC20VotesMock.sol" startline="18" endline="20" pcid="300"></source>
+<source file="systems/source-code/VotesMock.sol" startline="37" endline="39" pcid="775"></source>
+<source file="systems/source-code/ERC721VotesMock.sol" startline="22" endline="24" pcid="368"></source>
+<source file="systems/source-code/ERC20VotesCompMock.sol" startline="18" endline="20" pcid="295"></source>
+</class>
+
+<class classid="4" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/EnumerableMapMock.sol" startline="16" endline="18" pcid="143"></source>
+<source file="systems/source-code/EnumerableMapMock.sol" startline="145" endline="147" pcid="167"></source>
+</class>
+
+<class classid="5" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/EnumerableMapMock.sol" startline="25" endline="28" pcid="145"></source>
+<source file="systems/source-code/EnumerableMapMock.sol" startline="154" endline="157" pcid="169"></source>
+</class>
+
+<class classid="6" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/EnumerableMapMock.sol" startline="30" endline="32" pcid="146"></source>
+<source file="systems/source-code/EnumerableMapMock.sol" startline="159" endline="161" pcid="170"></source>
+<source file="systems/source-code/EnumerableMapMock.sol" startline="116" endline="118" pcid="162"></source>
+<source file="systems/source-code/EnumerableMapMock.sol" startline="73" endline="75" pcid="154"></source>
+<source file="systems/source-code/EnumerableMapMock.sol" startline="202" endline="204" pcid="178"></source>
+</class>
+
+<class classid="7" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/EnumerableMapMock.sol" startline="102" endline="104" pcid="159"></source>
+<source file="systems/source-code/EnumerableMapMock.sol" startline="188" endline="190" pcid="175"></source>
+</class>
+
+<class classid="8" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/EnumerableMapMock.sol" startline="111" endline="114" pcid="161"></source>
+<source file="systems/source-code/EnumerableMapMock.sol" startline="197" endline="200" pcid="177"></source>
+</class>
+
+<class classid="9" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/EnumerableSetMock.sol" startline="30" endline="32" pcid="210"></source>
+<source file="systems/source-code/EnumerableSetMock.sol" startline="100" endline="102" pcid="222"></source>
+<source file="systems/source-code/EnumerableSetMock.sol" startline="65" endline="67" pcid="216"></source>
+</class>
+
+<class classid="10" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC1155BurnableMock.sol" startline="10" endline="17" pcid="225"></source>
+<source file="systems/source-code/ERC1155Mock.sol" startline="18" endline="25" pcid="229"></source>
+</class>
+
+<class classid="11" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/ERC1155PausableMock.sol" startline="11" endline="13" pcid="233"></source>
+<source file="systems/source-code/PausableMock.sol" startline="24" endline="26" pcid="541"></source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="14" endline="16" pcid="338"></source>
+<source file="systems/source-code/ERC721ConsecutiveMock.sol" startline="31" endline="33" pcid="313"></source>
+<source file="systems/source-code/ERC20PausableMock.sol" startline="18" endline="20" pcid="281"></source>
+</class>
+
+<class classid="12" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/ERC1155PausableMock.sol" startline="15" endline="17" pcid="234"></source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="18" endline="20" pcid="339"></source>
+<source file="systems/source-code/PausableMock.sol" startline="28" endline="30" pcid="542"></source>
+<source file="systems/source-code/ERC721ConsecutiveMock.sol" startline="35" endline="37" pcid="314"></source>
+<source file="systems/source-code/ERC20PausableMock.sol" startline="22" endline="24" pcid="282"></source>
+</class>
+
+<class classid="13" nclones="8" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20CappedMock.sol" startline="14" endline="16" pcid="270"></source>
+<source file="systems/source-code/ERC721BurnableMock.sol" startline="14" endline="16" pcid="305"></source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="26" endline="28" pcid="341"></source>
+<source file="systems/source-code/ERC721Mock.sol" startline="22" endline="24" pcid="334"></source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="36" endline="38" pcid="361"></source>
+<source file="systems/source-code/ERC721ConsecutiveMock.sol" startline="43" endline="45" pcid="316"></source>
+<source file="systems/source-code/ERC721RoyaltyMock.sol" startline="22" endline="24" pcid="353"></source>
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="32" endline="34" pcid="327"></source>
+</class>
+
+<class classid="14" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20FlashMintMock.sol" startline="20" endline="22" pcid="271"></source>
+<source file="systems/source-code/ERC20VotesCompMock.sol" startline="10" endline="12" pcid="293"></source>
+<source file="systems/source-code/ERC20VotesMock.sol" startline="10" endline="12" pcid="298"></source>
+<source file="systems/source-code/ERC20SnapshotMock.sol" startline="21" endline="23" pcid="291"></source>
+<source file="systems/source-code/ERC20Mock.sol" startline="18" endline="20" pcid="277"></source>
+</class>
+
+<class classid="15" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20Mock.sol" startline="22" endline="24" pcid="278"></source>
+<source file="systems/source-code/ERC20VotesCompMock.sol" startline="14" endline="16" pcid="294"></source>
+<source file="systems/source-code/ERC20VotesMock.sol" startline="14" endline="16" pcid="299"></source>
+<source file="systems/source-code/ERC20SnapshotMock.sol" startline="25" endline="27" pcid="292"></source>
+</class>
+
+<class classid="16" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721BurnableMock.sol" startline="10" endline="12" pcid="304"></source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="32" endline="34" pcid="360"></source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="22" endline="24" pcid="340"></source>
+<source file="systems/source-code/ERC721ConsecutiveMock.sol" startline="39" endline="41" pcid="315"></source>
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="28" endline="30" pcid="326"></source>
+<source file="systems/source-code/ERC721Mock.sol" startline="18" endline="20" pcid="333"></source>
+</class>
+
+<class classid="17" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721BurnableMock.sol" startline="18" endline="20" pcid="306"></source>
+<source file="systems/source-code/ERC721ConsecutiveMock.sol" startline="51" endline="53" pcid="318"></source>
+<source file="systems/source-code/ERC721Mock.sol" startline="26" endline="28" pcid="335"></source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="40" endline="42" pcid="362"></source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="30" endline="32" pcid="342"></source>
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="36" endline="38" pcid="328"></source>
+</class>
+
+<class classid="18" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721BurnableMock.sol" startline="22" endline="28" pcid="307"></source>
+<source file="systems/source-code/ERC721Mock.sol" startline="30" endline="36" pcid="336"></source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="34" endline="40" pcid="343"></source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="44" endline="50" pcid="363"></source>
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="40" endline="46" pcid="329"></source>
+</class>
+
+<class classid="19" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721ConsecutiveEnumerableMock.sol" startline="30" endline="32" pcid="309"></source>
+<source file="systems/source-code/ERC721ConsecutiveMock.sol" startline="55" endline="57" pcid="319"></source>
+</class>
+
+<class classid="20" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721ConsecutiveEnumerableMock.sol" startline="34" endline="36" pcid="310"></source>
+<source file="systems/source-code/ERC721ConsecutiveMock.sol" startline="59" endline="61" pcid="320"></source>
+</class>
+
+<class classid="21" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="16" endline="18" pcid="323"></source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="16" endline="18" pcid="356"></source>
+</class>
+
+<class classid="22" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="20" endline="22" pcid="324"></source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="20" endline="22" pcid="357"></source>
+</class>
+
+<class classid="23" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="24" endline="26" pcid="325"></source>
+<source file="systems/source-code/ERC721Mock.sol" startline="14" endline="16" pcid="332"></source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="24" endline="26" pcid="358"></source>
+</class>
+
+<class classid="24" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="48" endline="50" pcid="330"></source>
+<source file="systems/source-code/ERC721Mock.sol" startline="38" endline="40" pcid="337"></source>
+<source file="systems/source-code/ERC721RoyaltyMock.sol" startline="26" endline="28" pcid="354"></source>
+<source file="systems/source-code/ERC721VotesMock.sol" startline="18" endline="20" pcid="367"></source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="42" endline="44" pcid="344"></source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="52" endline="54" pcid="364"></source>
+</class>
+
+<class classid="25" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721VotesMock.sol" startline="10" endline="12" pcid="365"></source>
+<source file="systems/source-code/VotesMock.sol" startline="13" endline="15" pcid="770"></source>
+</class>
+
+<class classid="26" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="39" endline="41" pcid="387"></source>
+<source file="systems/source-code/GovernorCompMock.sol" startline="11" endline="13" pcid="398"></source>
+<source file="systems/source-code/GovernorWithParamsMock.sol" startline="13" endline="15" pcid="430"></source>
+<source file="systems/source-code/GovernorVoteMock.sol" startline="11" endline="13" pcid="426"></source>
+</class>
+
+<class classid="27" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="61" endline="63" pcid="390"></source>
+<source file="systems/source-code/GovernorPreventLateQuorumMock.sol" startline="47" endline="49" pcid="407"></source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="70" endline="72" pcid="413"></source>
+<source file="systems/source-code/GovernorMock.sol" startline="38" endline="40" pcid="403"></source>
+<source file="systems/source-code/GovernorTimelockControlMock.sol" startline="65" endline="67" pcid="421"></source>
+</class>
+
+<class classid="28" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="92" endline="100" pcid="394"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="109" endline="114" pcid="803"></source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="74" endline="82" pcid="414"></source>
+</class>
+
+<class classid="29" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="106" endline="113" pcid="395"></source>
+<source file="systems/source-code/GovernorWithParamsMock.sol" startline="53" endline="60" pcid="435"></source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="49" endline="56" pcid="411"></source>
+<source file="systems/source-code/GovernorVoteMock.sol" startline="23" endline="30" pcid="429"></source>
+<source file="systems/source-code/GovernorMock.sol" startline="29" endline="36" pcid="402"></source>
+<source file="systems/source-code/GovernorCompMock.sol" startline="23" endline="30" pcid="401"></source>
+</class>
+
+<class classid="30" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="115" endline="122" pcid="396"></source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="84" endline="91" pcid="415"></source>
+</class>
+
+<class classid="31" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="124" endline="126" pcid="397"></source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="93" endline="95" pcid="416"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="124" endline="131" pcid="805"></source>
+</class>
+
+<class classid="32" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompMock.sol" startline="15" endline="17" pcid="399"></source>
+<source file="systems/source-code/GovernorWithParamsMock.sol" startline="17" endline="19" pcid="431"></source>
+<source file="systems/source-code/GovernorVoteMock.sol" startline="15" endline="17" pcid="427"></source>
+</class>
+
+<class classid="33" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompMock.sol" startline="19" endline="21" pcid="400"></source>
+<source file="systems/source-code/GovernorWithParamsMock.sol" startline="21" endline="23" pcid="432"></source>
+<source file="systems/source-code/GovernorVoteMock.sol" startline="19" endline="21" pcid="428"></source>
+</class>
+
+<class classid="34" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="31" endline="38" pcid="409"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="133" endline="140" pcid="806"></source>
+</class>
+
+<class classid="35" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="40" endline="47" pcid="410"></source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="83" endline="90" pcid="784"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="74" endline="81" pcid="799"></source>
+<source file="systems/source-code/MyGovernor3.sol" startline="38" endline="45" pcid="532"></source>
+<source file="systems/source-code/MyGovernor2.sol" startline="40" endline="47" pcid="522"></source>
+<source file="systems/source-code/MyGovernor1.sol" startline="34" endline="41" pcid="512"></source>
+<source file="systems/source-code/GovernorTimelockControlMock.sol" startline="40" endline="47" pcid="418"></source>
+</class>
+
+<class classid="36" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="61" endline="68" pcid="412"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="92" endline="99" pcid="801"></source>
+</class>
+
+<class classid="37" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorTimelockControlMock.sol" startline="31" endline="38" pcid="417"></source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="142" endline="149" pcid="791"></source>
+<source file="systems/source-code/MyGovernor2.sol" startline="85" endline="92" pcid="528"></source>
+<source file="systems/source-code/MyGovernor1.sol" startline="79" endline="86" pcid="518"></source>
+</class>
+
+<class classid="38" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorTimelockControlMock.sol" startline="61" endline="63" pcid="420"></source>
+<source file="systems/source-code/MyGovernor1.sol" startline="43" endline="45" pcid="513"></source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="101" endline="108" pcid="786"></source>
+<source file="systems/source-code/MyGovernor2.sol" startline="49" endline="51" pcid="523"></source>
+</class>
+
+<class classid="39" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorTimelockControlMock.sol" startline="69" endline="77" pcid="422"></source>
+<source file="systems/source-code/MyGovernor1.sol" startline="56" endline="64" pcid="515"></source>
+<source file="systems/source-code/MyGovernor2.sol" startline="62" endline="70" pcid="525"></source>
+<source file="systems/source-code/MyGovernor3.sol" startline="65" endline="73" pcid="535"></source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="118" endline="123" pcid="788"></source>
+</class>
+
+<class classid="40" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorTimelockControlMock.sol" startline="88" endline="90" pcid="424"></source>
+<source file="systems/source-code/MyGovernor3.sol" startline="84" endline="86" pcid="537"></source>
+<source file="systems/source-code/MyGovernor2.sol" startline="81" endline="83" pcid="527"></source>
+<source file="systems/source-code/MyGovernor1.sol" startline="75" endline="77" pcid="517"></source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="133" endline="140" pcid="790"></source>
+</class>
+
+<class classid="41" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="20" endline="22" pcid="437"></source>
+<source file="systems/source-code/InitializableMock.sol" startline="58" endline="60" pcid="444"></source>
+</class>
+
+<class classid="42" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="24" endline="26" pcid="438"></source>
+<source file="systems/source-code/InitializableMock.sol" startline="62" endline="64" pcid="445"></source>
+</class>
+
+<class classid="43" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="24" endline="26" pcid="510"></source>
+<source file="systems/source-code/MyGovernor3.sol" startline="24" endline="26" pcid="529"></source>
+<source file="systems/source-code/MyGovernor2.sol" startline="26" endline="28" pcid="519"></source>
+</class>
+
+<class classid="44" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="28" endline="30" pcid="511"></source>
+<source file="systems/source-code/MyGovernor3.sol" startline="28" endline="30" pcid="530"></source>
+<source file="systems/source-code/MyGovernor2.sol" startline="30" endline="32" pcid="520"></source>
+</class>
+
+<class classid="45" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="47" endline="54" pcid="514"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="101" endline="107" pcid="802"></source>
+</class>
+
+<class classid="46" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="66" endline="73" pcid="516"></source>
+<source file="systems/source-code/MyGovernor3.sol" startline="75" endline="82" pcid="536"></source>
+<source file="systems/source-code/MyGovernor2.sol" startline="72" endline="79" pcid="526"></source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="125" endline="131" pcid="789"></source>
+</class>
+
+<class classid="47" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor2.sol" startline="34" endline="36" pcid="521"></source>
+<source file="systems/source-code/MyGovernor3.sol" startline="32" endline="34" pcid="531"></source>
+</class>
+
+<class classid="48" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor2.sol" startline="53" endline="60" pcid="524"></source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="110" endline="116" pcid="787"></source>
+</class>
+
+<class classid="49" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="12" endline="14" pcid="739"></source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="12" endline="14" pcid="746"></source>
+</class>
+
+<class classid="50" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="16" endline="18" pcid="740"></source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="16" endline="18" pcid="747"></source>
+</class>
+
+<class classid="51" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="20" endline="22" pcid="741"></source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="20" endline="22" pcid="748"></source>
+</class>
+
+<class classid="52" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="24" endline="26" pcid="742"></source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="24" endline="26" pcid="749"></source>
+</class>
+
+<class classid="53" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="28" endline="30" pcid="743"></source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="28" endline="30" pcid="750"></source>
+</class>
+
+<class classid="54" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="32" endline="34" pcid="744"></source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="32" endline="34" pcid="751"></source>
+</class>
+
+<class classid="55" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="36" endline="38" pcid="745"></source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="36" endline="38" pcid="752"></source>
+</class>
+
+<class classid="56" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="28" endline="30" pcid="776"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="26" endline="28" pcid="792"></source>
+</class>
+
+<class classid="57" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="32" endline="34" pcid="777"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="30" endline="32" pcid="793"></source>
+</class>
+
+<class classid="58" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="44" endline="55" pcid="778"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="48" endline="59" pcid="796"></source>
+</class>
+
+<class classid="59" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="57" endline="59" pcid="779"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="34" endline="36" pcid="794"></source>
+</class>
+
+<class classid="60" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="62" endline="64" pcid="780"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="38" endline="40" pcid="795"></source>
+</class>
+
+<class classid="61" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="92" endline="99" pcid="785"></source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="83" endline="90" pcid="800"></source>
+</class>
+
+</clones>

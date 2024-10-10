@@ -1,0 +1,1391 @@
+<clones>
+<systeminfo processor="nicad6" system="source-code" granularity="functions" threshold="30%" minlines="3" maxlines="2500"/>
+<cloneinfo npcs="576" npairs="240"/>
+<runinfo ncompares="107097" cputime="9192"/>
+<classinfo nclasses="57"/>
+
+<class classid="1" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/AccessControlEnumerableMock.sol" startline="12" endline="14" pcid="1">
+    function setRoleAdmin(bytes32 roleId, bytes32 adminRoleId) public {
+        _setRoleAdmin(roleId, adminRoleId);
+    }
+</source>
+<source file="systems/source-code/AccessControlMock.sol" startline="12" endline="14" pcid="3">
+    function setRoleAdmin(bytes32 roleId, bytes32 adminRoleId) public {
+        _setRoleAdmin(roleId, adminRoleId);
+    }
+</source>
+</class>
+
+<class classid="2" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/EIP712External.sol" startline="28" endline="30" pcid="72">
+    function getChainId() external view returns (uint256) {
+        return block.chainid;
+    }
+</source>
+<source file="systems/source-code/ERC20VotesCompMock.sol" startline="18" endline="20" pcid="191">
+    function getChainId() external view returns (uint256) {
+        return block.chainid;
+    }
+</source>
+<source file="systems/source-code/ERC20VotesMock.sol" startline="18" endline="20" pcid="196">
+    function getChainId() external view returns (uint256) {
+        return block.chainid;
+    }
+</source>
+<source file="systems/source-code/VotesMock.sol" startline="37" endline="39" pcid="545">
+    function getChainId() external view returns (uint256) {
+        return block.chainid;
+    }
+</source>
+<source file="systems/source-code/ERC721VotesMock.sol" startline="22" endline="24" pcid="249">
+    function getChainId() external view returns (uint256) {
+        return block.chainid;
+    }
+</source>
+<source file="systems/source-code/ERC20PermitMock.sol" startline="17" endline="19" pcid="181">
+    function getChainId() external view returns (uint256) {
+        return block.chainid;
+    }
+</source>
+</class>
+
+<class classid="3" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/EnumerableSetMock.sol" startline="29" endline="31" pcid="124">
+    function length() public view returns (uint256) {
+        return _set.length();
+    }
+</source>
+<source file="systems/source-code/EnumerableSetMock.sol" startline="99" endline="101" pcid="136">
+    function length() public view returns (uint256) {
+        return _set.length();
+    }
+</source>
+<source file="systems/source-code/EnumerableSetMock.sol" startline="64" endline="66" pcid="130">
+    function length() public view returns (uint256) {
+        return _set.length();
+    }
+</source>
+</class>
+
+<class classid="4" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC1155BurnableMock.sol" startline="10" endline="17" pcid="139">
+    function mint(
+        address to,
+        uint256 id,
+        uint256 value,
+        bytes memory data
+    ) public {
+        _mint(to, id, value, data);
+    }
+</source>
+<source file="systems/source-code/ERC1155Mock.sol" startline="18" endline="25" pcid="143">
+    function mint(
+        address to,
+        uint256 id,
+        uint256 value,
+        bytes memory data
+    ) public {
+        _mint(to, id, value, data);
+    }
+</source>
+</class>
+
+<class classid="5" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC1155PausableMock.sol" startline="11" endline="13" pcid="147">
+    function pause() external {
+        _pause();
+    }
+</source>
+<source file="systems/source-code/ERC20PausableMock.sol" startline="18" endline="20" pcid="177">
+    function pause() external {
+        _pause();
+    }
+</source>
+<source file="systems/source-code/PausableMock.sol" startline="24" endline="26" pcid="388">
+    function pause() external {
+        _pause();
+    }
+</source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="14" endline="16" pcid="219">
+    function pause() external {
+        _pause();
+    }
+</source>
+</class>
+
+<class classid="6" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC1155PausableMock.sol" startline="15" endline="17" pcid="148">
+    function unpause() external {
+        _unpause();
+    }
+</source>
+<source file="systems/source-code/PausableMock.sol" startline="28" endline="30" pcid="389">
+    function unpause() external {
+        _unpause();
+    }
+</source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="18" endline="20" pcid="220">
+    function unpause() external {
+        _unpause();
+    }
+</source>
+<source file="systems/source-code/ERC20PausableMock.sol" startline="22" endline="24" pcid="178">
+    function unpause() external {
+        _unpause();
+    }
+</source>
+</class>
+
+<class classid="7" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC1155PausableMock.sol" startline="19" endline="28" pcid="149">
+    function _beforeTokenTransfer(
+        address operator,
+        address from,
+        address to,
+        uint256[] memory ids,
+        uint256[] memory amounts,
+        bytes memory data
+    ) internal virtual override(ERC1155, ERC1155Pausable) {
+        super._beforeTokenTransfer(operator, from, to, ids, amounts, data);
+    }
+</source>
+<source file="systems/source-code/ERC1155PresetMinterPauser.sol" startline="118" endline="127" pcid="155">
+    function _beforeTokenTransfer(
+        address operator,
+        address from,
+        address to,
+        uint256[] memory ids,
+        uint256[] memory amounts,
+        bytes memory data
+    ) internal virtual override(ERC1155, ERC1155Pausable) {
+        super._beforeTokenTransfer(operator, from, to, ids, amounts, data);
+    }
+</source>
+</class>
+
+<class classid="8" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20CappedMock.sol" startline="14" endline="16" pcid="172">
+    function mint(address to, uint256 tokenId) public {
+        _mint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="36" endline="38" pcid="242">
+    function mint(address to, uint256 tokenId) public {
+        _mint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721BurnableMock.sol" startline="14" endline="16" pcid="201">
+    function mint(address to, uint256 tokenId) public {
+        _mint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721Mock.sol" startline="22" endline="24" pcid="215">
+    function mint(address to, uint256 tokenId) public {
+        _mint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721RoyaltyMock.sol" startline="22" endline="24" pcid="234">
+    function mint(address to, uint256 tokenId) public {
+        _mint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="32" endline="34" pcid="208">
+    function mint(address to, uint256 tokenId) public {
+        _mint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="26" endline="28" pcid="222">
+    function mint(address to, uint256 tokenId) public {
+        _mint(to, tokenId);
+    }
+</source>
+</class>
+
+<class classid="9" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20Mock.sol" startline="18" endline="20" pcid="173">
+    function mint(address account, uint256 amount) public {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20VotesCompMock.sol" startline="10" endline="12" pcid="189">
+    function mint(address account, uint256 amount) public {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20SnapshotMock.sol" startline="21" endline="23" pcid="187">
+    function mint(address account, uint256 amount) public {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20VotesMock.sol" startline="10" endline="12" pcid="194">
+    function mint(address account, uint256 amount) public {
+        _mint(account, amount);
+    }
+</source>
+</class>
+
+<class classid="10" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20Mock.sol" startline="22" endline="24" pcid="174">
+    function burn(address account, uint256 amount) public {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20VotesCompMock.sol" startline="14" endline="16" pcid="190">
+    function burn(address account, uint256 amount) public {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20SnapshotMock.sol" startline="25" endline="27" pcid="188">
+    function burn(address account, uint256 amount) public {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20VotesMock.sol" startline="14" endline="16" pcid="195">
+    function burn(address account, uint256 amount) public {
+        _burn(account, amount);
+    }
+</source>
+</class>
+
+<class classid="11" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721BurnableMock.sol" startline="10" endline="12" pcid="200">
+    function exists(uint256 tokenId) public view returns (bool) {
+        return _exists(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721Mock.sol" startline="18" endline="20" pcid="214">
+    function exists(uint256 tokenId) public view returns (bool) {
+        return _exists(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="32" endline="34" pcid="241">
+    function exists(uint256 tokenId) public view returns (bool) {
+        return _exists(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="22" endline="24" pcid="221">
+    function exists(uint256 tokenId) public view returns (bool) {
+        return _exists(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="28" endline="30" pcid="207">
+    function exists(uint256 tokenId) public view returns (bool) {
+        return _exists(tokenId);
+    }
+</source>
+</class>
+
+<class classid="12" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721BurnableMock.sol" startline="18" endline="20" pcid="202">
+    function safeMint(address to, uint256 tokenId) public {
+        _safeMint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="40" endline="42" pcid="243">
+    function safeMint(address to, uint256 tokenId) public {
+        _safeMint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="30" endline="32" pcid="223">
+    function safeMint(address to, uint256 tokenId) public {
+        _safeMint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="36" endline="38" pcid="209">
+    function safeMint(address to, uint256 tokenId) public {
+        _safeMint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721Mock.sol" startline="26" endline="28" pcid="216">
+    function safeMint(address to, uint256 tokenId) public {
+        _safeMint(to, tokenId);
+    }
+</source>
+</class>
+
+<class classid="13" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721BurnableMock.sol" startline="22" endline="28" pcid="203">
+    function safeMint(
+        address to,
+        uint256 tokenId,
+        bytes memory _data
+    ) public {
+        _safeMint(to, tokenId, _data);
+    }
+</source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="44" endline="50" pcid="244">
+    function safeMint(
+        address to,
+        uint256 tokenId,
+        bytes memory _data
+    ) public {
+        _safeMint(to, tokenId, _data);
+    }
+</source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="34" endline="40" pcid="224">
+    function safeMint(
+        address to,
+        uint256 tokenId,
+        bytes memory _data
+    ) public {
+        _safeMint(to, tokenId, _data);
+    }
+</source>
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="40" endline="46" pcid="210">
+    function safeMint(
+        address to,
+        uint256 tokenId,
+        bytes memory _data
+    ) public {
+        _safeMint(to, tokenId, _data);
+    }
+</source>
+<source file="systems/source-code/ERC721Mock.sol" startline="30" endline="36" pcid="217">
+    function safeMint(
+        address to,
+        uint256 tokenId,
+        bytes memory _data
+    ) public {
+        _safeMint(to, tokenId, _data);
+    }
+</source>
+</class>
+
+<class classid="14" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="16" endline="18" pcid="204">
+    function _baseURI() internal view virtual override returns (string memory) {
+        return _baseTokenURI;
+    }
+</source>
+<source file="systems/source-code/ERC721PresetMinterPauserAutoId.sol" startline="67" endline="69" pcid="226">
+    function _baseURI() internal view virtual override returns (string memory) {
+        return _baseTokenURI;
+    }
+</source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="16" endline="18" pcid="237">
+    function _baseURI() internal view virtual override returns (string memory) {
+        return _baseTokenURI;
+    }
+</source>
+</class>
+
+<class classid="15" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="20" endline="22" pcid="205">
+    function setBaseURI(string calldata newBaseTokenURI) public {
+        _baseTokenURI = newBaseTokenURI;
+    }
+</source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="20" endline="22" pcid="238">
+    function setBaseURI(string calldata newBaseTokenURI) public {
+        _baseTokenURI = newBaseTokenURI;
+    }
+</source>
+</class>
+
+<class classid="16" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="24" endline="26" pcid="206">
+    function baseURI() public view returns (string memory) {
+        return _baseURI();
+    }
+</source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="24" endline="26" pcid="239">
+    function baseURI() public view returns (string memory) {
+        return _baseURI();
+    }
+</source>
+<source file="systems/source-code/ERC721Mock.sol" startline="14" endline="16" pcid="213">
+    function baseURI() public view returns (string memory) {
+        return _baseURI();
+    }
+</source>
+</class>
+
+<class classid="17" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721EnumerableMock.sol" startline="48" endline="50" pcid="211">
+    function burn(uint256 tokenId) public {
+        _burn(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721PausableMock.sol" startline="42" endline="44" pcid="225">
+    function burn(uint256 tokenId) public {
+        _burn(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721RoyaltyMock.sol" startline="26" endline="28" pcid="235">
+    function burn(uint256 tokenId) public {
+        _burn(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721URIStorageMock.sol" startline="52" endline="54" pcid="245">
+    function burn(uint256 tokenId) public {
+        _burn(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721VotesMock.sol" startline="18" endline="20" pcid="248">
+    function burn(uint256 tokenId) public {
+        _burn(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721Mock.sol" startline="38" endline="40" pcid="218">
+    function burn(uint256 tokenId) public {
+        _burn(tokenId);
+    }
+</source>
+</class>
+
+<class classid="18" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721VotesMock.sol" startline="10" endline="12" pcid="246">
+    function getTotalSupply() public view returns (uint256) {
+        return _getTotalSupply();
+    }
+</source>
+<source file="systems/source-code/VotesMock.sol" startline="13" endline="15" pcid="540">
+    function getTotalSupply() public view returns (uint256) {
+        return _getTotalSupply();
+    }
+</source>
+</class>
+
+<class classid="19" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="40" endline="42" pcid="268">
+    function quorum(uint256) public pure override returns (uint256) {
+        return 0;
+    }
+</source>
+<source file="systems/source-code/GovernorVoteMock.sol" startline="11" endline="13" pcid="311">
+    function quorum(uint256) public pure override returns (uint256) {
+        return 0;
+    }
+</source>
+<source file="systems/source-code/GovernorCompMock.sol" startline="11" endline="13" pcid="280">
+    function quorum(uint256) public pure override returns (uint256) {
+        return 0;
+    }
+</source>
+</class>
+
+<class classid="20" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="64" endline="66" pcid="271">
+    function proposalThreshold() public view override(Governor, GovernorSettings) returns (uint256) {
+        return super.proposalThreshold();
+    }
+</source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="72" endline="74" pcid="297">
+    function proposalThreshold() public view override(Governor, GovernorSettings) returns (uint256) {
+        return super.proposalThreshold();
+    }
+</source>
+<source file="systems/source-code/GovernorTimelockControlMock.sol" startline="72" endline="74" pcid="306">
+    function proposalThreshold() public view override(Governor, GovernorSettings) returns (uint256) {
+        return super.proposalThreshold();
+    }
+</source>
+<source file="systems/source-code/GovernorMock.sol" startline="48" endline="50" pcid="287">
+    function proposalThreshold() public view override(Governor, GovernorSettings) returns (uint256) {
+        return super.proposalThreshold();
+    }
+</source>
+</class>
+
+<class classid="21" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="95" endline="103" pcid="275">
+    function _execute(
+        uint256 proposalId,
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal virtual override(Governor, GovernorTimelockCompound) {
+        super._execute(proposalId, targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="76" endline="84" pcid="298">
+    function _execute(
+        uint256 proposalId,
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal virtual override(Governor, GovernorTimelockCompound) {
+        super._execute(proposalId, targets, values, calldatas, descriptionHash);
+    }
+</source>
+</class>
+
+<class classid="22" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="109" endline="116" pcid="276">
+    function cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 salt
+    ) public returns (uint256 proposalId) {
+        return _cancel(targets, values, calldatas, salt);
+    }
+</source>
+<source file="systems/source-code/GovernorVoteMock.sol" startline="23" endline="30" pcid="314">
+    function cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 salt
+    ) public returns (uint256 proposalId) {
+        return _cancel(targets, values, calldatas, salt);
+    }
+</source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="50" endline="57" pcid="295">
+    function cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 salt
+    ) public returns (uint256 proposalId) {
+        return _cancel(targets, values, calldatas, salt);
+    }
+</source>
+<source file="systems/source-code/GovernorMock.sol" startline="29" endline="36" pcid="285">
+    function cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 salt
+    ) public returns (uint256 proposalId) {
+        return _cancel(targets, values, calldatas, salt);
+    }
+</source>
+<source file="systems/source-code/GovernorCompMock.sol" startline="23" endline="30" pcid="283">
+    function cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 salt
+    ) public returns (uint256 proposalId) {
+        return _cancel(targets, values, calldatas, salt);
+    }
+</source>
+</class>
+
+<class classid="23" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="118" endline="125" pcid="277">
+    function _cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 salt
+    ) internal virtual override(Governor, GovernorTimelockCompound) returns (uint256 proposalId) {
+        return super._cancel(targets, values, calldatas, salt);
+    }
+</source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="86" endline="93" pcid="299">
+    function _cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 salt
+    ) internal virtual override(Governor, GovernorTimelockCompound) returns (uint256 proposalId) {
+        return super._cancel(targets, values, calldatas, salt);
+    }
+</source>
+</class>
+
+<class classid="24" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="127" endline="135" pcid="278">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        virtual
+        override(IGovernor, GovernorVotesComp)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+<source file="systems/source-code/GovernorCompMock.sol" startline="32" endline="40" pcid="284">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        virtual
+        override(IGovernor, GovernorVotesComp)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+</class>
+
+<class classid="25" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompatibilityBravoMock.sol" startline="137" endline="139" pcid="279">
+    function _executor() internal view virtual override(Governor, GovernorTimelockCompound) returns (address) {
+        return super._executor();
+    }
+</source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="105" endline="107" pcid="301">
+    function _executor() internal view virtual override(Governor, GovernorTimelockCompound) returns (address) {
+        return super._executor();
+    }
+</source>
+</class>
+
+<class classid="26" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompMock.sol" startline="15" endline="17" pcid="281">
+    function votingDelay() public pure override returns (uint256) {
+        return 4;
+    }
+</source>
+<source file="systems/source-code/GovernorVoteMock.sol" startline="15" endline="17" pcid="312">
+    function votingDelay() public pure override returns (uint256) {
+        return 4;
+    }
+</source>
+</class>
+
+<class classid="27" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorCompMock.sol" startline="19" endline="21" pcid="282">
+    function votingPeriod() public pure override returns (uint256) {
+        return 16;
+    }
+</source>
+<source file="systems/source-code/GovernorVoteMock.sol" startline="19" endline="21" pcid="313">
+    function votingPeriod() public pure override returns (uint256) {
+        return 16;
+    }
+</source>
+</class>
+
+<class classid="28" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorMock.sol" startline="38" endline="46" pcid="286">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        virtual
+        override(IGovernor, GovernorVotes)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="95" endline="103" pcid="300">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        virtual
+        override(IGovernor, GovernorVotes)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+<source file="systems/source-code/GovernorTimelockControlMock.sol" startline="95" endline="103" pcid="309">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        virtual
+        override(IGovernor, GovernorVotes)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+<source file="systems/source-code/GovernorVoteMock.sol" startline="32" endline="40" pcid="315">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        virtual
+        override(IGovernor, GovernorVotes)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+</class>
+
+<class classid="29" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/GovernorTimelockCompoundMock.sol" startline="41" endline="48" pcid="294">
+    function quorum(uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotesQuorumFraction)
+        returns (uint256)
+    {
+        return super.quorum(blockNumber);
+    }
+</source>
+<source file="systems/source-code/GovernorTimelockControlMock.sol" startline="41" endline="48" pcid="303">
+    function quorum(uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotesQuorumFraction)
+        returns (uint256)
+    {
+        return super.quorum(blockNumber);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="38" endline="45" pcid="378">
+    function quorum(uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotesQuorumFraction)
+        returns (uint256)
+    {
+        return super.quorum(blockNumber);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="40" endline="47" pcid="367">
+    function quorum(uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotesQuorumFraction)
+        returns (uint256)
+    {
+        return super.quorum(blockNumber);
+    }
+</source>
+<source file="systems/source-code/MyGovernor1.sol" startline="34" endline="41" pcid="356">
+    function quorum(uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotesQuorumFraction)
+        returns (uint256)
+    {
+        return super.quorum(blockNumber);
+    }
+</source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="83" endline="90" pcid="554">
+    function quorum(uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotesQuorumFraction)
+        returns (uint256)
+    {
+        return super.quorum(blockNumber);
+    }
+</source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="74" endline="81" pcid="569">
+    function quorum(uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotesQuorumFraction)
+        returns (uint256)
+    {
+        return super.quorum(blockNumber);
+    }
+</source>
+</class>
+
+<class classid="30" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="16" endline="18" pcid="316">
+    function initialize() public initializer {
+        initializerRan = true;
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="54" endline="56" pcid="323">
+    function initialize() public initializer {
+        initializerRan = true;
+    }
+</source>
+</class>
+
+<class classid="31" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="20" endline="22" pcid="317">
+    function initializeOnlyInitializing() public onlyInitializing {
+        onlyInitializingRan = true;
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="58" endline="60" pcid="324">
+    function initializeOnlyInitializing() public onlyInitializing {
+        onlyInitializingRan = true;
+    }
+</source>
+</class>
+
+<class classid="32" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="24" endline="26" pcid="354">
+    function votingDelay() public pure override returns (uint256) {
+        return 1; // 1 block
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="24" endline="26" pcid="375">
+    function votingDelay() public pure override returns (uint256) {
+        return 1; // 1 block
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="26" endline="28" pcid="364">
+    function votingDelay() public pure override returns (uint256) {
+        return 1; // 1 block
+    }
+</source>
+</class>
+
+<class classid="33" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="28" endline="30" pcid="355">
+    function votingPeriod() public pure override returns (uint256) {
+        return 45818; // 1 week
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="28" endline="30" pcid="376">
+    function votingPeriod() public pure override returns (uint256) {
+        return 45818; // 1 week
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="30" endline="32" pcid="365">
+    function votingPeriod() public pure override returns (uint256) {
+        return 45818; // 1 week
+    }
+</source>
+</class>
+
+<class classid="34" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="43" endline="50" pcid="357">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotes)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="83" endline="90" pcid="570">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotes)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="92" endline="99" pcid="555">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotes)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="49" endline="56" pcid="368">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotes)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="47" endline="54" pcid="379">
+    function getVotes(address account, uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotes)
+        returns (uint256)
+    {
+        return super.getVotes(account, blockNumber);
+    }
+</source>
+</class>
+
+<class classid="35" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="52" endline="54" pcid="358">
+    function state(uint256 proposalId) public view override(Governor, GovernorTimelockControl) returns (ProposalState) {
+        return super.state(proposalId);
+    }
+</source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="101" endline="108" pcid="556">
+    function state(uint256 proposalId)
+        public
+        view
+        override(Governor, GovernorTimelockControl)
+        returns (ProposalState)
+    {
+        return super.state(proposalId);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="58" endline="60" pcid="369">
+    function state(uint256 proposalId) public view override(Governor, GovernorTimelockControl) returns (ProposalState) {
+        return super.state(proposalId);
+    }
+</source>
+</class>
+
+<class classid="36" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="56" endline="63" pcid="359">
+    function propose(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        string memory description
+    ) public override(Governor, IGovernor) returns (uint256) {
+        return super.propose(targets, values, calldatas, description);
+    }
+</source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="101" endline="107" pcid="572">
+    function propose(address[] memory targets, uint256[] memory values, bytes[] memory calldatas, string memory description)
+        public
+        override(Governor, IGovernor)
+        returns (uint256)
+    {
+        return super.propose(targets, values, calldatas, description);
+    }
+</source>
+</class>
+
+<class classid="37" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="65" endline="73" pcid="360">
+    function _execute(
+        uint256 proposalId,
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) {
+        super._execute(proposalId, targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="71" endline="79" pcid="371">
+    function _execute(
+        uint256 proposalId,
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) {
+        super._execute(proposalId, targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="74" endline="82" pcid="382">
+    function _execute(
+        uint256 proposalId,
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) {
+        super._execute(proposalId, targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="118" endline="123" pcid="558">
+    function _execute(uint256 proposalId, address[] memory targets, uint256[] memory values, bytes[] memory calldatas, bytes32 descriptionHash)
+        internal
+        override(Governor, GovernorTimelockControl)
+    {
+        super._execute(proposalId, targets, values, calldatas, descriptionHash);
+    }
+</source>
+</class>
+
+<class classid="38" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="75" endline="82" pcid="361">
+    function _cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) returns (uint256) {
+        return super._cancel(targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="81" endline="88" pcid="372">
+    function _cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) returns (uint256) {
+        return super._cancel(targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="84" endline="91" pcid="383">
+    function _cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) returns (uint256) {
+        return super._cancel(targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="125" endline="131" pcid="559">
+    function _cancel(address[] memory targets, uint256[] memory values, bytes[] memory calldatas, bytes32 descriptionHash)
+        internal
+        override(Governor, GovernorTimelockControl)
+        returns (uint256)
+    {
+        return super._cancel(targets, values, calldatas, descriptionHash);
+    }
+</source>
+</class>
+
+<class classid="39" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="84" endline="86" pcid="362">
+    function _executor() internal view override(Governor, GovernorTimelockControl) returns (address) {
+        return super._executor();
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="90" endline="92" pcid="373">
+    function _executor() internal view override(Governor, GovernorTimelockControl) returns (address) {
+        return super._executor();
+    }
+</source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="133" endline="140" pcid="560">
+    function _executor()
+        internal
+        view
+        override(Governor, GovernorTimelockControl)
+        returns (address)
+    {
+        return super._executor();
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="93" endline="95" pcid="384">
+    function _executor() internal view override(Governor, GovernorTimelockControl) returns (address) {
+        return super._executor();
+    }
+</source>
+</class>
+
+<class classid="40" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="88" endline="95" pcid="363">
+    function supportsInterface(bytes4 interfaceId)
+        public
+        view
+        override(Governor, GovernorTimelockControl)
+        returns (bool)
+    {
+        return super.supportsInterface(interfaceId);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="94" endline="101" pcid="374">
+    function supportsInterface(bytes4 interfaceId)
+        public
+        view
+        override(Governor, GovernorTimelockControl)
+        returns (bool)
+    {
+        return super.supportsInterface(interfaceId);
+    }
+</source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="142" endline="149" pcid="561">
+    function supportsInterface(bytes4 interfaceId)
+        public
+        view
+        override(Governor, GovernorTimelockControl)
+        returns (bool)
+    {
+        return super.supportsInterface(interfaceId);
+    }
+</source>
+</class>
+
+<class classid="41" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor2.sol" startline="34" endline="36" pcid="366">
+    function proposalThreshold() public pure override returns (uint256) {
+        return 1000e18;
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="32" endline="34" pcid="377">
+    function proposalThreshold() public pure override returns (uint256) {
+        return 1000e18;
+    }
+</source>
+</class>
+
+<class classid="42" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor2.sol" startline="62" endline="69" pcid="370">
+    function propose(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        string memory description
+    ) public override(Governor, GovernorProposalThreshold, IGovernor) returns (uint256) {
+        return super.propose(targets, values, calldatas, description);
+    }
+</source>
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="110" endline="116" pcid="557">
+    function propose(address[] memory targets, uint256[] memory values, bytes[] memory calldatas, string memory description)
+        public
+        override(Governor, GovernorProposalThreshold, IGovernor)
+        returns (uint256)
+    {
+        return super.propose(targets, values, calldatas, description);
+    }
+</source>
+</class>
+
+<class classid="43" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/SafeERC20Helper.sol" startline="67" endline="69" pcid="432">
+    function setAllowance(uint256 allowance_) public {
+        _allowances[_msgSender()] = allowance_;
+    }
+</source>
+<source file="systems/source-code/SafeERC20Helper.sol" startline="99" endline="101" pcid="437">
+    function setAllowance(uint256 allowance_) public {
+        _allowances[_msgSender()] = allowance_;
+    }
+</source>
+</class>
+
+<class classid="44" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/SafeERC20Helper.sol" startline="71" endline="73" pcid="433">
+    function allowance(address owner, address) public view returns (uint256) {
+        return _allowances[owner];
+    }
+</source>
+<source file="systems/source-code/SafeERC20Helper.sol" startline="103" endline="105" pcid="438">
+    function allowance(address owner, address) public view returns (uint256) {
+        return _allowances[owner];
+    }
+</source>
+</class>
+
+<class classid="45" nclones="5" nlines="12" similarity="75">
+<source file="systems/source-code/SafeMathMock.sol" startline="74" endline="85" pcid="459">
+    function addMemoryCheck() public pure returns (uint256 mem) {
+        uint256 length = 32;
+        assembly {
+            mem := mload(0x40)
+        }
+        for (uint256 i = 0; i < length; ++i) {
+            SafeMath.add(1, 1);
+        }
+        assembly {
+            mem := sub(mload(0x40), mem)
+        }
+    }
+</source>
+<source file="systems/source-code/SafeMathMock.sol" startline="113" endline="124" pcid="462">
+    function divMemoryCheck() public pure returns (uint256 mem) {
+        uint256 length = 32;
+        assembly {
+            mem := mload(0x40)
+        }
+        for (uint256 i = 0; i < length; ++i) {
+            SafeMath.div(1, 1);
+        }
+        assembly {
+            mem := sub(mload(0x40), mem)
+        }
+    }
+</source>
+<source file="systems/source-code/SafeMathMock.sol" startline="87" endline="98" pcid="460">
+    function subMemoryCheck() public pure returns (uint256 mem) {
+        uint256 length = 32;
+        assembly {
+            mem := mload(0x40)
+        }
+        for (uint256 i = 0; i < length; ++i) {
+            SafeMath.sub(1, 1);
+        }
+        assembly {
+            mem := sub(mload(0x40), mem)
+        }
+    }
+</source>
+<source file="systems/source-code/SafeMathMock.sol" startline="100" endline="111" pcid="461">
+    function mulMemoryCheck() public pure returns (uint256 mem) {
+        uint256 length = 32;
+        assembly {
+            mem := mload(0x40)
+        }
+        for (uint256 i = 0; i < length; ++i) {
+            SafeMath.mul(1, 1);
+        }
+        assembly {
+            mem := sub(mload(0x40), mem)
+        }
+    }
+</source>
+<source file="systems/source-code/SafeMathMock.sol" startline="126" endline="137" pcid="463">
+    function modMemoryCheck() public pure returns (uint256 mem) {
+        uint256 length = 32;
+        assembly {
+            mem := mload(0x40)
+        }
+        for (uint256 i = 0; i < length; ++i) {
+            SafeMath.mod(1, 1);
+        }
+        assembly {
+            mem := sub(mload(0x40), mem)
+        }
+    }
+</source>
+</class>
+
+<class classid="46" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="12" endline="14" pcid="509">
+    function getDeadline() public view returns (uint64) {
+        return _timer.getDeadline();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="12" endline="14" pcid="516">
+    function getDeadline() public view returns (uint64) {
+        return _timer.getDeadline();
+    }
+</source>
+</class>
+
+<class classid="47" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="16" endline="18" pcid="510">
+    function setDeadline(uint64 timestamp) public {
+        _timer.setDeadline(timestamp);
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="16" endline="18" pcid="517">
+    function setDeadline(uint64 timestamp) public {
+        _timer.setDeadline(timestamp);
+    }
+</source>
+</class>
+
+<class classid="48" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="20" endline="22" pcid="511">
+    function reset() public {
+        _timer.reset();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="20" endline="22" pcid="518">
+    function reset() public {
+        _timer.reset();
+    }
+</source>
+</class>
+
+<class classid="49" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="24" endline="26" pcid="512">
+    function isUnset() public view returns (bool) {
+        return _timer.isUnset();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="24" endline="26" pcid="519">
+    function isUnset() public view returns (bool) {
+        return _timer.isUnset();
+    }
+</source>
+</class>
+
+<class classid="50" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="28" endline="30" pcid="513">
+    function isStarted() public view returns (bool) {
+        return _timer.isStarted();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="28" endline="30" pcid="520">
+    function isStarted() public view returns (bool) {
+        return _timer.isStarted();
+    }
+</source>
+</class>
+
+<class classid="51" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="32" endline="34" pcid="514">
+    function isPending() public view returns (bool) {
+        return _timer.isPending();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="32" endline="34" pcid="521">
+    function isPending() public view returns (bool) {
+        return _timer.isPending();
+    }
+</source>
+</class>
+
+<class classid="52" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="36" endline="38" pcid="515">
+    function isExpired() public view returns (bool) {
+        return _timer.isExpired();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="36" endline="38" pcid="522">
+    function isExpired() public view returns (bool) {
+        return _timer.isExpired();
+    }
+</source>
+</class>
+
+<class classid="53" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="28" endline="30" pcid="546">
+    function isExecuted(uint256 proposalId) public view returns (bool) {
+        return _proposals[proposalId].executed;
+    }
+</source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="26" endline="28" pcid="562">
+    function isExecuted(uint256 proposalId) public view returns (bool) {
+        return _proposals[proposalId].executed;
+    }
+</source>
+</class>
+
+<class classid="54" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="32" endline="34" pcid="547">
+    function isCanceled(uint256 proposalId) public view returns (bool) {
+        return _proposals[proposalId].canceled;
+    }
+</source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="30" endline="32" pcid="563">
+    function isCanceled(uint256 proposalId) public view returns (bool) {
+        return _proposals[proposalId].canceled;
+    }
+</source>
+</class>
+
+<class classid="55" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="44" endline="55" pcid="548">
+    function _castVote(
+        uint256 proposalId,
+        address account,
+        uint8 support,
+        string memory reason
+    ) internal override virtual returns (uint256) {
+        
+        uint256 deltaWeight = super._castVote(proposalId, account, support, reason);  //HARNESS
+        ghost_sum_vote_power_by_id[proposalId] += deltaWeight;
+
+        return deltaWeight;        
+    }
+</source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="48" endline="59" pcid="566">
+    function _castVote(
+        uint256 proposalId,
+        address account,
+        uint8 support,
+        string memory reason
+    ) internal override virtual returns (uint256) {
+        
+        uint256 deltaWeight = super._castVote(proposalId, account, support, reason);  //HARNESS
+        ghost_sum_vote_power_by_id[proposalId] += deltaWeight;
+
+        return deltaWeight;        
+    }
+</source>
+</class>
+
+<class classid="56" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="57" endline="59" pcid="549">
+    function snapshot(uint256 proposalId) public view returns (uint64) {
+        return _proposals[proposalId].voteStart._deadline;
+    }
+</source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="34" endline="36" pcid="564">
+    function snapshot(uint256 proposalId) public view returns (uint64) {
+        return _proposals[proposalId].voteStart._deadline;
+    }
+</source>
+</class>
+
+<class classid="57" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/WizardControlFirstPriority.sol" startline="62" endline="64" pcid="550">
+    function getExecutor() public view returns (address){
+        return _executor();
+    }
+</source>
+<source file="systems/source-code/WizardFirstTry.sol" startline="38" endline="40" pcid="565">
+    function getExecutor() public view returns (address){
+        return _executor();
+    }
+</source>
+</class>
+
+</clones>

@@ -1,0 +1,1124 @@
+<clones>
+<systeminfo processor="nicad6" system="source-code" granularity="functions" threshold="0%" minlines="3" maxlines="2500"/>
+<cloneinfo npcs="1954" npairs="700"/>
+<runinfo ncompares="486135" cputime="18131"/>
+<classinfo nclasses="206"/>
+
+<class classid="1" nclones="13" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="71" endline="73" pcid="12"></source>
+<source file="systems/source-code/LiquidatorRewards.sol" startline="70" endline="72" pcid="923"></source>
+<source file="systems/source-code/SynthetixBridgeToOptimism.sol" startline="40" endline="42" pcid="1602"></source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="72" endline="74" pcid="93"></source>
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="66" endline="68" pcid="151"></source>
+<source file="systems/source-code/EtherWrapper.sol" startline="89" endline="91" pcid="421"></source>
+<source file="systems/source-code/Synth.sol" startline="212" endline="214" pcid="1569"></source>
+<source file="systems/source-code/ExchangeCircuitBreaker.sol" startline="97" endline="99" pcid="445"></source>
+<source file="systems/source-code/Liquidator.sol" startline="66" endline="68" pcid="896"></source>
+<source file="systems/source-code/Exchanger.sol" startline="146" endline="148" pcid="459"></source>
+<source file="systems/source-code/FeePool.sol" startline="145" endline="147" pcid="593"></source>
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="77" endline="79" pcid="61"></source>
+<source file="systems/source-code/SynthRedeemer.sol" startline="32" endline="34" pcid="1665"></source>
+</class>
+
+<class classid="2" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="75" endline="77" pcid="13"></source>
+<source file="systems/source-code/TradingRewards.sol" startline="70" endline="72" pcid="1900"></source>
+<source file="systems/source-code/Issuer.sol" startline="135" endline="137" pcid="812"></source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="68" endline="70" pcid="92"></source>
+<source file="systems/source-code/FeePool.sol" startline="137" endline="139" pcid="591"></source>
+<source file="systems/source-code/Synth.sol" startline="208" endline="210" pcid="1568"></source>
+</class>
+
+<class classid="3" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="79" endline="81" pcid="14"></source>
+<source file="systems/source-code/Liquidator.sol" startline="70" endline="72" pcid="897"></source>
+<source file="systems/source-code/Issuer.sol" startline="139" endline="141" pcid="813"></source>
+<source file="systems/source-code/Exchanger.sol" startline="122" endline="124" pcid="453"></source>
+<source file="systems/source-code/PurgeableSynth.sol" startline="42" endline="44" pcid="1440"></source>
+<source file="systems/source-code/EtherWrapper.sol" startline="85" endline="87" pcid="420"></source>
+<source file="systems/source-code/Depot.sol" startline="515" endline="517" pcid="359"></source>
+</class>
+
+<class classid="4" nclones="9" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="83" endline="85" pcid="15"></source>
+<source file="systems/source-code/Issuer.sol" startline="179" endline="181" pcid="823"></source>
+<source file="systems/source-code/Liquidator.sol" startline="62" endline="64" pcid="895"></source>
+<source file="systems/source-code/RewardEscrowV2.sol" startline="46" endline="48" pcid="1462"></source>
+<source file="systems/source-code/ExchangeCircuitBreaker.sol" startline="93" endline="95" pcid="444"></source>
+<source file="systems/source-code/Synth.sol" startline="200" endline="202" pcid="1566"></source>
+<source file="systems/source-code/Exchanger.sol" startline="114" endline="116" pcid="451"></source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="64" endline="66" pcid="91"></source>
+<source file="systems/source-code/FeePool.sol" startline="125" endline="127" pcid="588"></source>
+</class>
+
+<class classid="5" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="87" endline="89" pcid="16"></source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="36" endline="38" pcid="1286"></source>
+<source file="systems/source-code/FeePool.sol" startline="141" endline="143" pcid="592"></source>
+</class>
+
+<class classid="6" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="91" endline="93" pcid="17"></source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="40" endline="42" pcid="1287"></source>
+<source file="systems/source-code/NativeEtherWrapper.sol" startline="33" endline="35" pcid="1293"></source>
+<source file="systems/source-code/FeePool.sol" startline="161" endline="163" pcid="597"></source>
+</class>
+
+<class classid="7" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="95" endline="97" pcid="18"></source>
+<source file="systems/source-code/Synth.sol" startline="216" endline="218" pcid="1570"></source>
+</class>
+
+<class classid="8" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="99" endline="101" pcid="19"></source>
+<source file="systems/source-code/FeePool.sol" startline="169" endline="171" pcid="599"></source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="44" endline="46" pcid="1288"></source>
+</class>
+
+<class classid="9" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="103" endline="105" pcid="20"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="150" endline="152" pcid="1701"></source>
+</class>
+
+<class classid="10" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="69" endline="71" pcid="59"></source>
+<source file="systems/source-code/WrapperFactory.sol" startline="44" endline="46" pcid="1949"></source>
+<source file="systems/source-code/Synth.sol" startline="204" endline="206" pcid="1567"></source>
+<source file="systems/source-code/EtherWrapper.sol" startline="81" endline="83" pcid="419"></source>
+<source file="systems/source-code/Exchanger.sol" startline="134" endline="136" pcid="456"></source>
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="70" endline="72" pcid="152"></source>
+<source file="systems/source-code/Issuer.sol" startline="147" endline="149" pcid="815"></source>
+</class>
+
+<class classid="11" nclones="5" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="73" endline="75" pcid="60"></source>
+<source file="systems/source-code/Liquidator.sol" startline="58" endline="60" pcid="894"></source>
+<source file="systems/source-code/Issuer.sol" startline="131" endline="133" pcid="811"></source>
+<source file="systems/source-code/Exchanger.sol" startline="130" endline="132" pcid="455"></source>
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="58" endline="60" pcid="149"></source>
+</class>
+
+<class classid="12" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="81" endline="83" pcid="62"></source>
+<source file="systems/source-code/ExchangeRates.sol" startline="526" endline="529" pcid="544"></source>
+<source file="systems/source-code/Exchanger.sol" startline="1032" endline="1034" pcid="504"></source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="436" endline="438" pcid="138"></source>
+</class>
+
+<class classid="13" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="98" endline="100" pcid="64"></source>
+<source file="systems/source-code/RewardEscrow.sol" startline="79" endline="81" pcid="1445"></source>
+</class>
+
+<class classid="14" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="76" endline="78" pcid="94"></source>
+<source file="systems/source-code/FeePool.sol" startline="157" endline="159" pcid="596"></source>
+</class>
+
+<class classid="15" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="84" endline="86" pcid="96"></source>
+<source file="systems/source-code/Issuer.sol" startline="151" endline="153" pcid="816"></source>
+</class>
+
+<class classid="16" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="206" endline="216" pcid="115"></source>
+<source file="systems/source-code/Synthetix.sol" startline="123" endline="133" pcid="1584"></source>
+</class>
+
+<class classid="17" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="74" endline="76" pcid="153"></source>
+<source file="systems/source-code/WrapperFactory.sol" startline="40" endline="42" pcid="1948"></source>
+<source file="systems/source-code/MixinSystemSettings.sol" startline="78" endline="80" pcid="1191"></source>
+</class>
+
+<class classid="18" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="112" endline="114" pcid="172"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="163" endline="165" pcid="1324"></source>
+<source file="systems/source-code/FuturesMarketBase.sol" startline="213" endline="215" pcid="674"></source>
+</class>
+
+<class classid="19" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="116" endline="118" pcid="173"></source>
+<source file="systems/source-code/CollateralManager.sol" startline="145" endline="147" pcid="231"></source>
+</class>
+
+<class classid="20" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="124" endline="126" pcid="175"></source>
+<source file="systems/source-code/CollateralManager.sol" startline="141" endline="143" pcid="230"></source>
+<source file="systems/source-code/ExchangeCircuitBreaker.sol" startline="89" endline="91" pcid="443"></source>
+</class>
+
+<class classid="21" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="128" endline="130" pcid="176"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="159" endline="161" pcid="1323"></source>
+<source file="systems/source-code/FuturesMarketManager.sol" startline="77" endline="79" pcid="753"></source>
+<source file="systems/source-code/FuturesMarketBase.sol" startline="209" endline="211" pcid="673"></source>
+</class>
+
+<class classid="22" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="132" endline="134" pcid="177"></source>
+<source file="systems/source-code/FuturesMarketManager.sol" startline="73" endline="75" pcid="752"></source>
+</class>
+
+<class classid="23" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/CollateralErc20.sol" startline="83" endline="89" pcid="214"></source>
+<source file="systems/source-code/CollateralShort.sol" startline="53" endline="59" pcid="290"></source>
+<source file="systems/source-code/CollateralEth.sol" startline="43" endline="49" pcid="223"></source>
+</class>
+
+<class classid="24" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/CollateralErc20.sol" startline="91" endline="93" pcid="215"></source>
+<source file="systems/source-code/CollateralEth.sol" startline="51" endline="53" pcid="224"></source>
+<source file="systems/source-code/CollateralShort.sol" startline="82" endline="84" pcid="294"></source>
+</class>
+
+<class classid="25" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Depot.sol" startline="511" endline="513" pcid="358"></source>
+<source file="systems/source-code/TradingRewards.sol" startline="66" endline="68" pcid="1899"></source>
+<source file="systems/source-code/LiquidatorRewards.sol" startline="78" endline="80" pcid="925"></source>
+</class>
+
+<class classid="26" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeCircuitBreaker.sol" startline="76" endline="78" pcid="440"></source>
+<source file="systems/source-code/Exchanger.sol" startline="166" endline="168" pcid="464"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="39" endline="41" pcid="1683"></source>
+</class>
+
+<class classid="27" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="142" endline="144" pcid="458"></source>
+<source file="systems/source-code/Issuer.sol" startline="159" endline="161" pcid="818"></source>
+<source file="systems/source-code/FeePool.sol" startline="153" endline="155" pcid="595"></source>
+</class>
+
+<class classid="28" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="158" endline="160" pcid="462"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="32" endline="34" pcid="1682"></source>
+</class>
+
+<class classid="29" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="162" endline="164" pcid="463"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="160" endline="162" pcid="1703"></source>
+</class>
+
+<class classid="30" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRates.sol" startline="84" endline="86" pcid="508"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="110" endline="112" pcid="1694"></source>
+</class>
+
+<class classid="31" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRates.sol" startline="88" endline="90" pcid="509"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="154" endline="156" pcid="1702"></source>
+</class>
+
+<class classid="32" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="35" endline="37" pcid="547"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="220" endline="222" pcid="1714"></source>
+</class>
+
+<class classid="33" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="39" endline="41" pcid="548"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="226" endline="228" pcid="1715"></source>
+</class>
+
+<class classid="34" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="43" endline="45" pcid="549"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="238" endline="240" pcid="1717"></source>
+</class>
+
+<class classid="35" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="47" endline="49" pcid="550"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="244" endline="246" pcid="1718"></source>
+</class>
+
+<class classid="36" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangerWithFeeRecAlternatives.sol" startline="49" endline="51" pcid="558"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="214" endline="216" pcid="1713"></source>
+</class>
+
+<class classid="37" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="129" endline="131" pcid="589"></source>
+<source file="systems/source-code/LiquidatorRewards.sol" startline="66" endline="68" pcid="922"></source>
+<source file="systems/source-code/Issuer.sol" startline="143" endline="145" pcid="814"></source>
+</class>
+
+<class classid="38" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="149" endline="151" pcid="594"></source>
+<source file="systems/source-code/Synthetix.sol" startline="45" endline="47" pcid="1579"></source>
+<source file="systems/source-code/Issuer.sol" startline="163" endline="165" pcid="819"></source>
+<source file="systems/source-code/LiquidatorRewards.sol" startline="74" endline="76" pcid="924"></source>
+</class>
+
+<class classid="39" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="173" endline="175" pcid="600"></source>
+<source file="systems/source-code/Liquidator.sol" startline="74" endline="76" pcid="898"></source>
+<source file="systems/source-code/Issuer.sol" startline="205" endline="207" pcid="825"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="45" endline="47" pcid="1684"></source>
+</class>
+
+<class classid="40" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="177" endline="179" pcid="601"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="53" endline="55" pcid="1685"></source>
+</class>
+
+<class classid="41" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="181" endline="183" pcid="602"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="58" endline="60" pcid="1686"></source>
+</class>
+
+<class classid="42" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="205" endline="207" pcid="672"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="155" endline="157" pcid="1322"></source>
+</class>
+
+<class classid="43" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="217" endline="219" pcid="675"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="167" endline="169" pcid="1325"></source>
+</class>
+
+<class classid="44" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="232" endline="238" pcid="677"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="182" endline="188" pcid="1327"></source>
+</class>
+
+<class classid="45" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="240" endline="244" pcid="678"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="190" endline="194" pcid="1328"></source>
+</class>
+
+<class classid="46" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="246" endline="251" pcid="679"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="196" endline="201" pcid="1329"></source>
+</class>
+
+<class classid="47" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="257" endline="259" pcid="680"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="207" endline="209" pcid="1330"></source>
+</class>
+
+<class classid="48" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="261" endline="264" pcid="681"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="211" endline="214" pcid="1331"></source>
+</class>
+
+<class classid="49" nclones="2" nlines="18" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="271" endline="305" pcid="682"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="221" endline="255" pcid="1332"></source>
+</class>
+
+<class classid="50" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="307" endline="309" pcid="683"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="257" endline="259" pcid="1333"></source>
+</class>
+
+<class classid="51" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="311" endline="314" pcid="684"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="261" endline="264" pcid="1334"></source>
+</class>
+
+<class classid="52" nclones="2" nlines="8" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="316" endline="323" pcid="685"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="266" endline="273" pcid="1335"></source>
+</class>
+
+<class classid="53" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="328" endline="331" pcid="686"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="278" endline="281" pcid="1336"></source>
+</class>
+
+<class classid="54" nclones="2" nlines="13" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="339" endline="358" pcid="687"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="289" endline="308" pcid="1337"></source>
+</class>
+
+<class classid="55" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="360" endline="365" pcid="688"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="310" endline="315" pcid="1338"></source>
+</class>
+
+<class classid="56" nclones="2" nlines="17" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="367" endline="390" pcid="689"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="317" endline="340" pcid="1339"></source>
+</class>
+
+<class classid="57" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="400" endline="406" pcid="690"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="350" endline="356" pcid="1340"></source>
+</class>
+
+<class classid="58" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="418" endline="421" pcid="691"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="368" endline="371" pcid="1341"></source>
+</class>
+
+<class classid="59" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="423" endline="430" pcid="692"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="373" endline="380" pcid="1342"></source>
+</class>
+
+<class classid="60" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="432" endline="443" pcid="693"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="382" endline="393" pcid="1343"></source>
+</class>
+
+<class classid="61" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="445" endline="456" pcid="694"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="395" endline="406" pcid="1344"></source>
+</class>
+
+<class classid="62" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="462" endline="464" pcid="695"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="412" endline="414" pcid="1345"></source>
+</class>
+
+<class classid="63" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="466" endline="468" pcid="696"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="416" endline="418" pcid="1346"></source>
+</class>
+
+<class classid="64" nclones="2" nlines="37" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="470" endline="563" pcid="697"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="420" endline="513" pcid="1347"></source>
+</class>
+
+<class classid="65" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="570" endline="572" pcid="698"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="520" endline="522" pcid="1348"></source>
+</class>
+
+<class classid="66" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="577" endline="579" pcid="699"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="527" endline="529" pcid="1349"></source>
+</class>
+
+<class classid="67" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="581" endline="583" pcid="700"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="531" endline="533" pcid="1350"></source>
+</class>
+
+<class classid="68" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="585" endline="587" pcid="701"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="535" endline="537" pcid="1351"></source>
+</class>
+
+<class classid="69" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="591" endline="593" pcid="702"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="541" endline="543" pcid="1352"></source>
+</class>
+
+<class classid="70" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="598" endline="600" pcid="703"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="548" endline="550" pcid="1353"></source>
+</class>
+
+<class classid="71" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="605" endline="609" pcid="704"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="555" endline="559" pcid="1354"></source>
+</class>
+
+<class classid="72" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="614" endline="618" pcid="705"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="564" endline="568" pcid="1355"></source>
+</class>
+
+<class classid="73" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="624" endline="629" pcid="706"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="574" endline="579" pcid="1356"></source>
+</class>
+
+<class classid="74" nclones="2" nlines="8" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="658" endline="667" pcid="708"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="612" endline="621" pcid="1358"></source>
+</class>
+
+<class classid="75" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="676" endline="689" pcid="709"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="630" endline="643" pcid="1359"></source>
+</class>
+
+<class classid="76" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="694" endline="724" pcid="710"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="648" endline="678" pcid="1360"></source>
+</class>
+
+<class classid="77" nclones="2" nlines="8" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="726" endline="736" pcid="711"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="680" endline="690" pcid="1361"></source>
+</class>
+
+<class classid="78" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="741" endline="745" pcid="712"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="695" endline="699" pcid="1362"></source>
+</class>
+
+<class classid="79" nclones="2" nlines="19" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="747" endline="779" pcid="713"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="701" endline="733" pcid="1363"></source>
+</class>
+
+<class classid="80" nclones="2" nlines="16" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="782" endline="820" pcid="714"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="736" endline="774" pcid="1364"></source>
+</class>
+
+<class classid="81" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="828" endline="832" pcid="715"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="782" endline="786" pcid="1365"></source>
+</class>
+
+<class classid="82" nclones="2" nlines="7" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="838" endline="844" pcid="716"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="792" endline="798" pcid="1366"></source>
+</class>
+
+<class classid="83" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="908" endline="910" pcid="718"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="862" endline="864" pcid="1368"></source>
+</class>
+
+<class classid="84" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="916" endline="918" pcid="719"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="870" endline="872" pcid="1369"></source>
+</class>
+
+<class classid="85" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="920" endline="933" pcid="720"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="874" endline="887" pcid="1370"></source>
+</class>
+
+<class classid="86" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="938" endline="940" pcid="721"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="892" endline="894" pcid="1371"></source>
+</class>
+
+<class classid="87" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="943" endline="945" pcid="722"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="897" endline="899" pcid="1372"></source>
+</class>
+
+<class classid="88" nclones="2" nlines="7" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="947" endline="962" pcid="723"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="901" endline="916" pcid="1373"></source>
+</class>
+
+<class classid="89" nclones="2" nlines="18" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="964" endline="1000" pcid="724"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="918" endline="954" pcid="1374"></source>
+</class>
+
+<class classid="90" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/FuturesMarketBase.sol" startline="1007" endline="1014" pcid="725"></source>
+<source file="systems/source-code/PerpsV2MarketBase.sol" startline="961" endline="968" pcid="1375"></source>
+</class>
+
+<class classid="91" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="33" endline="35" pcid="773"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="34" endline="36" pcid="1377"></source>
+</class>
+
+<class classid="92" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="42" endline="44" pcid="774"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="43" endline="45" pcid="1378"></source>
+</class>
+
+<class classid="93" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="49" endline="51" pcid="775"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="50" endline="52" pcid="1379"></source>
+</class>
+
+<class classid="94" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="56" endline="58" pcid="776"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="57" endline="59" pcid="1380"></source>
+</class>
+
+<class classid="95" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="63" endline="65" pcid="777"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="64" endline="66" pcid="1381"></source>
+</class>
+
+<class classid="96" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="70" endline="72" pcid="778"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="71" endline="73" pcid="1382"></source>
+</class>
+
+<class classid="97" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="77" endline="79" pcid="779"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="78" endline="80" pcid="1383"></source>
+</class>
+
+<class classid="98" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="84" endline="86" pcid="780"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="85" endline="87" pcid="1384"></source>
+</class>
+
+<class classid="99" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="91" endline="93" pcid="781"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="92" endline="94" pcid="1385"></source>
+</class>
+
+<class classid="100" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="98" endline="100" pcid="782"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="99" endline="101" pcid="1386"></source>
+</class>
+
+<class classid="101" nclones="2" nlines="11" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="102" endline="126" pcid="783"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="103" endline="127" pcid="1387"></source>
+</class>
+
+<class classid="102" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="132" endline="134" pcid="784"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="133" endline="135" pcid="1388"></source>
+</class>
+
+<class classid="103" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="140" endline="142" pcid="785"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="141" endline="143" pcid="1389"></source>
+</class>
+
+<class classid="104" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="147" endline="149" pcid="786"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="148" endline="150" pcid="1390"></source>
+</class>
+
+<class classid="105" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="155" endline="157" pcid="787"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="156" endline="158" pcid="1391"></source>
+</class>
+
+<class classid="106" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="163" endline="170" pcid="788"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="164" endline="171" pcid="1392"></source>
+</class>
+
+<class classid="107" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="172" endline="175" pcid="789"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="173" endline="176" pcid="1393"></source>
+</class>
+
+<class classid="108" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="177" endline="180" pcid="790"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="178" endline="181" pcid="1394"></source>
+</class>
+
+<class classid="109" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="182" endline="185" pcid="791"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="183" endline="186" pcid="1395"></source>
+</class>
+
+<class classid="110" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="187" endline="190" pcid="792"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="188" endline="191" pcid="1396"></source>
+</class>
+
+<class classid="111" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="192" endline="194" pcid="793"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="193" endline="195" pcid="1397"></source>
+</class>
+
+<class classid="112" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="196" endline="198" pcid="794"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="197" endline="199" pcid="1398"></source>
+</class>
+
+<class classid="113" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="200" endline="202" pcid="795"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="201" endline="203" pcid="1399"></source>
+</class>
+
+<class classid="114" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="215" endline="218" pcid="797"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="216" endline="219" pcid="1401"></source>
+</class>
+
+<class classid="115" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="220" endline="224" pcid="798"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="221" endline="225" pcid="1402"></source>
+</class>
+
+<class classid="116" nclones="2" nlines="13" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="226" endline="248" pcid="799"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="227" endline="249" pcid="1403"></source>
+</class>
+
+<class classid="117" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="250" endline="254" pcid="800"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="251" endline="255" pcid="1404"></source>
+</class>
+
+<class classid="118" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="256" endline="259" pcid="801"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="257" endline="260" pcid="1405"></source>
+</class>
+
+<class classid="119" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="261" endline="264" pcid="802"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="262" endline="265" pcid="1406"></source>
+</class>
+
+<class classid="120" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/FuturesMarketSettings.sol" startline="266" endline="270" pcid="803"></source>
+<source file="systems/source-code/PerpsV2Settings.sol" startline="267" endline="271" pcid="1407"></source>
+</class>
+
+<class classid="121" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Issuer.sol" startline="370" endline="372" pcid="839"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="146" endline="148" pcid="1700"></source>
+</class>
+
+<class classid="122" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="22" endline="25" pcid="890"></source>
+<source file="systems/source-code/State.sol" startline="23" endline="26" pcid="1546"></source>
+</class>
+
+<class classid="123" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="27" endline="33" pcid="891"></source>
+<source file="systems/source-code/TokenState.sol" startline="25" endline="31" pcid="1896"></source>
+</class>
+
+<class classid="124" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="35" endline="37" pcid="892"></source>
+<source file="systems/source-code/TokenState.sol" startline="39" endline="41" pcid="1897"></source>
+</class>
+
+<class classid="125" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="78" endline="80" pcid="899"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="64" endline="66" pcid="1687"></source>
+</class>
+
+<class classid="126" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="82" endline="84" pcid="900"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="71" endline="73" pcid="1688"></source>
+</class>
+
+<class classid="127" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="86" endline="88" pcid="901"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="85" endline="87" pcid="1690"></source>
+</class>
+
+<class classid="128" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="90" endline="92" pcid="902"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="77" endline="79" pcid="1689"></source>
+</class>
+
+<class classid="129" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="94" endline="96" pcid="903"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="91" endline="93" pcid="1691"></source>
+</class>
+
+<class classid="130" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="98" endline="100" pcid="904"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="103" endline="105" pcid="1693"></source>
+</class>
+
+<class classid="131" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidator.sol" startline="102" endline="104" pcid="905"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="97" endline="99" pcid="1692"></source>
+</class>
+
+<class classid="132" nclones="17" nlines="6" similarity="100">
+<source file="systems/source-code/Migration_Alphard.sol" startline="142" endline="147" pcid="964"></source>
+<source file="systems/source-code/Migration_MirzamOptimism.sol" startline="68" endline="73" pcid="1055"></source>
+<source file="systems/source-code/Migration_Mirzam.sol" startline="70" endline="75" pcid="1048"></source>
+<source file="systems/source-code/Migration_Rasalhague.sol" startline="76" endline="81" pcid="1086"></source>
+<source file="systems/source-code/Migration_AlpheratzOptimism.sol" startline="118" endline="123" pcid="991"></source>
+<source file="systems/source-code/Migration_MenkentOptimism.sol" startline="143" endline="148" pcid="1022"></source>
+<source file="systems/source-code/Migration_DiphdaOptimism.sol" startline="337" endline="342" pcid="1006"></source>
+<source file="systems/source-code/Migration_Mizar.sol" startline="70" endline="75" pcid="1061"></source>
+<source file="systems/source-code/Migration_MizarOptimism.sol" startline="70" endline="75" pcid="1069"></source>
+<source file="systems/source-code/Migration_Hamal.sol" startline="93" endline="98" pcid="1016"></source>
+<source file="systems/source-code/Migration_MirachOptimism.sol" startline="211" endline="216" pcid="1037"></source>
+<source file="systems/source-code/Migration_RasalhagueOptimism.sol" startline="70" endline="75" pcid="1092"></source>
+<source file="systems/source-code/Migration_AlphardOptimism.sol" startline="122" endline="127" pcid="974"></source>
+<source file="systems/source-code/Migration_Diphda.sol" startline="394" endline="399" pcid="1000"></source>
+<source file="systems/source-code/Migration_Alpheratz.sol" startline="118" endline="123" pcid="983"></source>
+<source file="systems/source-code/Migration_Mirach.sol" startline="177" endline="182" pcid="1029"></source>
+<source file="systems/source-code/Migration_NunkiOptimism.sol" startline="167" endline="172" pcid="1077"></source>
+</class>
+
+<class classid="133" nclones="17" nlines="6" similarity="100">
+<source file="systems/source-code/Migration_Alphard.sol" startline="149" endline="154" pcid="965"></source>
+<source file="systems/source-code/Migration_Mizar.sol" startline="77" endline="82" pcid="1062"></source>
+<source file="systems/source-code/Migration_AlpheratzOptimism.sol" startline="125" endline="130" pcid="992"></source>
+<source file="systems/source-code/Migration_MirachOptimism.sol" startline="218" endline="223" pcid="1038"></source>
+<source file="systems/source-code/Migration_Rasalhague.sol" startline="83" endline="88" pcid="1087"></source>
+<source file="systems/source-code/Migration_RasalhagueOptimism.sol" startline="77" endline="82" pcid="1093"></source>
+<source file="systems/source-code/Migration_Diphda.sol" startline="401" endline="406" pcid="1001"></source>
+<source file="systems/source-code/Migration_AlphardOptimism.sol" startline="129" endline="134" pcid="975"></source>
+<source file="systems/source-code/Migration_NunkiOptimism.sol" startline="174" endline="179" pcid="1078"></source>
+<source file="systems/source-code/Migration_DiphdaOptimism.sol" startline="344" endline="349" pcid="1007"></source>
+<source file="systems/source-code/Migration_Mirach.sol" startline="184" endline="189" pcid="1030"></source>
+<source file="systems/source-code/Migration_Mirzam.sol" startline="77" endline="82" pcid="1049"></source>
+<source file="systems/source-code/Migration_MizarOptimism.sol" startline="77" endline="82" pcid="1070"></source>
+<source file="systems/source-code/Migration_Hamal.sol" startline="100" endline="105" pcid="1017"></source>
+<source file="systems/source-code/Migration_MenkentOptimism.sol" startline="150" endline="155" pcid="1023"></source>
+<source file="systems/source-code/Migration_Alpheratz.sol" startline="125" endline="130" pcid="984"></source>
+<source file="systems/source-code/Migration_MirzamOptimism.sol" startline="75" endline="80" pcid="1056"></source>
+</class>
+
+<class classid="134" nclones="2" nlines="13" similarity="100">
+<source file="systems/source-code/Migration_Alphard.sol" startline="156" endline="171" pcid="966"></source>
+<source file="systems/source-code/Migration_AlphardOptimism.sol" startline="136" endline="151" pcid="976"></source>
+</class>
+
+<class classid="135" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/Migration_Mirzam.sol" startline="38" endline="43" pcid="1046"></source>
+<source file="systems/source-code/Migration_MirzamOptimism.sol" startline="38" endline="43" pcid="1053"></source>
+</class>
+
+<class classid="136" nclones="2" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_Mirzam.sol" startline="84" endline="93" pcid="1050"></source>
+<source file="systems/source-code/Migration_MirzamOptimism.sol" startline="82" endline="91" pcid="1057"></source>
+</class>
+
+<class classid="137" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/Migration_Mizar.sol" startline="38" endline="43" pcid="1059"></source>
+<source file="systems/source-code/Migration_MizarOptimism.sol" startline="38" endline="43" pcid="1067"></source>
+</class>
+
+<class classid="138" nclones="2" nlines="10" similarity="100">
+<source file="systems/source-code/Migration_Mizar.sol" startline="45" endline="68" pcid="1060"></source>
+<source file="systems/source-code/Migration_MizarOptimism.sol" startline="45" endline="68" pcid="1068"></source>
+</class>
+
+<class classid="139" nclones="2" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_Mizar.sol" startline="84" endline="93" pcid="1063"></source>
+<source file="systems/source-code/Migration_MizarOptimism.sol" startline="84" endline="93" pcid="1071"></source>
+</class>
+
+<class classid="140" nclones="2" nlines="7" similarity="100">
+<source file="systems/source-code/Migration_Rasalhague.sol" startline="90" endline="99" pcid="1088"></source>
+<source file="systems/source-code/Migration_RasalhagueOptimism.sol" startline="84" endline="93" pcid="1094"></source>
+</class>
+
+<class classid="141" nclones="3" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="46" endline="49" pcid="1105"></source>
+<source file="systems/source-code/MixinSystemSettings.sol" startline="73" endline="76" pcid="1190"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="46" endline="49" pcid="1153"></source>
+</class>
+
+<class classid="142" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="51" endline="53" pcid="1106"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="51" endline="53" pcid="1154"></source>
+</class>
+
+<class classid="143" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="57" endline="59" pcid="1107"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="57" endline="59" pcid="1155"></source>
+</class>
+
+<class classid="144" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="61" endline="63" pcid="1108"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="61" endline="63" pcid="1156"></source>
+</class>
+
+<class classid="145" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="65" endline="67" pcid="1109"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="65" endline="67" pcid="1157"></source>
+</class>
+
+<class classid="146" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="69" endline="71" pcid="1110"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="69" endline="71" pcid="1158"></source>
+</class>
+
+<class classid="147" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="73" endline="75" pcid="1111"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="73" endline="75" pcid="1159"></source>
+</class>
+
+<class classid="148" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="77" endline="79" pcid="1112"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="77" endline="79" pcid="1160"></source>
+</class>
+
+<class classid="149" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="81" endline="83" pcid="1113"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="81" endline="83" pcid="1161"></source>
+</class>
+
+<class classid="150" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="85" endline="87" pcid="1114"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="85" endline="87" pcid="1162"></source>
+</class>
+
+<class classid="151" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="89" endline="91" pcid="1115"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="89" endline="91" pcid="1163"></source>
+</class>
+
+<class classid="152" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="93" endline="95" pcid="1116"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="93" endline="95" pcid="1164"></source>
+</class>
+
+<class classid="153" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="97" endline="99" pcid="1117"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="97" endline="99" pcid="1165"></source>
+</class>
+
+<class classid="154" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="101" endline="103" pcid="1118"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="101" endline="103" pcid="1166"></source>
+</class>
+
+<class classid="155" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="105" endline="107" pcid="1119"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="105" endline="107" pcid="1167"></source>
+</class>
+
+<class classid="156" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesMarketSettings.sol" startline="109" endline="111" pcid="1120"></source>
+<source file="systems/source-code/MixinPerpsV2MarketSettings.sol" startline="109" endline="111" pcid="1168"></source>
+</class>
+
+<class classid="157" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesNextPriceOrders.sol" startline="31" endline="33" pcid="1121"></source>
+<source file="systems/source-code/MixinPerpsV2MarketNextPrice.sol" startline="31" endline="33" pcid="1145"></source>
+</class>
+
+<class classid="158" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesNextPriceOrders.sol" startline="37" endline="39" pcid="1122"></source>
+<source file="systems/source-code/MixinPerpsV2MarketNextPrice.sol" startline="37" endline="39" pcid="1146"></source>
+</class>
+
+<class classid="159" nclones="2" nlines="17" similarity="100">
+<source file="systems/source-code/MixinFuturesNextPriceOrders.sol" startline="41" endline="91" pcid="1123"></source>
+<source file="systems/source-code/MixinPerpsV2MarketNextPrice.sol" startline="41" endline="91" pcid="1147"></source>
+</class>
+
+<class classid="160" nclones="2" nlines="19" similarity="100">
+<source file="systems/source-code/MixinFuturesNextPriceOrders.sol" startline="105" endline="149" pcid="1124"></source>
+<source file="systems/source-code/MixinPerpsV2MarketNextPrice.sol" startline="105" endline="149" pcid="1148"></source>
+</class>
+
+<class classid="161" nclones="2" nlines="23" similarity="100">
+<source file="systems/source-code/MixinFuturesNextPriceOrders.sol" startline="164" endline="226" pcid="1125"></source>
+<source file="systems/source-code/MixinPerpsV2MarketNextPrice.sol" startline="164" endline="226" pcid="1149"></source>
+</class>
+
+<class classid="162" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesNextPriceOrders.sol" startline="232" endline="234" pcid="1126"></source>
+<source file="systems/source-code/MixinPerpsV2MarketNextPrice.sol" startline="232" endline="234" pcid="1150"></source>
+</class>
+
+<class classid="163" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesNextPriceOrders.sol" startline="238" endline="240" pcid="1127"></source>
+<source file="systems/source-code/MixinPerpsV2MarketNextPrice.sol" startline="238" endline="240" pcid="1151"></source>
+</class>
+
+<class classid="164" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/MixinFuturesNextPriceOrders.sol" startline="243" endline="253" pcid="1128"></source>
+<source file="systems/source-code/MixinPerpsV2MarketNextPrice.sol" startline="243" endline="253" pcid="1152"></source>
+</class>
+
+<class classid="165" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="14" endline="18" pcid="1129"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="14" endline="18" pcid="1169"></source>
+</class>
+
+<class classid="166" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="24" endline="27" pcid="1130"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="24" endline="27" pcid="1170"></source>
+</class>
+
+<class classid="167" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="33" endline="36" pcid="1131"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="33" endline="36" pcid="1171"></source>
+</class>
+
+<class classid="168" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="42" endline="45" pcid="1132"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="42" endline="45" pcid="1172"></source>
+</class>
+
+<class classid="169" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="50" endline="52" pcid="1133"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="50" endline="52" pcid="1173"></source>
+</class>
+
+<class classid="170" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="57" endline="60" pcid="1134"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="57" endline="60" pcid="1174"></source>
+</class>
+
+<class classid="171" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="65" endline="68" pcid="1135"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="65" endline="68" pcid="1175"></source>
+</class>
+
+<class classid="172" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="73" endline="76" pcid="1136"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="73" endline="76" pcid="1176"></source>
+</class>
+
+<class classid="173" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="81" endline="84" pcid="1137"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="81" endline="84" pcid="1177"></source>
+</class>
+
+<class classid="174" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="90" endline="93" pcid="1138"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="90" endline="93" pcid="1178"></source>
+</class>
+
+<class classid="175" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="102" endline="106" pcid="1139"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="102" endline="106" pcid="1179"></source>
+</class>
+
+<class classid="176" nclones="2" nlines="9" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="115" endline="125" pcid="1140"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="115" endline="125" pcid="1180"></source>
+</class>
+
+<class classid="177" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="130" endline="133" pcid="1141"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="130" endline="133" pcid="1181"></source>
+</class>
+
+<class classid="178" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="143" endline="155" pcid="1142"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="143" endline="155" pcid="1182"></source>
+</class>
+
+<class classid="179" nclones="2" nlines="11" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="160" endline="190" pcid="1143"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="160" endline="190" pcid="1183"></source>
+</class>
+
+<class classid="180" nclones="2" nlines="10" similarity="100">
+<source file="systems/source-code/MixinFuturesViews.sol" startline="193" endline="223" pcid="1144"></source>
+<source file="systems/source-code/MixinPerpsV2MarketViews.sol" startline="193" endline="223" pcid="1184"></source>
+</class>
+
+<class classid="181" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MockEtherWrapper.sol" startline="13" endline="15" pcid="1245"></source>
+<source file="systems/source-code/MockWrapperFactory.sol" startline="13" endline="15" pcid="1285"></source>
+</class>
+
+<class classid="182" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/OwnerRelayOnEthereum.sol" startline="24" endline="26" pcid="1306"></source>
+<source file="systems/source-code/OwnerRelayOnOptimism.sol" startline="28" endline="30" pcid="1312"></source>
+</class>
+
+<class classid="183" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="17" endline="19" pcid="1422"></source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="17" endline="19" pcid="1425"></source>
+</class>
+
+<class classid="184" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="21" endline="27" pcid="1423"></source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="21" endline="27" pcid="1426"></source>
+</class>
+
+<class classid="185" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="32" endline="34" pcid="1424"></source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="32" endline="34" pcid="1427"></source>
+</class>
+
+<class classid="186" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="60" endline="63" pcid="1443"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="46" endline="49" pcid="1642"></source>
+</class>
+
+<class classid="187" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="98" endline="100" pcid="1448"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="71" endline="73" pcid="1645"></source>
+</class>
+
+<class classid="188" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="105" endline="107" pcid="1449"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="78" endline="80" pcid="1646"></source>
+</class>
+
+<class classid="189" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="112" endline="114" pcid="1450"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="85" endline="87" pcid="1647"></source>
+</class>
+
+<class classid="190" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="143" endline="145" pcid="1453"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="116" endline="118" pcid="1650"></source>
+</class>
+
+<class classid="191" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="150" endline="152" pcid="1454"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="123" endline="125" pcid="1651"></source>
+</class>
+
+<class classid="192" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="65" endline="67" pcid="1503"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="49" endline="51" pcid="1531"></source>
+</class>
+
+<class classid="193" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="69" endline="71" pcid="1504"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="53" endline="55" pcid="1532"></source>
+</class>
+
+<class classid="194" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="73" endline="75" pcid="1505"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="57" endline="59" pcid="1533"></source>
+</class>
+
+<class classid="195" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="77" endline="85" pcid="1506"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="61" endline="69" pcid="1534"></source>
+</class>
+
+<class classid="196" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="87" endline="89" pcid="1507"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="71" endline="73" pcid="1535"></source>
+</class>
+
+<class classid="197" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="91" endline="93" pcid="1508"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="75" endline="77" pcid="1536"></source>
+</class>
+
+<class classid="198" nclones="2" nlines="15" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="125" endline="144" pcid="1512"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="113" endline="132" pcid="1541"></source>
+</class>
+
+<class classid="199" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="146" endline="153" pcid="1513"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="141" endline="148" pcid="1543"></source>
+</class>
+
+<class classid="200" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TestableAddressSet.sol" startline="26" endline="28" pcid="1858"></source>
+<source file="systems/source-code/TestableBytes32Set.sol" startline="26" endline="28" pcid="1865"></source>
+</class>
+
+<class classid="201" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TestableFuturesMarket.sol" startline="12" endline="14" pcid="1871"></source>
+<source file="systems/source-code/TestablePerpsV2Market.sol" startline="12" endline="14" pcid="1881"></source>
+</class>
+
+<class classid="202" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/TestableFuturesMarket.sol" startline="16" endline="19" pcid="1872"></source>
+<source file="systems/source-code/TestablePerpsV2Market.sol" startline="16" endline="19" pcid="1882"></source>
+</class>
+
+<class classid="203" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TestableFuturesMarket.sol" startline="21" endline="23" pcid="1873"></source>
+<source file="systems/source-code/TestablePerpsV2Market.sol" startline="21" endline="23" pcid="1883"></source>
+</class>
+
+<class classid="204" nclones="2" nlines="9" similarity="100">
+<source file="systems/source-code/TestableFuturesMarket.sol" startline="28" endline="44" pcid="1874"></source>
+<source file="systems/source-code/TestablePerpsV2Market.sol" startline="28" endline="44" pcid="1884"></source>
+</class>
+
+<class classid="205" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/TestableFuturesMarket.sol" startline="52" endline="56" pcid="1875"></source>
+<source file="systems/source-code/TestablePerpsV2Market.sol" startline="52" endline="56" pcid="1885"></source>
+</class>
+
+<class classid="206" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/TestableFuturesMarket.sol" startline="61" endline="66" pcid="1876"></source>
+<source file="systems/source-code/TestablePerpsV2Market.sol" startline="61" endline="66" pcid="1886"></source>
+</class>
+
+</clones>

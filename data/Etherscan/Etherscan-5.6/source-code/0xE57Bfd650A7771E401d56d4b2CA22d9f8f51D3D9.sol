@@ -1,0 +1,24 @@
+{{
+  "language": "Solidity",
+  "sources": {
+    "contracts/UniswapFactoryHelper.sol": {
+      "content": "// SPDX-License-Identifier: AGPL-3.0\npragma solidity 0.5.16;\n\ninterface IUniswapV2Factory {\n    function getPair(address tokenA, address tokenB)\n        external\n        view\n        returns (address pair);\n\n    function allPairs(uint256) external view returns (address pair);\n\n    function allPairsLength() external view returns (uint256);\n}\n\ninterface IUniswapV2Pool {\n    function token0() external view returns (address);\n\n    function token1() external view returns (address);\n\n    function getReserves()\n        external\n        view\n        returns (\n            uint112,\n            uint112,\n            uint32\n        );\n}\n\ncontract UniswapFactoryHelper {\n    function getPairsFor(IUniswapV2Factory factory, address token)\n        public\n        view\n        returns (address[] memory)\n    {\n        uint256 allPairsLength = factory.allPairsLength();\n        address[] memory pairs = new address[](allPairsLength);\n        uint256 count = 0;\n        for (uint256 i = 0; i < allPairsLength; i++) {\n            address pair = factory.allPairs(i);\n            IUniswapV2Pool pool = IUniswapV2Pool(pair);\n            if (token == pool.token0()) {\n                pairs[count] = pair;\n                count++;\n            } else if (token == pool.token1()) {\n                pairs[count] = pair;\n                count++;\n            }\n        }\n        address[] memory resized = new address[](count);\n        for (uint256 i = 0; i < count; i++) {\n            resized[i] = pairs[i];\n        }\n        return resized;\n    }\n\n    function deepestPoolFor(IUniswapV2Factory factory, address token)\n        external\n        view\n        returns (address, uint112)\n    {\n        return deepestPoolFor(factory, token, new address[](0));\n    }\n\n    function deepestPoolFor(\n        IUniswapV2Factory factory,\n        address token,\n        address[] memory ignorePools\n    ) public view returns (address, uint112) {\n        uint256 allPairsLength = factory.allPairsLength();\n        uint112 deepestReserves = 0;\n        address deepestPool = address(0);\n        for (uint256 i = 0; i < allPairsLength; i++) {\n            address pair = factory.allPairs(i);\n            IUniswapV2Pool pool = IUniswapV2Pool(pair);\n            if (token == pool.token0()) {\n                if (shouldIgnore(pair, ignorePools)) {\n                    continue;\n                }\n                (uint112 reserves, , ) = pool.getReserves();\n                if (reserves > deepestReserves) {\n                    deepestReserves = reserves;\n                    deepestPool = pair;\n                }\n            } else if (token == pool.token1()) {\n                if (shouldIgnore(pair, ignorePools)) {\n                    continue;\n                }\n                (, uint112 reserves, ) = pool.getReserves();\n                if (reserves > deepestReserves) {\n                    deepestReserves = reserves;\n                    deepestPool = pair;\n                }\n            }\n        }\n        return (deepestPool, deepestReserves);\n    }\n\n    function deepestPoolForFrom(address token, IUniswapV2Pool[] memory pools)\n        public\n        view\n        returns (address, uint112)\n    {\n        uint256 poolsLength = pools.length;\n        uint112 deepestReserves = 0;\n        address deepestPool = address(0);\n        for (uint256 i = 0; i < poolsLength; i++) {\n            IUniswapV2Pool pool = pools[i];\n            if (token == pool.token0()) {\n                (uint112 reserves, , ) = pool.getReserves();\n                if (reserves > deepestReserves) {\n                    deepestReserves = reserves;\n                    deepestPool = address(pool);\n                }\n            } else if (token == pool.token1()) {\n                (, uint112 reserves, ) = pool.getReserves();\n                if (reserves > deepestReserves) {\n                    deepestReserves = reserves;\n                    deepestPool = address(pool);\n                }\n            }\n        }\n        return (deepestPool, deepestReserves);\n    }\n\n    function shouldIgnore(address pair, address[] memory ignorePools)\n        internal\n        pure\n        returns (bool)\n    {\n        for (uint256 i = 0; i < ignorePools.length; i++) {\n            if (pair == ignorePools[i]) {\n                return true;\n            }\n        }\n        return false;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "abi"
+        ]
+      }
+    },
+    "remappings": []
+  }
+}}

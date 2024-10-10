@@ -1,0 +1,862 @@
+<clones>
+<systeminfo processor="nicad6" system="source-code" granularity="functions" threshold="30%" minlines="3" maxlines="2500"/>
+<cloneinfo npcs="534" npairs="85"/>
+<runinfo ncompares="62112" cputime="9095"/>
+<classinfo nclasses="38"/>
+
+<class classid="1" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Checkpoints.t.sol" startline="20" endline="22" pcid="30">
+    function _boundUint32(uint32 x, uint32 min, uint32 max) internal view returns (uint32) {
+        return SafeCast.toUint32(bound(uint256(x), uint256(min), uint256(max)));
+    }
+</source>
+<source file="systems/source-code/Checkpoints.t.sol" startline="143" endline="145" pcid="38">
+    function _boundUint32(uint32 x, uint32 min, uint32 max) internal view returns (uint32) {
+        return SafeCast.toUint32(bound(uint256(x), uint256(min), uint256(max)));
+    }
+</source>
+</class>
+
+<class classid="2" nclones="2" nlines="8" similarity="100">
+<source file="systems/source-code/Checkpoints.t.sol" startline="24" endline="31" pcid="31">
+    function _prepareKeys(uint32[] memory keys, uint32 maxSpread) internal view {
+        uint32 lastKey = 0;
+        for (uint256 i = 0; i < keys.length; ++i) {
+            uint32 key = _boundUint32(keys[i], lastKey, lastKey + maxSpread);
+            keys[i] = key;
+            lastKey = key;
+        }
+    }
+</source>
+<source file="systems/source-code/Checkpoints.t.sol" startline="147" endline="154" pcid="39">
+    function _prepareKeys(uint32[] memory keys, uint32 maxSpread) internal view {
+        uint32 lastKey = 0;
+        for (uint256 i = 0; i < keys.length; ++i) {
+            uint32 key = _boundUint32(keys[i], lastKey, lastKey + maxSpread);
+            keys[i] = key;
+            lastKey = key;
+        }
+    }
+</source>
+</class>
+
+<class classid="3" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/Checkpoints.t.sol" startline="33" endline="38" pcid="32">
+    function _assertLatestCheckpoint(bool exist, uint32 key, uint224 value) internal {
+        (bool _exist, uint32 _key, uint224 _value) = _ckpts.latestCheckpoint();
+        assertEq(_exist, exist);
+        assertEq(_key, key);
+        assertEq(_value, value);
+    }
+</source>
+<source file="systems/source-code/Checkpoints.t.sol" startline="156" endline="161" pcid="40">
+    function _assertLatestCheckpoint(bool exist, uint32 key, uint224 value) internal {
+        (bool _exist, uint32 _key, uint224 _value) = _ckpts.latestCheckpoint();
+        assertEq(_exist, exist);
+        assertEq(_key, key);
+        assertEq(_value, value);
+    }
+</source>
+</class>
+
+<class classid="4" nclones="3" nlines="25" similarity="76">
+<source file="systems/source-code/Checkpoints.t.sol" startline="41" endline="77" pcid="33">
+    function testPush(uint32[] memory keys, uint224[] memory values, uint32 pastKey) public {
+        vm.assume(values.length > 0 && values.length <= keys.length);
+        _prepareKeys(keys, _KEY_MAX_GAP);
+
+        // initial state
+        assertEq(_ckpts.length(), 0);
+        assertEq(_ckpts.latest(), 0);
+        _assertLatestCheckpoint(false, 0, 0);
+
+        uint256 duplicates = 0;
+        for (uint256 i = 0; i < keys.length; ++i) {
+            uint32 key = keys[i];
+            uint224 value = values[i % values.length];
+            if (i > 0 && key == keys[i - 1]) ++duplicates;
+
+            // push
+            vm.roll(key);
+            _ckpts.push(value);
+
+            // check length & latest
+            assertEq(_ckpts.length(), i + 1 - duplicates);
+            assertEq(_ckpts.latest(), value);
+            _assertLatestCheckpoint(true, key, value);
+        }
+
+        // Can't push any key in the past
+        if (keys.length > 0) {
+            uint32 lastKey = keys[keys.length - 1];
+            if (lastKey > 0) {
+                pastKey = _boundUint32(pastKey, 0, lastKey - 1);
+
+                vm.roll(pastKey);
+                vm.expectRevert();
+                this.push(values[keys.length % values.length]);
+            }
+        }
+    }
+</source>
+<source file="systems/source-code/Checkpoints.t.sol" startline="164" endline="197" pcid="41">
+    function testPush(uint32[] memory keys, uint224[] memory values, uint32 pastKey) public {
+        vm.assume(values.length > 0 && values.length <= keys.length);
+        _prepareKeys(keys, _KEY_MAX_GAP);
+
+        // initial state
+        assertEq(_ckpts.length(), 0);
+        assertEq(_ckpts.latest(), 0);
+        _assertLatestCheckpoint(false, 0, 0);
+
+        uint256 duplicates = 0;
+        for (uint256 i = 0; i < keys.length; ++i) {
+            uint32 key = keys[i];
+            uint224 value = values[i % values.length];
+            if (i > 0 && key == keys[i - 1]) ++duplicates;
+
+            // push
+            _ckpts.push(key, value);
+
+            // check length & latest
+            assertEq(_ckpts.length(), i + 1 - duplicates);
+            assertEq(_ckpts.latest(), value);
+            _assertLatestCheckpoint(true, key, value);
+        }
+
+        if (keys.length > 0) {
+            uint32 lastKey = keys[keys.length - 1];
+            if (lastKey > 0) {
+                pastKey = _boundUint32(pastKey, 0, lastKey - 1);
+
+                vm.expectRevert();
+                this.push(pastKey, values[keys.length % values.length]);
+            }
+        }
+    }
+</source>
+<source file="systems/source-code/Checkpoints.t.sol" startline="272" endline="305" pcid="47">
+    function testPush(uint96[] memory keys, uint160[] memory values, uint96 pastKey) public {
+        vm.assume(values.length > 0 && values.length <= keys.length);
+        _prepareKeys(keys, _KEY_MAX_GAP);
+
+        // initial state
+        assertEq(_ckpts.length(), 0);
+        assertEq(_ckpts.latest(), 0);
+        _assertLatestCheckpoint(false, 0, 0);
+
+        uint256 duplicates = 0;
+        for (uint256 i = 0; i < keys.length; ++i) {
+            uint96 key = keys[i];
+            uint160 value = values[i % values.length];
+            if (i > 0 && key == keys[i - 1]) ++duplicates;
+
+            // push
+            _ckpts.push(key, value);
+
+            // check length & latest
+            assertEq(_ckpts.length(), i + 1 - duplicates);
+            assertEq(_ckpts.latest(), value);
+            _assertLatestCheckpoint(true, key, value);
+        }
+
+        if (keys.length > 0) {
+            uint96 lastKey = keys[keys.length - 1];
+            if (lastKey > 0) {
+                pastKey = _boundUint96(pastKey, 0, lastKey - 1);
+
+                vm.expectRevert();
+                this.push(pastKey, values[keys.length % values.length]);
+            }
+        }
+    }
+</source>
+</class>
+
+<class classid="5" nclones="2" nlines="8" similarity="83">
+<source file="systems/source-code/EnumerableMap.sol" startline="263" endline="273" pcid="106">
+    function keys(UintToUintMap storage map) internal view returns (uint256[] memory) {
+        bytes32[] memory store = keys(map._inner);
+        uint256[] memory result;
+
+        /// @solidity memory-safe-assembly
+        assembly {
+            result := store
+        }
+
+        return result;
+    }
+</source>
+<source file="systems/source-code/EnumerableMap.sol" startline="371" endline="381" pcid="115">
+    function keys(UintToAddressMap storage map) internal view returns (uint256[] memory) {
+        bytes32[] memory store = keys(map._inner);
+        uint256[] memory result;
+
+        /// @solidity memory-safe-assembly
+        assembly {
+            result := store
+        }
+
+        return result;
+    }
+</source>
+</class>
+
+<class classid="6" nclones="2" nlines="6" similarity="75">
+<source file="systems/source-code/ERC1271WalletMock.sol" startline="20" endline="25" pcid="185">
+    function isValidSignature(bytes32, bytes memory) public pure override returns (bytes4) {
+        assembly {
+            mstore(0, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+            return(0, 32)
+        }
+    }
+</source>
+<source file="systems/source-code/ERC165MaliciousData.sol" startline="6" endline="11" pcid="191">
+    function supportsInterface(bytes4) public pure returns (bool) {
+        assembly {
+            mstore(0, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+            return(0, 32)
+        }
+    }
+</source>
+</class>
+
+<class classid="7" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20FlashMintHarness.sol" startline="15" endline="17" pcid="198">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20Mock.sol" startline="9" endline="11" pcid="203">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20PermitHarness.sol" startline="10" endline="12" pcid="205">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC4626Mock.sol" startline="9" endline="11" pcid="225">
+    function mint(address account, uint256 amount) external {
+        _mint(account, amount);
+    }
+</source>
+</class>
+
+<class classid="8" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/ERC20FlashMintHarness.sol" startline="19" endline="21" pcid="199">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC4626Mock.sol" startline="13" endline="15" pcid="226">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20PermitHarness.sol" startline="14" endline="16" pcid="206">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/ERC20Mock.sol" startline="13" endline="15" pcid="204">
+    function burn(address account, uint256 amount) external {
+        _burn(account, amount);
+    }
+</source>
+</class>
+
+<class classid="9" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721ConsecutiveEnumerableMock.sol" startline="26" endline="28" pcid="228">
+    function _ownerOf(uint256 tokenId) internal view virtual override(ERC721, ERC721Consecutive) returns (address) {
+        return super._ownerOf(tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721ConsecutiveMock.sol" startline="30" endline="32" pcid="232">
+    function _ownerOf(uint256 tokenId) internal view virtual override(ERC721, ERC721Consecutive) returns (address) {
+        return super._ownerOf(tokenId);
+    }
+</source>
+</class>
+
+<class classid="10" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ERC721ConsecutiveEnumerableMock.sol" startline="30" endline="32" pcid="229">
+    function _mint(address to, uint256 tokenId) internal virtual override(ERC721, ERC721Consecutive) {
+        super._mint(to, tokenId);
+    }
+</source>
+<source file="systems/source-code/ERC721ConsecutiveMock.sol" startline="34" endline="36" pcid="233">
+    function _mint(address to, uint256 tokenId) internal virtual override(ERC721, ERC721Consecutive) {
+        super._mint(to, tokenId);
+    }
+</source>
+</class>
+
+<class classid="11" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="20" endline="22" pcid="287">
+    function initialize() public initializer {
+        initializerRan = true;
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="58" endline="60" pcid="294">
+    function initialize() public initializer {
+        initializerRan = true;
+    }
+</source>
+</class>
+
+<class classid="12" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/InitializableMock.sol" startline="24" endline="26" pcid="288">
+    function initializeOnlyInitializing() public onlyInitializing {
+        onlyInitializingRan = true;
+    }
+</source>
+<source file="systems/source-code/InitializableMock.sol" startline="62" endline="64" pcid="295">
+    function initializeOnlyInitializing() public onlyInitializing {
+        onlyInitializingRan = true;
+    }
+</source>
+</class>
+
+<class classid="13" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor.sol" startline="36" endline="40" pcid="323">
+    function state(
+        uint256 proposalId
+    ) public view override(Governor, IGovernor, GovernorTimelockControl) returns (ProposalState) {
+        return super.state(proposalId);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="42" endline="46" pcid="353">
+    function state(
+        uint256 proposalId
+    ) public view override(Governor, IGovernor, GovernorTimelockControl) returns (ProposalState) {
+        return super.state(proposalId);
+    }
+</source>
+</class>
+
+<class classid="14" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor.sol" startline="42" endline="49" pcid="324">
+    function propose(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        string memory description
+    ) public override(Governor, GovernorCompatibilityBravo, IGovernor) returns (uint256) {
+        return super.propose(targets, values, calldatas, description);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="48" endline="55" pcid="354">
+    function propose(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        string memory description
+    ) public override(Governor, GovernorCompatibilityBravo, IGovernor) returns (uint256) {
+        return super.propose(targets, values, calldatas, description);
+    }
+</source>
+</class>
+
+<class classid="15" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor.sol" startline="51" endline="58" pcid="325">
+    function cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) public override(Governor, GovernorCompatibilityBravo, IGovernor) returns (uint256) {
+        return super.cancel(targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="57" endline="64" pcid="355">
+    function cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) public override(Governor, GovernorCompatibilityBravo, IGovernor) returns (uint256) {
+        return super.cancel(targets, values, calldatas, descriptionHash);
+    }
+</source>
+</class>
+
+<class classid="16" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor.sol" startline="60" endline="68" pcid="326">
+    function _execute(
+        uint256 proposalId,
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) {
+        super._execute(proposalId, targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="57" endline="65" pcid="345">
+    function _execute(
+        uint256 proposalId,
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) {
+        super._execute(proposalId, targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor1.sol" startline="51" endline="59" pcid="335">
+    function _execute(
+        uint256 proposalId,
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) {
+        super._execute(proposalId, targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="66" endline="74" pcid="356">
+    function _execute(
+        uint256 proposalId,
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) {
+        super._execute(proposalId, targets, values, calldatas, descriptionHash);
+    }
+</source>
+</class>
+
+<class classid="17" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor.sol" startline="70" endline="77" pcid="327">
+    function _cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) returns (uint256) {
+        return super._cancel(targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="67" endline="74" pcid="346">
+    function _cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) returns (uint256) {
+        return super._cancel(targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="76" endline="83" pcid="357">
+    function _cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) returns (uint256) {
+        return super._cancel(targets, values, calldatas, descriptionHash);
+    }
+</source>
+<source file="systems/source-code/MyGovernor1.sol" startline="61" endline="68" pcid="336">
+    function _cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal override(Governor, GovernorTimelockControl) returns (uint256) {
+        return super._cancel(targets, values, calldatas, descriptionHash);
+    }
+</source>
+</class>
+
+<class classid="18" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor.sol" startline="79" endline="81" pcid="328">
+    function _executor() internal view override(Governor, GovernorTimelockControl) returns (address) {
+        return super._executor();
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="85" endline="87" pcid="358">
+    function _executor() internal view override(Governor, GovernorTimelockControl) returns (address) {
+        return super._executor();
+    }
+</source>
+<source file="systems/source-code/MyGovernor1.sol" startline="70" endline="72" pcid="337">
+    function _executor() internal view override(Governor, GovernorTimelockControl) returns (address) {
+        return super._executor();
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="76" endline="78" pcid="347">
+    function _executor() internal view override(Governor, GovernorTimelockControl) returns (address) {
+        return super._executor();
+    }
+</source>
+</class>
+
+<class classid="19" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor.sol" startline="83" endline="87" pcid="329">
+    function supportsInterface(
+        bytes4 interfaceId
+    ) public view override(Governor, IERC165, GovernorTimelockControl) returns (bool) {
+        return super.supportsInterface(interfaceId);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="89" endline="93" pcid="359">
+    function supportsInterface(
+        bytes4 interfaceId
+    ) public view override(Governor, IERC165, GovernorTimelockControl) returns (bool) {
+        return super.supportsInterface(interfaceId);
+    }
+</source>
+</class>
+
+<class classid="20" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="22" endline="24" pcid="330">
+    function votingDelay() public pure override returns (uint256) {
+        return 1; // 1 block
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="22" endline="24" pcid="349">
+    function votingDelay() public pure override returns (uint256) {
+        return 1; // 1 block
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="24" endline="26" pcid="339">
+    function votingDelay() public pure override returns (uint256) {
+        return 1; // 1 block
+    }
+</source>
+</class>
+
+<class classid="21" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="26" endline="28" pcid="331">
+    function votingPeriod() public pure override returns (uint256) {
+        return 45818; // 1 week
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="26" endline="28" pcid="350">
+    function votingPeriod() public pure override returns (uint256) {
+        return 45818; // 1 week
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="28" endline="30" pcid="340">
+    function votingPeriod() public pure override returns (uint256) {
+        return 45818; // 1 week
+    }
+</source>
+</class>
+
+<class classid="22" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="32" endline="36" pcid="332">
+    function quorum(
+        uint256 blockNumber
+    ) public view override(IGovernor, GovernorVotesQuorumFraction) returns (uint256) {
+        return super.quorum(blockNumber);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="38" endline="42" pcid="342">
+    function quorum(
+        uint256 blockNumber
+    ) public view override(IGovernor, GovernorVotesQuorumFraction) returns (uint256) {
+        return super.quorum(blockNumber);
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="36" endline="40" pcid="352">
+    function quorum(
+        uint256 blockNumber
+    ) public view override(IGovernor, GovernorVotesQuorumFraction) returns (uint256) {
+        return super.quorum(blockNumber);
+    }
+</source>
+</class>
+
+<class classid="23" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="38" endline="40" pcid="333">
+    function state(uint256 proposalId) public view override(Governor, GovernorTimelockControl) returns (ProposalState) {
+        return super.state(proposalId);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="44" endline="46" pcid="343">
+    function state(uint256 proposalId) public view override(Governor, GovernorTimelockControl) returns (ProposalState) {
+        return super.state(proposalId);
+    }
+</source>
+</class>
+
+<class classid="24" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor1.sol" startline="74" endline="78" pcid="338">
+    function supportsInterface(
+        bytes4 interfaceId
+    ) public view override(Governor, GovernorTimelockControl) returns (bool) {
+        return super.supportsInterface(interfaceId);
+    }
+</source>
+<source file="systems/source-code/MyGovernor2.sol" startline="80" endline="84" pcid="348">
+    function supportsInterface(
+        bytes4 interfaceId
+    ) public view override(Governor, GovernorTimelockControl) returns (bool) {
+        return super.supportsInterface(interfaceId);
+    }
+</source>
+</class>
+
+<class classid="25" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MyGovernor2.sol" startline="32" endline="34" pcid="341">
+    function proposalThreshold() public pure override returns (uint256) {
+        return 1000e18;
+    }
+</source>
+<source file="systems/source-code/MyGovernor3.sol" startline="30" endline="32" pcid="351">
+    function proposalThreshold() public pure override returns (uint256) {
+        return 1000e18;
+    }
+</source>
+</class>
+
+<class classid="26" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyToken.sol" startline="13" endline="15" pcid="360">
+    function _afterTokenTransfer(address from, address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._afterTokenTransfer(from, to, amount);
+    }
+</source>
+<source file="systems/source-code/MyTokenWrapped.sol" startline="20" endline="22" pcid="369">
+    function _afterTokenTransfer(address from, address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._afterTokenTransfer(from, to, amount);
+    }
+</source>
+<source file="systems/source-code/MyTokenTimestampBased.sol" startline="24" endline="26" pcid="365">
+    function _afterTokenTransfer(address from, address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._afterTokenTransfer(from, to, amount);
+    }
+</source>
+</class>
+
+<class classid="27" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyToken.sol" startline="17" endline="19" pcid="361">
+    function _mint(address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._mint(to, amount);
+    }
+</source>
+<source file="systems/source-code/MyTokenWrapped.sol" startline="24" endline="26" pcid="370">
+    function _mint(address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._mint(to, amount);
+    }
+</source>
+<source file="systems/source-code/MyTokenTimestampBased.sol" startline="28" endline="30" pcid="366">
+    function _mint(address to, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._mint(to, amount);
+    }
+</source>
+</class>
+
+<class classid="28" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/MyToken.sol" startline="21" endline="23" pcid="362">
+    function _burn(address account, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/MyTokenWrapped.sol" startline="28" endline="30" pcid="371">
+    function _burn(address account, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._burn(account, amount);
+    }
+</source>
+<source file="systems/source-code/MyTokenTimestampBased.sol" startline="32" endline="34" pcid="367">
+    function _burn(address account, uint256 amount) internal override(ERC20, ERC20Votes) {
+        super._burn(account, amount);
+    }
+</source>
+</class>
+
+<class classid="29" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PausableHarness.sol" startline="8" endline="10" pcid="374">
+    function pause() external {
+        _pause();
+    }
+</source>
+<source file="systems/source-code/PausableMock.sol" startline="24" endline="26" pcid="380">
+    function pause() external {
+        _pause();
+    }
+</source>
+</class>
+
+<class classid="30" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PausableHarness.sol" startline="12" endline="14" pcid="375">
+    function unpause() external {
+        _unpause();
+    }
+</source>
+<source file="systems/source-code/PausableMock.sol" startline="28" endline="30" pcid="381">
+    function unpause() external {
+        _unpause();
+    }
+</source>
+</class>
+
+<class classid="31" nclones="5" nlines="12" similarity="75">
+<source file="systems/source-code/SafeMathMemoryCheck.sol" startline="8" endline="19" pcid="455">
+    function addMemoryCheck() internal pure returns (uint256 mem) {
+        uint256 length = 32;
+        assembly {
+            mem := mload(0x40)
+        }
+        for (uint256 i = 0; i < length; ++i) {
+            SafeMath.add(1, 1);
+        }
+        assembly {
+            mem := sub(mload(0x40), mem)
+        }
+    }
+</source>
+<source file="systems/source-code/SafeMathMemoryCheck.sol" startline="34" endline="45" pcid="457">
+    function mulMemoryCheck() internal pure returns (uint256 mem) {
+        uint256 length = 32;
+        assembly {
+            mem := mload(0x40)
+        }
+        for (uint256 i = 0; i < length; ++i) {
+            SafeMath.mul(1, 1);
+        }
+        assembly {
+            mem := sub(mload(0x40), mem)
+        }
+    }
+</source>
+<source file="systems/source-code/SafeMathMemoryCheck.sol" startline="60" endline="71" pcid="459">
+    function modMemoryCheck() internal pure returns (uint256 mem) {
+        uint256 length = 32;
+        assembly {
+            mem := mload(0x40)
+        }
+        for (uint256 i = 0; i < length; ++i) {
+            SafeMath.mod(1, 1);
+        }
+        assembly {
+            mem := sub(mload(0x40), mem)
+        }
+    }
+</source>
+<source file="systems/source-code/SafeMathMemoryCheck.sol" startline="21" endline="32" pcid="456">
+    function subMemoryCheck() internal pure returns (uint256 mem) {
+        uint256 length = 32;
+        assembly {
+            mem := mload(0x40)
+        }
+        for (uint256 i = 0; i < length; ++i) {
+            SafeMath.sub(1, 1);
+        }
+        assembly {
+            mem := sub(mload(0x40), mem)
+        }
+    }
+</source>
+<source file="systems/source-code/SafeMathMemoryCheck.sol" startline="47" endline="58" pcid="458">
+    function divMemoryCheck() internal pure returns (uint256 mem) {
+        uint256 length = 32;
+        assembly {
+            mem := mload(0x40)
+        }
+        for (uint256 i = 0; i < length; ++i) {
+            SafeMath.div(1, 1);
+        }
+        assembly {
+            mem := sub(mload(0x40), mem)
+        }
+    }
+</source>
+</class>
+
+<class classid="32" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="12" endline="14" pcid="509">
+    function getDeadline() public view returns (uint64) {
+        return _timer.getDeadline();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="12" endline="14" pcid="516">
+    function getDeadline() public view returns (uint64) {
+        return _timer.getDeadline();
+    }
+</source>
+</class>
+
+<class classid="33" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="16" endline="18" pcid="510">
+    function setDeadline(uint64 timestamp) public {
+        _timer.setDeadline(timestamp);
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="16" endline="18" pcid="517">
+    function setDeadline(uint64 timestamp) public {
+        _timer.setDeadline(timestamp);
+    }
+</source>
+</class>
+
+<class classid="34" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="20" endline="22" pcid="511">
+    function reset() public {
+        _timer.reset();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="20" endline="22" pcid="518">
+    function reset() public {
+        _timer.reset();
+    }
+</source>
+</class>
+
+<class classid="35" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="24" endline="26" pcid="512">
+    function isUnset() public view returns (bool) {
+        return _timer.isUnset();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="24" endline="26" pcid="519">
+    function isUnset() public view returns (bool) {
+        return _timer.isUnset();
+    }
+</source>
+</class>
+
+<class classid="36" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="28" endline="30" pcid="513">
+    function isStarted() public view returns (bool) {
+        return _timer.isStarted();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="28" endline="30" pcid="520">
+    function isStarted() public view returns (bool) {
+        return _timer.isStarted();
+    }
+</source>
+</class>
+
+<class classid="37" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="32" endline="34" pcid="514">
+    function isPending() public view returns (bool) {
+        return _timer.isPending();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="32" endline="34" pcid="521">
+    function isPending() public view returns (bool) {
+        return _timer.isPending();
+    }
+</source>
+</class>
+
+<class classid="38" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TimersBlockNumberImpl.sol" startline="36" endline="38" pcid="515">
+    function isExpired() public view returns (bool) {
+        return _timer.isExpired();
+    }
+</source>
+<source file="systems/source-code/TimersTimestampImpl.sol" startline="36" endline="38" pcid="522">
+    function isExpired() public view returns (bool) {
+        return _timer.isExpired();
+    }
+</source>
+</class>
+
+</clones>

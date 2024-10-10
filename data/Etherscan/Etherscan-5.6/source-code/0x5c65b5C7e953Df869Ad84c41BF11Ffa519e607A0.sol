@@ -1,0 +1,36 @@
+{{
+  "language": "Solidity",
+  "sources": {
+    "DepositModel_02.sol": {
+      "content": "// SPDX-License-Identifier: MIT\n// StakingManager \npragma solidity 0.8.21;\n\nimport \"IDepositModel.sol\";\nimport \"Rates_02.sol\";\n\n/// _deposit.amountParams[0]  - accrued and available for claim interests\n/// _deposit.amountParams[1]  - Last Accrued Month \n/// _deposit.amountParams[2]  - percent of accrued that available for claim\ncontract DepositModel_02 is Rates_02, IDepositModel{\n\n    uint256 public constant INTEREST_ACCRUE_PERIOD = 30 days;\n    uint256 public immutable DECIMALS10;\n    \n    constructor(uint8 _decimals) {\n        DECIMALS10 = 10**_decimals;\n    }\n\n    function checkOpen(address _user, Deposit memory _deposit) \n        external \n        view returns(bool ok, Deposit memory)\n    {\n\n        // New deposit\n        _deposit.startDate = block.timestamp;\n        require(\n            _deposit.amountParams.length == 3, \n            \"This Deposit require 3 amount params: Interests = 0, LastAccruedMonth = 0 and % for claim interests\"\n        );\n        require(_deposit.amountParams[2] <= 100 * PERCENT_DENOMINATOR, \"Must be not more 100%\");\n        _deposit.amountParams[0] = 0;\n        _deposit.amountParams[1] = 0;\n\n        ok = true;\n        return (ok, _deposit);\n\n    }\n\n    function accrueInterests(Deposit memory _deposit) \n        external \n        returns(Deposit memory, uint256 increment) {\n\n        // 1. How many full months since start deposit\n        uint256 fullM = (block.timestamp -  _deposit.startDate) / INTEREST_ACCRUE_PERIOD;\n        // uint256 currRate = 100000;\n        uint256 currRate;\n        uint256 availableForClaim;\n        uint256 oneMonthAccrued;\n        for (uint256 i = _deposit.amountParams[1] + 1; i <= fullM; ++ i) {\n            currRate = _getRateForPeriodAndAmount(_deposit.body / DECIMALS10, i);\n            //oneMonthAccrued = _deposit.body * (currRate / 12) / (100 * PERCENT_DENOMINATOR) ;\n            oneMonthAccrued = _deposit.body * currRate / (100 * PERCENT_DENOMINATOR) / 12 ;\n            // In this deposit type only part of increment available for claim\n            availableForClaim = oneMonthAccrued * _deposit.amountParams[2] / (100 * PERCENT_DENOMINATOR);\n            if (availableForClaim > 0) {\n                _deposit.amountParams[0] += availableForClaim;\n            }\n            // THIS IS DEBUG TIME EVENT ONLY! COMMENT BEFORE PRODUCTION\n            emit InterestsAccrued(i, currRate, _deposit.body, oneMonthAccrued);\n            _deposit.body += oneMonthAccrued - availableForClaim;\n            increment += oneMonthAccrued;\n\n        }\n        _deposit.amountParams[1] = fullM;\n        return (_deposit, increment);\n    }\n\n    function calcInterests(Deposit memory _deposit, uint256 _monthCount) \n        external \n        view\n        returns(Deposit memory, uint256 increment) {\n\n        uint256 currRate;\n        uint256 availableForClaim;\n        uint256 oneMonthAccrued;\n        for (uint256 i = _deposit.amountParams[1] + 1; i <= _monthCount; i ++) {\n            currRate = _getRateForPeriodAndAmount(_deposit.body / DECIMALS10, i);\n            //oneMonthAccrued = _deposit.body * (currRate / 12) / (100 * PERCENT_DENOMINATOR) ;\n            oneMonthAccrued = _deposit.body * currRate / (100 * PERCENT_DENOMINATOR) / 12 ;\n            // In this deposit type only part of increment available for claim\n            availableForClaim = oneMonthAccrued * _deposit.amountParams[2] / (100 * PERCENT_DENOMINATOR);\n            if (availableForClaim > 0) {\n                _deposit.amountParams[0] += availableForClaim;\n            }\n            _deposit.body += oneMonthAccrued - availableForClaim;\n            increment += oneMonthAccrued;\n        }\n        _deposit.amountParams[1] = _monthCount;\n        return (_deposit, increment);\n    }\n\n    function payInterestsToBody(Deposit memory _deposit) external returns(Deposit memory){\n       _deposit.body += _deposit.amountParams[0];\n       _deposit.amountParams[0] = 0;\n       return _deposit;\n    }\n    \n    function getRateForPeriodAndAmount(uint256 _amount, uint256 _currMonth) external view returns(uint256) {\n        return _getRateForPeriodAndAmount(_amount, _currMonth);\n    }\n    ///////////////////////////////////////////////////////////\n    ///////    Admin Functions        /////////////////////////\n    ///////////////////////////////////////////////////////////\n    \n    ///////////////////////////////////////////////////////////\n\n}"
+    },
+    "IDepositModel.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.21;\n\n\nstruct Deposit {\n    uint256 startDate;\n    uint256 body;\n    uint256[] amountParams;\n    address[] addressParams;\n    uint8 depositModelIndex;\n}\n\nstruct DepositInfo {\n    uint256 startDate;\n    uint256 body;\n    uint8 depositModelIndex;\n}\n\ninterface IDepositModel  {\n\n    event InterestsAccrued(\n        uint256 indexed MonthNumber, \n        uint256 Rate, \n        uint256 BodyForCalc,  \n        uint256 Interests\n    );\n    function checkOpen(address _user, Deposit memory _deposit) \n        external \n        view returns(bool ok, Deposit memory depositData);\n\n    function accrueInterests(Deposit memory _deposit) \n        external \n        returns(Deposit memory, uint256 increment);\n        \n    function payInterestsToBody(Deposit memory _deposit) \n        external \n        returns(Deposit memory);\n\n    function getRateForPeriodAndAmount(uint256 _amount, uint256 _currMonth) \n        external \n        view \n        returns(uint256);\n\n    function calcInterests(Deposit memory _deposit, uint256 _monthCount) \n        external \n        view\n        returns(Deposit memory, uint256 increment);\n}"
+    },
+    "Rates_02.sol": {
+      "content": "// SPDX-License-Identifier: MIT\n// Rates \npragma solidity 0.8.21;\n\n\n\nabstract contract Rates_02 {\n   \n    uint256 public constant PERCENT_DENOMINATOR = 10000; // 100%  - 1000000\n    uint256 public constant BASE_START = 45000;          // 4.5%\n    uint256 public constant BASE_STEP = 2500;            // 0.25%\n    uint256 public constant BASE_MAX = 105000;           // 10.5%\n    uint256 public constant AMOUNT_BONUS = 2500;         // 0.25%\n    uint256 public constant AMOUNT_STEP = 100_000;\n\n    \n\n    function _getRateForPeriodAndAmount(uint256 _amount, uint256 _currMonth) \n        internal \n        view \n        returns(uint256 rate) \n    {\n        rate = BASE_START + BASE_STEP * (_currMonth / 3);\n        rate += AMOUNT_BONUS * (_amount / AMOUNT_STEP);\n        if (rate >= BASE_MAX) {\n            rate = BASE_MAX;\n        }\n    }\n}"
+    }
+  },
+  "settings": {
+    "evmVersion": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "libraries": {
+      "DepositModel_02.sol": {}
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "devdoc",
+          "userdoc",
+          "metadata",
+          "abi"
+        ]
+      }
+    }
+  }
+}}

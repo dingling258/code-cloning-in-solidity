@@ -1,0 +1,433 @@
+<clones>
+<systeminfo processor="nicad6" system="source-code" granularity="functions" threshold="30%" minlines="3" maxlines="2500"/>
+<cloneinfo npcs="1338" npairs="238"/>
+<runinfo ncompares="308278" cputime="19072"/>
+<classinfo nclasses="76"/>
+
+<class classid="1" nclones="2" nlines="7" similarity="80">
+<source file="systems/source-code/AddressSetLib.sol" startline="10" endline="16" pcid="7"></source>
+<source file="systems/source-code/Bytes32SetLib.sol" startline="10" endline="16" pcid="143"></source>
+</class>
+
+<class classid="2" nclones="2" nlines="15" similarity="72">
+<source file="systems/source-code/AddressSetLib.sol" startline="18" endline="40" pcid="8"></source>
+<source file="systems/source-code/Bytes32SetLib.sol" startline="18" endline="40" pcid="144"></source>
+</class>
+
+<class classid="3" nclones="2" nlines="6" similarity="75">
+<source file="systems/source-code/AddressSetLib.sol" startline="42" endline="48" pcid="9"></source>
+<source file="systems/source-code/Bytes32SetLib.sol" startline="42" endline="48" pcid="145"></source>
+</class>
+
+<class classid="4" nclones="2" nlines="12" similarity="80">
+<source file="systems/source-code/AddressSetLib.sol" startline="50" endline="63" pcid="10"></source>
+<source file="systems/source-code/Bytes32SetLib.sol" startline="50" endline="63" pcid="146"></source>
+</class>
+
+<class classid="5" nclones="10" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="77" endline="79" pcid="12"></source>
+<source file="systems/source-code/EtherWrapper.sol" startline="89" endline="91" pcid="391"></source>
+<source file="systems/source-code/SynthRedeemer.sol" startline="32" endline="34" pcid="1130"></source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="73" endline="75" pcid="86"></source>
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="77" endline="79" pcid="53"></source>
+<source file="systems/source-code/Exchanger.sol" startline="155" endline="157" pcid="415"></source>
+<source file="systems/source-code/SynthetixBridgeToOptimism.sol" startline="36" endline="38" pcid="1087"></source>
+<source file="systems/source-code/Liquidations.sol" startline="65" endline="67" pcid="705"></source>
+<source file="systems/source-code/Synth.sol" startline="209" endline="211" pcid="1057"></source>
+<source file="systems/source-code/FeePool.sol" startline="139" endline="141" pcid="547"></source>
+</class>
+
+<class classid="6" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="81" endline="83" pcid="13"></source>
+<source file="systems/source-code/TradingRewards.sol" startline="70" endline="72" pcid="1284"></source>
+<source file="systems/source-code/Synth.sol" startline="205" endline="207" pcid="1056"></source>
+<source file="systems/source-code/Issuer.sol" startline="117" endline="119" pcid="631"></source>
+<source file="systems/source-code/FeePool.sol" startline="131" endline="133" pcid="545"></source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="69" endline="71" pcid="85"></source>
+</class>
+
+<class classid="7" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="85" endline="87" pcid="14"></source>
+<source file="systems/source-code/Exchanger.sol" startline="135" endline="137" pcid="410"></source>
+<source file="systems/source-code/PurgeableSynth.sol" startline="42" endline="44" pcid="945"></source>
+<source file="systems/source-code/EtherWrapper.sol" startline="85" endline="87" pcid="390"></source>
+<source file="systems/source-code/Liquidations.sol" startline="69" endline="71" pcid="706"></source>
+<source file="systems/source-code/Depot.sol" startline="515" endline="517" pcid="335"></source>
+<source file="systems/source-code/Issuer.sol" startline="121" endline="123" pcid="632"></source>
+</class>
+
+<class classid="8" nclones="7" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="89" endline="91" pcid="15"></source>
+<source file="systems/source-code/Exchanger.sol" startline="127" endline="129" pcid="408"></source>
+<source file="systems/source-code/Synth.sol" startline="197" endline="199" pcid="1054"></source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="65" endline="67" pcid="84"></source>
+<source file="systems/source-code/RewardEscrowV2.sol" startline="46" endline="48" pcid="967"></source>
+<source file="systems/source-code/Liquidations.sol" startline="61" endline="63" pcid="704"></source>
+<source file="systems/source-code/FeePool.sol" startline="115" endline="117" pcid="541"></source>
+</class>
+
+<class classid="9" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="93" endline="95" pcid="16"></source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="36" endline="38" pcid="880"></source>
+<source file="systems/source-code/FeePool.sol" startline="135" endline="137" pcid="546"></source>
+<source file="systems/source-code/Issuer.sol" startline="141" endline="143" pcid="637"></source>
+</class>
+
+<class classid="10" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="97" endline="99" pcid="17"></source>
+<source file="systems/source-code/NativeEtherWrapper.sol" startline="33" endline="35" pcid="887"></source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="40" endline="42" pcid="881"></source>
+<source file="systems/source-code/FeePool.sol" startline="159" endline="161" pcid="552"></source>
+</class>
+
+<class classid="11" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="101" endline="103" pcid="18"></source>
+<source file="systems/source-code/MultiCollateralSynth.sol" startline="44" endline="46" pcid="882"></source>
+<source file="systems/source-code/FeePool.sol" startline="163" endline="165" pcid="553"></source>
+</class>
+
+<class classid="12" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseDebtCache.sol" startline="105" endline="107" pcid="19"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="129" endline="131" pcid="1157"></source>
+</class>
+
+<class classid="13" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="69" endline="71" pcid="51"></source>
+<source file="systems/source-code/WrapperFactory.sol" startline="44" endline="46" pcid="1333"></source>
+<source file="systems/source-code/Synth.sol" startline="201" endline="203" pcid="1055"></source>
+<source file="systems/source-code/EtherWrapper.sol" startline="81" endline="83" pcid="389"></source>
+<source file="systems/source-code/Exchanger.sol" startline="143" endline="145" pcid="412"></source>
+<source file="systems/source-code/Issuer.sol" startline="129" endline="131" pcid="634"></source>
+</class>
+
+<class classid="14" nclones="6" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="73" endline="75" pcid="52"></source>
+<source file="systems/source-code/Exchanger.sol" startline="139" endline="141" pcid="411"></source>
+<source file="systems/source-code/BaseSynthetixBridge.sol" startline="35" endline="37" pcid="137"></source>
+<source file="systems/source-code/FeePool.sol" startline="119" endline="121" pcid="542"></source>
+<source file="systems/source-code/Liquidations.sol" startline="57" endline="59" pcid="703"></source>
+<source file="systems/source-code/Issuer.sol" startline="113" endline="115" pcid="630"></source>
+</class>
+
+<class classid="15" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="81" endline="83" pcid="54"></source>
+<source file="systems/source-code/BaseSynthetix.sol" startline="356" endline="358" pcid="127"></source>
+<source file="systems/source-code/Exchanger.sol" startline="886" endline="888" pcid="455"></source>
+<source file="systems/source-code/ExchangeRates.sol" startline="565" endline="567" pcid="498"></source>
+</class>
+
+<class classid="16" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseRewardEscrowV2.sol" startline="98" endline="100" pcid="56"></source>
+<source file="systems/source-code/RewardEscrow.sol" startline="79" endline="81" pcid="950"></source>
+</class>
+
+<class classid="17" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="61" endline="63" pcid="83"></source>
+<source file="systems/source-code/Issuer.sol" startline="125" endline="127" pcid="633"></source>
+<source file="systems/source-code/FeePool.sol" startline="143" endline="145" pcid="548"></source>
+</class>
+
+<class classid="18" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="77" endline="79" pcid="87"></source>
+<source file="systems/source-code/FeePool.sol" startline="155" endline="157" pcid="551"></source>
+</class>
+
+<class classid="19" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/BaseSynthetix.sol" startline="200" endline="210" pcid="106"></source>
+<source file="systems/source-code/Synthetix.sol" startline="121" endline="131" pcid="1070"></source>
+</class>
+
+<class classid="20" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="116" endline="118" pcid="149"></source>
+<source file="systems/source-code/CollateralManager.sol" startline="145" endline="147" pcid="207"></source>
+</class>
+
+<class classid="21" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Collateral.sol" startline="124" endline="126" pcid="151"></source>
+<source file="systems/source-code/CollateralManager.sol" startline="141" endline="143" pcid="206"></source>
+</class>
+
+<class classid="22" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/CollateralErc20.sol" startline="83" endline="89" pcid="190"></source>
+<source file="systems/source-code/CollateralShort.sol" startline="53" endline="59" pcid="266"></source>
+<source file="systems/source-code/CollateralEth.sol" startline="43" endline="49" pcid="199"></source>
+</class>
+
+<class classid="23" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/CollateralErc20.sol" startline="91" endline="93" pcid="191"></source>
+<source file="systems/source-code/CollateralShort.sol" startline="82" endline="84" pcid="270"></source>
+<source file="systems/source-code/CollateralEth.sol" startline="51" endline="53" pcid="200"></source>
+</class>
+
+<class classid="24" nclones="2" nlines="6" similarity="80">
+<source file="systems/source-code/CollateralUtil.sol" startline="27" endline="32" pcid="272"></source>
+<source file="systems/source-code/PurgeableSynth.sol" startline="35" endline="40" pcid="944"></source>
+</class>
+
+<class classid="25" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Depot.sol" startline="511" endline="513" pcid="334"></source>
+<source file="systems/source-code/TradingRewards.sol" startline="66" endline="68" pcid="1283"></source>
+</class>
+
+<class classid="26" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="151" endline="153" pcid="414"></source>
+<source file="systems/source-code/Issuer.sol" startline="137" endline="139" pcid="636"></source>
+<source file="systems/source-code/FeePool.sol" startline="151" endline="153" pcid="550"></source>
+</class>
+
+<class classid="27" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="167" endline="169" pcid="418"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="67" endline="69" pcid="1146"></source>
+</class>
+
+<class classid="28" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="171" endline="173" pcid="419"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="139" endline="141" pcid="1159"></source>
+</class>
+
+<class classid="29" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Exchanger.sol" startline="175" endline="177" pcid="420"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="74" endline="76" pcid="1147"></source>
+</class>
+
+<class classid="30" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRates.sol" startline="134" endline="136" pcid="462"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="117" endline="119" pcid="1154"></source>
+</class>
+
+<class classid="31" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRates.sol" startline="138" endline="140" pcid="463"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="133" endline="135" pcid="1158"></source>
+</class>
+
+<class classid="32" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="41" endline="43" pcid="502"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="207" endline="209" pcid="1172"></source>
+</class>
+
+<class classid="33" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="45" endline="47" pcid="503"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="213" endline="215" pcid="1173"></source>
+</class>
+
+<class classid="34" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="49" endline="51" pcid="504"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="225" endline="227" pcid="1175"></source>
+</class>
+
+<class classid="35" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="53" endline="55" pcid="505"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="231" endline="233" pcid="1176"></source>
+</class>
+
+<class classid="36" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangeRatesWithDexPricing.sol" startline="57" endline="59" pcid="506"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="237" endline="239" pcid="1177"></source>
+</class>
+
+<class classid="37" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ExchangerWithFeeRecAlternatives.sol" startline="49" endline="51" pcid="511"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="201" endline="203" pcid="1171"></source>
+</class>
+
+<class classid="38" nclones="3" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="147" endline="149" pcid="549"></source>
+<source file="systems/source-code/Issuer.sol" startline="145" endline="147" pcid="638"></source>
+<source file="systems/source-code/Synthetix.sol" startline="45" endline="47" pcid="1065"></source>
+</class>
+
+<class classid="39" nclones="4" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="167" endline="169" pcid="554"></source>
+<source file="systems/source-code/Issuer.sol" startline="161" endline="163" pcid="642"></source>
+<source file="systems/source-code/Liquidations.sol" startline="78" endline="80" pcid="708"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="80" endline="82" pcid="1148"></source>
+</class>
+
+<class classid="40" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="171" endline="173" pcid="555"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="88" endline="90" pcid="1149"></source>
+</class>
+
+<class classid="41" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/FeePool.sol" startline="175" endline="177" pcid="556"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="93" endline="95" pcid="1150"></source>
+</class>
+
+<class classid="42" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Issuer.sol" startline="317" endline="319" pcid="654"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="125" endline="127" pcid="1156"></source>
+</class>
+
+<class classid="43" nclones="2" nlines="6" similarity="80">
+<source file="systems/source-code/LegacyOwned.sol" startline="16" endline="21" pcid="698"></source>
+<source file="systems/source-code/Owned.sol" startline="19" endline="24" pcid="896"></source>
+</class>
+
+<class classid="44" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="22" endline="25" pcid="699"></source>
+<source file="systems/source-code/State.sol" startline="23" endline="26" pcid="1034"></source>
+</class>
+
+<class classid="45" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="27" endline="33" pcid="700"></source>
+<source file="systems/source-code/TokenState.sol" startline="25" endline="31" pcid="1280"></source>
+</class>
+
+<class classid="46" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/LegacyTokenState.sol" startline="35" endline="37" pcid="701"></source>
+<source file="systems/source-code/TokenState.sol" startline="39" endline="41" pcid="1281"></source>
+</class>
+
+<class classid="47" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidations.sol" startline="82" endline="84" pcid="709"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="99" endline="101" pcid="1151"></source>
+</class>
+
+<class classid="48" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidations.sol" startline="86" endline="88" pcid="710"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="106" endline="108" pcid="1152"></source>
+</class>
+
+<class classid="49" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/Liquidations.sol" startline="90" endline="92" pcid="711"></source>
+<source file="systems/source-code/SystemSettings.sol" startline="112" endline="114" pcid="1153"></source>
+</class>
+
+<class classid="50" nclones="3" nlines="6" similarity="100">
+<source file="systems/source-code/Migration_Alkaid.sol" startline="1025" endline="1030" pcid="749"></source>
+<source file="systems/source-code/Migration_Mirfak.sol" startline="266" endline="271" pcid="763"></source>
+<source file="systems/source-code/Migration_Kaus.sol" startline="82" endline="87" pcid="755"></source>
+</class>
+
+<class classid="51" nclones="3" nlines="6" similarity="100">
+<source file="systems/source-code/Migration_Alkaid.sol" startline="1032" endline="1037" pcid="750"></source>
+<source file="systems/source-code/Migration_Mirfak.sol" startline="273" endline="278" pcid="764"></source>
+<source file="systems/source-code/Migration_Kaus.sol" startline="89" endline="94" pcid="756"></source>
+</class>
+
+<class classid="52" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MixinSystemSettings.sol" startline="60" endline="62" pcid="796"></source>
+<source file="systems/source-code/WrapperFactory.sol" startline="40" endline="42" pcid="1332"></source>
+</class>
+
+<class classid="53" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/MockEtherWrapper.sol" startline="13" endline="15" pcid="846"></source>
+<source file="systems/source-code/MockWrapperFactory.sol" startline="13" endline="15" pcid="879"></source>
+</class>
+
+<class classid="54" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/OwnerRelayOnEthereum.sol" startline="24" endline="26" pcid="898"></source>
+<source file="systems/source-code/OwnerRelayOnOptimism.sol" startline="28" endline="30" pcid="904"></source>
+</class>
+
+<class classid="55" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="17" endline="19" pcid="927"></source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="17" endline="19" pcid="930"></source>
+</class>
+
+<class classid="56" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="21" endline="27" pcid="928"></source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="21" endline="27" pcid="931"></source>
+</class>
+
+<class classid="57" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/PublicEST.sol" startline="32" endline="34" pcid="929"></source>
+<source file="systems/source-code/PublicEST8Decimals.sol" startline="32" endline="34" pcid="932"></source>
+</class>
+
+<class classid="58" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="60" endline="63" pcid="948"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="46" endline="49" pcid="1104"></source>
+</class>
+
+<class classid="59" nclones="2" nlines="4" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="69" endline="72" pcid="949"></source>
+<source file="systems/source-code/SynthetixStateWithLimitedSetup.sol" startline="29" endline="32" pcid="1126"></source>
+</class>
+
+<class classid="60" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="98" endline="100" pcid="953"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="71" endline="73" pcid="1107"></source>
+</class>
+
+<class classid="61" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="105" endline="107" pcid="954"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="78" endline="80" pcid="1108"></source>
+</class>
+
+<class classid="62" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="112" endline="114" pcid="955"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="85" endline="87" pcid="1109"></source>
+</class>
+
+<class classid="63" nclones="2" nlines="9" similarity="83">
+<source file="systems/source-code/RewardEscrow.sol" startline="119" endline="127" pcid="956"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="92" endline="100" pcid="1110"></source>
+</class>
+
+<class classid="64" nclones="2" nlines="7" similarity="80">
+<source file="systems/source-code/RewardEscrow.sol" startline="132" endline="138" pcid="957"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="105" endline="111" pcid="1111"></source>
+</class>
+
+<class classid="65" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="143" endline="145" pcid="958"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="116" endline="118" pcid="1112"></source>
+</class>
+
+<class classid="66" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/RewardEscrow.sol" startline="150" endline="152" pcid="959"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="123" endline="125" pcid="1113"></source>
+</class>
+
+<class classid="67" nclones="2" nlines="22" similarity="76">
+<source file="systems/source-code/RewardEscrow.sol" startline="224" endline="247" pcid="963"></source>
+<source file="systems/source-code/SynthetixEscrow.sol" startline="206" endline="228" pcid="1117"></source>
+</class>
+
+<class classid="68" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="65" endline="67" pcid="1008"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="49" endline="51" pcid="1019"></source>
+</class>
+
+<class classid="69" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="69" endline="71" pcid="1009"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="53" endline="55" pcid="1020"></source>
+</class>
+
+<class classid="70" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="73" endline="75" pcid="1010"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="57" endline="59" pcid="1021"></source>
+</class>
+
+<class classid="71" nclones="2" nlines="6" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="77" endline="85" pcid="1011"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="61" endline="69" pcid="1022"></source>
+</class>
+
+<class classid="72" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="87" endline="89" pcid="1012"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="71" endline="73" pcid="1023"></source>
+</class>
+
+<class classid="73" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="91" endline="93" pcid="1013"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="75" endline="77" pcid="1024"></source>
+</class>
+
+<class classid="74" nclones="2" nlines="15" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="125" endline="144" pcid="1017"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="113" endline="132" pcid="1029"></source>
+</class>
+
+<class classid="75" nclones="2" nlines="5" similarity="100">
+<source file="systems/source-code/ShortingRewards.sol" startline="146" endline="153" pcid="1018"></source>
+<source file="systems/source-code/StakingRewards.sol" startline="141" endline="148" pcid="1031"></source>
+</class>
+
+<class classid="76" nclones="2" nlines="3" similarity="100">
+<source file="systems/source-code/TestableAddressSet.sol" startline="26" endline="28" pcid="1256"></source>
+<source file="systems/source-code/TestableBytes32Set.sol" startline="26" endline="28" pcid="1263"></source>
+</class>
+
+</clones>
