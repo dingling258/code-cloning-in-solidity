@@ -10,5 +10,4 @@ Each directory contains all versions of their respective `.sol` files, along wit
 
 ## Analysis Results
 
-- **result1**: Analysis results of code cloning.
-- **result2**: Further analysis results of code cloning.
+- **result1&result2**: Analysis results of code cloning.
